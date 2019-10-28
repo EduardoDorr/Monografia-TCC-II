@@ -1,0 +1,44 @@
+% ||||||||||||||||||||||||||||||||||||||||||||||
+% CAPITULO 1 - INTRODUÇÃO
+% ||||||||||||||||||||||||||||||||||||||||||||||
+\chapter{Introdução}\label{Introdução}
+
+% ----------------------------------------------
+
+	Desde muitos anos a necessidade de sistemas industriais mais inteligentes, capazes de se auto-regularem e tomar decisões de forma objetiva e eficiente não necessitando de contínuas intervenções humanas vem se tornando uma necessidade mais eminente e trivial. O advento da chamada Indústria 4.0, conceito esse inicialmente apresentado na feira de Hannover em 2011 \cite{SEBRAE2016}, trouxe uma grande quebra de paradigma na forma como vinha se fazendo automação, e assim apresentando uma topologia de descentralização do controle dos diversos processos com dispositivos inteligentes capazes de comunicarem-se entre si, trocando informações, corrigindo distorções, se adaptando e aprendendo.
+	
+	Naturalmente, vários gestores e engenheiros começaram a ver grandes oportunidades de aumentar a eficiência de suas fábricas, desde ganhos diretos de produção como diagnóstico rápido, diminuição do tempo de manutenção, capacidade de ver as variáveis de processo, eficiência e disponibilidade das máquinas de qualquer local, inclusive na tela de seus próprios smartphones, e tudo isso em tempo real graças a enorme integração entre a automação e a tecnologia da informação \cite{FIA2018}.
+	
+	Não obstante, a indústria da borracha também não ficaria para trás e também vem exigindo profundas melhorias e atualização dos principais equipamentos utilizados neste setor que já remontam mais de um século e ainda são utilizados hoje com pouquíssimas diferenças em seus sistemas de controle \cite{Groover2012}. Grande parte dos poucos avanços proferidos se dá também pelas propriedades do principal composto desta indústria, a borracha, que não possui comportamento linear, pois em processo possui propriedades de um fluído não newtoniano \cite{Mark2013}.
+
+	A indústria da borracha, possui uma grande gama de oportunidades de inovação de forma a aprimorar o controle, sensoriamento e inteligência das máquinas. Contudo, para isso é necessário um vasto conhecimento dos processos e entendimento da importância que os sistemas de controle têm neste caminho. Sendo assim, será que os alunos formados nos cursos de engenharia com foco em controle e automação saem do ambiente universitário preparados e com uma boa noção da realidade dos processos e sistemas de controle aplicados na indústria, salvo os alunos que já operam na área?
+	
+	Entre os diversos desafios encontrados durante a graduação, sempre surgiu uma necessidade latente de aplicação prática dos conteúdos discorridos, assim relacionando toda a teoria aprendida na construção de soluções para problemas reais vistos na indústria. A decorrência desta necessidade fomentou a elaboração deste trabalho, visando desenvolver um projeto didático e miniaturizado de um sistema real encontrado em diversas linhas de máquinas nos setores de produção de papel, polímeros, metais e elastômeros.
+	
+	Com o desenvolvimento deste sistema, serão relacionadas diversas áreas de conhecimento que foram abordadas na graduação, tais como teoria de sistemas de controle, eletrônica de potência, programação, DSP e física, além de conhecimentos a parte necessários para a completa formação de um engenheiro, como entendimento dos processos de fabricação, projeto de máquinas e a percepção de como todo engenheiro, independente da sua área específica de atuação, precisa ter noções mínimas das demais áreas para poder desenvolver suas atividades.
+	
+	O objeto de estudo se limitará ao projeto mecânico, projeto eletrônico, modelagem matemática, manufatura e comissionamento, levantamento dos dados da planta, desenvolvimento do algoritmo de controle e implementação em um controlador embarcado de uma pequena linha de bobinamento e desbobinamento de papel com um acumulador vertical, que recria uma etapa de um grande sistema de processamento de mantas, carcaças e correias de borracha. A utilização do papel como material, deve-se a facilidade de obtenção, uma vez que a topologia de controle seria igual para quaisquer dos materiais supracitados, apenas interferindo nos parâmetros da planta e do controle.
+	
+	No decorrer do trabalho, será apresentado brevemente o funcionamento da indústria da borracha e onde este tipo de equipamento se insere no ramo, além de explanar sobre a teoria de sistemas de controle, métodos de sintonização de controladores, seguido da apresentação de toda a modelagem matemática, projeto da maquete e a solução proposta para implementar e testar o sistema.
+
+% ----------------------------------------------
+
+\section{Objetivos}
+
+	Todos os conhecimentos desenvolvidos se tornarão ferramentas poderosas de trabalho na vida profissional do engenheiro, e assim, espera-se que uma maquete didática com capacidade de desafiar e promover o crescimento de futuros discentes dos cursos de controle das engenharias da Unisinos, venha a aguçar e proporcionar toda a experiência prática envolvida na escolha da abordagem e solução de um desafio real.
+	
+	Assim, objetiva-se alcançar os seguintes pontos:
+	
+\begin{enumerate}[label=\alph*)]
+	\item Conhecer uma importante etapa de um processo de produção comum na indústria;
+	\item Compreensão a base física e matemática aplicada na modelagem de um sistema;
+	\item Simulação e análise do comportamento de um sistema a partir da modelagem do mesmo;
+	\item Construção uma maquete didática que simula em pequena escala uma planta real;
+	\item Análise dos parâmetros da planta e comparação com o modelo calculado;
+	\item Desenvolvimento de um controlador PID discreto em cascata para controle de tensão do material a partir do torque do atuador realimentado pela corrente elétrica do motor;
+	\item Análise dos resultados obtidos no controle simulado da planta;
+	\item Implementação do controlador desenvolvido em sistema embarcado;
+	\item Análise dos resultados obtidos no controle implementado da planta, comparando com os resultados simulados.
+\end{enumerate}
+
+% ----------------------------------------------

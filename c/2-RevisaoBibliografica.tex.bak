@@ -1,0 +1,460 @@
+% ||||||||||||||||||||||||||||||||||||||||||||||
+% CAPITULO 2
+% ||||||||||||||||||||||||||||||||||||||||||||||
+\chapter{Revisão Bibliográfica}
+
+% ----------------------------------------------
+
+\section{Indústria da Borracha}
+
+	O uso da borracha na sociedade atual possui alcance muito vasto, atingindo, praticamente, todos os setores da indústria e toda a população, onde mais da metade do material produzido é empregado na fabricação de pneus para todos os tipos de veículos automotores, mas apesar do crescente uso da borracha, ela é conhecida desde a expedição feita por Colombo ao novo continente no final do século XV, onde, em contato com os nativos, percebeu o uso de certos artefatos feitos de um material até então desconhecido, que atiçou a curiosidade dos europeus \cite{Gent2016}.
+
+	Contudo, a borracha natural não vulcanizada, que é produzida a partir do latex extraído da Hevea Brasiliensis, mais conhecida como seringueira \cite{Marto2007}, apresentava vários problemas relacionados com sua durabilidade quando exposta a temperaturas extremas e por isso acabou caindo em desuso, até a invenção do processo de vulcanização por Charles Goodyear em 1839 \cite{Rocha2003} que acabou resolvendo os problemas e reabrindo as portas para o crescimento e uso contínuo do composto na indústria.
+	
+	Muitos dos métodos de processamento da borracha se parecem com o processo empregado em plásticos, mas a tecnologia utilizada difere bastante, inclusive o tamanho da aplicabilidade da borracha em relação ao plástico também é muito diferente, onde, massivamente, é empregada na produção de pneus e seguido por correias de transporte. Basicamente, a indústria da borracha produz dois tipos de produtos, sendo a própria borracha que servirá como matéria-prima para a produção do segundo tipo de produto é a borracha manufaturada. A borracha possui um ciclo comum de manufatura, onde ela passa por etapas bem definidas, sendo elas: (1) Composição, (2) Mistura, (3) Conformação e (4) Vulcanização \cite{Groover2012}.
+	
+	O processo de Composição da borracha é a etapa onde são adicionados aditivos para alterar suas propriedades químicas a fim de se atingir os requisitos exigidos para o produto final, além de alterar seu custo e capacidade de ser processada. A adição destes químicos é necessária para possibilitar a última etapa, de Vulcanização. Entre os aditivos que integram a formulação destacam-se os agentes vulcanizadores, aceleradores, ativadores e retardadores, antidegradantes, plastificantes e pigmentos \cite{Rocha2003}.
+	
+	Conforme \citeauthor{Gomes}, o tipo e proporção da carga de aditivo depende das características finais do composto, onde existem aditivos de reforço e aditivos de enchimento, onde o primeiro destina-se a melhorar as propriedades mecânicas do composto como dureza, tenacidade, rigidez, resistência à abrasão, condutividade eléctrica e etc, enquanto o último, destina-se a baratear o custo da matéria-prima estendo o material. O aditivo mais básico na Composição é o Negro de Carbono, vulgarmente conhecido como Negro de Fumo, que aumenta a resistência a tração, abrasão e aos raios ultra-violetas. Inclusive, a coloração normalmente preta dos produtos de borracha se dá pelo uso do Negro de Carbono na composição.
+	
+	Para se assegurar a correta incorporação e dispersão dos aditivos, ocorre a etapa de Mistura, onde, através de forças de cisalhamento, abrasão e compressão, o composto é misturado e homogenizado em misturadores abertos ou em misturados internos. Durante esta etapa, ainda não pode-se adicionar aditivos vulcanizantes, pois devidos as forças e a viscosidade da borracha, durante o processo alcançam-se temperaturas próximas de $\SI{150}{\celsius}$, o que poderia levar a vulcanização do composto antes da etapa de Conformação.
+	
+	O misturador aberto, também conhecido como cilindro ou moinho, foi, historicamente, o primeiro misturador a ser utilizado na indústria, sendo basicamente dois cilindros metálicos paralelos horizontalmente que giram um contra o outro com velocidades diferentes, pode-se ver uma representação dele na figura \ref{fig:MAC}. A borracha e os diversos aditivos são adicionados no espaço entre os cilindros, sendo puxados e misturados. Dependendo da linha de fabricação, este equipamento pode trabalhar de forma descontínua, como um misturador independente, ou operar de forma contínua como um "pulmão" entre um processo descontínuo e um contínuo, como será detalhada mais a frente.
+	
+	O misturador interno, ou fechado, é outro tipo de misturador, mas como o próprio nome sugere, opera misturando o composto dentro de uma câmara fechada, onde rotores giram em sentidos opostos produzindo a dispersão dos ingredientes, enquanto um peso flutuante, conhecido como pilão, exerce força sobre a mistura pressionando-a contra os rotores. Acima da câmara, há um bocal por onde a borracha e aditivos são adicionados e posteriormente pressionados pelo pilão. Um tipo comum de misturador interno é o misturador Banbury, conforme ilustra a figura \ref{fig:MIR}.
+	
+\begin{figure}[H]
+	\caption{Tipos de misturadores de borracha.}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.8\linewidth]{i/MAC.png}
+		\caption{Misturador Aberto de Cilindros.}
+		\label{fig:MAC}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.8\linewidth]{i/MIR.png}
+		\caption{Misturador Interno de Rotores (Banbury).}
+		\label{fig:MIR}
+	\end{subfigure}
+	\fonte{Adaptado de \citeonline{Groover2012}.} 
+\end{figure}
+
+	A última etapa antes de vulcanizar a borracha trata-se da Conformação, onde se dará o formato desejado para a borracha, conforme as especificações. A Formação pode ser dividida em 4 processos diferentes, sendo eles: Extrusão, Calandragem, Revestimento e Moldagem. Em geral estes processos são utilizados juntos e, diferentemente dos demais, a Moldagem inclui a etapa de Vulcanização em seu processo.
+	
+	O processo de extrusão é definido pelo bombeamento de um composto através de um tubo com um orifício na extremidade, por onde o material será expulso do interior do tubo no formato desejado, conforme figura \ref{fig:EPT}. A extrusora é o principal equipamento utilizado na indústria da borracha, sendo constituída por um fuso dentro de uma câmara cilíndrica aquecida, conhecida como cilindro ou barril, que com a rotação do fuso, empurra a borracha através da câmara até o cabeçote da extrusora, onde é montado um molde com orifício dando o formato preliminar ou definitivo do produto.
+	
+	Existem extrusoras com alimentação a quente e a frio, as grandes diferenças construtivas entre elas se dá pela relação diâmetro-comprimento, fato diretamente relacionado com a alimentação de composto da mesma. As extrusoras com alimentação a quente fora as primeiras a surgir, remontando mais de dois milênios durante a época de Arquimedes \cite{Rocha2003}, possuindo comprimento menor, mas necessitando que o composto seja pre-aquecido antes da alimentação. Só após a Segunda Guerra Mundial é que se começaram a surgir as primeiras extrusoras com alimentação a frio, mais longas, com o perfil do fuso possuindo seções diferentes e, tal como o nome diz, podendo ser alimentadas com compostos a temperatura ambiente.
+
+\begin{figure}[H]
+	\caption{Processo de extrusão.}
+	\centering
+	\includegraphics[width = 0.8\linewidth]{i/EPT.png}
+	\label{fig:EPT}
+	\fonte{Adaptado de \citeonline{Groover2012}.} 
+\end{figure}
+		
+	O processo de calandragem constitui-se por passar o composto por entre dois cilindros paralelos ou mais que giram um contra o outro com controle dimensional de afastamento radial produzindo mantas de borracha com ótimo critério de espessura e sendo utilizadas para laminar os compostos e impregnar e recobrir de borracha uma alma têxtil, sendo largamente empregado na produção de carcaças, correias transportadoras e etc. As calandras contam com vários tipos de disposições e número de rolos para efetuar o processo \cite{EN12301:2000}, operando em sistemas contínuos ou isoladamente. A figura \ref{fig:CLF} apresenta uma calandra de 4 rolos laminadora:
+	
+\begin{figure}[H]
+	\caption{Processo de calandragem.}
+	\centering
+	\includegraphics[width = 0.4\linewidth]{i/CLF.png}
+	\label{fig:CLF}
+	\fonte{Adaptado de \citeonline{Groover2012}.} 
+\end{figure}	
+	
+	Calandras de dois rolos, dificilmente são utilizadas individualmente, assim sendo geralmente vistas em sistemas conjuntos com extrusoras, formando um equipamento chamado de Roller-Head-Die, que possui um ótimo controle dimensional da manta de borracha produzida, resolvendo o problema de espessura visto nas extrusoras e o problema de formação de bolhas no banco de borracha das calandras, o equipamento é apresentado na figura \ref{fig:roller}. Calandras de três rolos são extremamente versáteis, podendo ser empregadas em diversas operações diferentes para produção de lâminas e inclusive na impregnação da alma têxtil.
+	
+\begin{figure}[H]
+	\caption{Tipos de processos de conformação.}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=0.8\linewidth]{i/roller.png}
+		\centering
+		\caption{Roller-Head-Die.}
+		\label{fig:roller}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=0.8\linewidth]{i/impregnacao.png}
+		\centering
+		\caption{Impregnação de Tecido.}
+		\label{fig:impregnacao}
+	\end{subfigure}
+	\fonte{Adaptado de \citeonline{Groover2012}.} 
+\end{figure}	
+	
+	Já as calandras de 4 rolos são bastante utilizadas em processos de impregnação e recobrimento. O processo de impregnação é onde a alma têxtil, chamada \textit{Fabric}, vulgarmente conhecida como tecido, é friccionada por uma camada de borracha enquanto passa entre os cilindros da calandram tornando-se um tecido revestido de borracha, e posteriormente este tecido pode receber uma nova camada de borracha sobre o impregnado, criando um revestimento de borracha, conforme figura \ref{fig:impregnacao} \cite{Groover2012}.
+	
+	Na Moldagem, a borracha pode receber sua forma final a partir de 3 processos diferentes, sendo eles: Compressão, Transferência e Injeção. Destes 3 processos, os mais comuns são a compressão e injeção, mas em todos os processos são utilizados moldes. O processo de compressão consiste na prensagem da borracha dentro de um molde que dá sua forma final. O molde é aquecido e durante sua moldagem já é feito a vulcanização da borracha, sendo o método mais utilizado na produção das bandas de rodagem para pneus. O processo de injeção é composto por um molde aquecido que recebe a injeção de borracha em um estado semi-sólido através de orifícios e no final do processo o molde se abre para remoção do produto acabado. Devido ao alto custo do molde de injeção, este processo só é utilizado em produção em massa.
+
+	Contudo, entre os produtos de borracha, a produção de correias para esteiras transportadores ocorre em processos geralmente contínuos com impregnação de tecido posteriormente empilhadas para formação de carcaças mais espessas. Neste tipo de sistema, a máquina principal da linha normalmente é uma calandra com de 4 rolos, formada também por um desbobinador e um bobinador que são, respectivamente, responsáveis por entregar tecido para o processo da calandra e recolher o tecido impregnado em uma bobina para posterior processo.
+	
+% ----------------------------------------------
+
+\section{Acumulador Industrial}
+
+	Em uma longa linha de processamento de correias, encontra-se um grande e complexo sistema dinâmico interconectado com diversas zonas de controle dependentes entre si, em que o ponto crucial para a ótima produção depende de todo o sistema de tensionamento do material dentro da linha, que em casos de um controle ruim leva a alguns problemas no processo, como o amassamento do material, criação de enrugamentos na bobina ou ainda o desalinhamento da bobina deixando-a deformada, conforme figura \ref{fig:problemastensionamento}.
+	
+\begin{figure}[H]
+	\caption{Tipos de problemas de tensionamento.}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.6\linewidth]{i/amassamento.png} 
+		\caption{Amassamento.}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.6\linewidth]{i/enrugamento.png}
+		\caption{Enrugamento.}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.6\linewidth]{i/desalinhamento.png}
+		\caption{Desalinhamento.}
+	\end{subfigure}
+	\label{fig:problemastensionamento}
+	\fonte{Adaptado de \citeauthor{IMC}.} 
+\end{figure}
+	
+	Em sua maioria, linhas de calandragem, seja para indústria de polímeros, elastômeros ou papel, são formadas por três seções principais. Uma seção de entrada, formada por uma estação de desbobinamento, um sistema de tracionamento e um acumulador de entrada. Uma seção de processamento na qual será formado o produto objetivo da linha e por último uma seção de saída, formada por um acumulador de saída e um bobinador, como pode ser observado na figura \ref{fig:linha}.
+
+\begin{figure}[H]
+	\caption{Linha de processamento de mantas.}
+	\centering
+	\includegraphics[width = 1\linewidth]{i/linha.png}
+	\label{fig:linha}
+	\fonte{Adaptado de \citeonline{Pagilla2004}.} 
+\end{figure}
+
+	Então, como o próprio nome sugere, a principal função do acumulador é manter uma quantidade tanto quanto possível de material armazenada, operando como um "pulmão" para a linha de processamento. Linhas de produção contínua aumentam muito a produtividade da planta, e por isso a instalação de acumuladores de entrada e saída em linhas de processamento de mantas acaba evitando a descontinuidade da produção durante as trocas de bobinas. Nesta etapa do processo, na ausência de um acumulador a linha deveria ser parada para se fazer a troca e/ou emenda da bobina no desbobinador e/ou bobinador, o que implicaria em perda de produção e até mesmo marcas indesejadas na superfície do material. Com o acumulador inserido na linha, durante o processo ele permaneceria com uma quantidade pre-definida de material armazenado em seu interior, podendo ser uma quantidade grande ou pequena de acordo com o processo e o tipo de acumulador: de entrada ou saída. Quando instalado após um desbobinador, o equipamento tende a operar acumulado e desacumula material nos momentos de troca da bobina do desbobinador, enquanto que quando instalado antes de um bobinador, ele tende a operar desacumulado e passa a acumular o material processado durante a troca da bobina \cite{Simotion}.
+	
+	Explicando melhor, em acumuladores de entrada o objetivo é iniciar a acumular material quando a quantidade no desbobinador estiver no final, e quando terminar, o sistema antes do acumulador será parado para a troca da bobina, enquanto a linha continuaria produzindo na mesma velocidade, ou em velocidade menor dependendo do tempo de troca, consumindo o material estocado. Em contra-partida, em acumuladores de saída, o objetivo é manter-se a maior parte do tempo sem material acumulado, de forma que quando a bobina no bobinador chegar ao seu diâmetro nominal, o sistema após o acumulador será parado para a troca, enquanto o acumulador inicia o acúmulo do material já processado. O tempo de troca de material deve ser o menor possível de forma a evitar interrupções de processo \cite{Kuhm2012b}.
+	
+	Em geral, os acumuladores são constituídos de um eixo de acúmulo e um eixo de alimentação, que tipicamente recebe um sensor para medição da tensão sobre o material acumulado. O eixo de acúmulo é constituído de um carro com vários rolos livres que se move ao longo deste eixo e assim alterando a quantidade e tensão do material. Os acumuladores podem ter seu eixo de acúmulo tanto na horizontal quando na vertical, de acordo com o espaço físico do local de instalação e tipo de processo \cite{Simotion}.
+	
+	Em resumo, o acumulador tem por função criar um desacoplamento entre o desbobinamento/bobinamento e a seção de processamento. Entretanto, a dinâmica do acumulador acaba se tornando um ponto importante dentro do controle de tensionamento do material, podendo prejudicar a qualidade do produto, ou mesmo causar sua perda e assim perdendo a principal vantagem de manter a linha em movimento. Isto se deve aos distúrbios de tensão verificados antes e depois do acumulador quando o carro se movimenta \cite{Pagilla2001}. Sendo assim, torna-se imprescindível o desenvolvimento de uma forma de controle eficiente para a manutenção de uma tensão estável no material de forma a não prejudicar a linha como um todo.
+
+\begin{figure}[H]
+	\caption{Esquema de um acumulador industrial.}
+	\centering
+	\includegraphics[width = 0.5\linewidth]{i/acumulador.png}
+	\fonte{Elaborado pelo autor.} 
+\end{figure}
+	
+	Considerando que um acumulador é formado por uma sequência de seções de material sendo tracionado entre dois rolos consecutivos, pode-se descrever o comportamento de uma seção e expandir para as demais seções. Neste caso, a Lei de \textit{Hooke}, que descreve a tração sobre a manta em função da elasticidade e o alongamento sofrido na seção, tens-se \cite{Koc2002}:
+
+\begin{equation}\label{eq:tk1}
+	T_k = ES\varepsilon_k = ES\frac{L_k - L_o}{L_o}
+\end{equation}
+
+	Onde, $T_k$ é a tensão sobre o material na seção entre os rolos $k$ e $k+1$, $E$ é o módulo de \textit{Young} do material, $S$ é a seção transversal do material, $\varepsilon_k$ é o alongamento gerado no material, $L_k$ é o comprimento de manta entre os rolos sobre ação de tracionamento e $L_o$ é o comprimento nominal entre os rolos, ou seja, sem ação do tracionamento. Importante ressaltar que a Lei de \textit{Hooke} para materiais viscoelásticos é mais complexa e o modelo de \textit{Voigt} descreve a tensão em uma seção entre dois rolos consecutivos \cite{Koc1999}:
+	
+\begin{equation}\label{eq:tk2}
+	T_k = ES\varepsilon_k + \nu S\frac{d\varepsilon_k}{dt}
+\end{equation}
+
+	Igualmente a relação \ref{eq:tk1}, $T_k$ é a tensão sobre o material na seção, mas agora é adicionado o termo $\nu$ que é a viscosidade cinemática dependente do termo diferencial de $\varepsilon_k$. Considerando, então, apenas a relação \ref{eq:tk1}, pode-se descrever o comportamento da deformação na manta elástica através da seguinte equação \cite{Kuhm2011}:
+	
+\begin{equation}\label{eq:eke}
+	\frac{d}{d_t}(\frac{L_k}{1+\varepsilon_k^e}) = - \frac{V_{k+1}}{1+\varepsilon_k^e} + \frac{V_k}{1+\varepsilon_{k-1}^e}
+\end{equation}	
+
+	Onde $V_k$ é a velocidade do rolo $k$, $V_{k+1}$ é a velocidade do rolo $k+1$, $\varepsilon_k^e$ é a deformação gerada no material na seção entre os rolos $k$ e $k+1$ e $\varepsilon_{k-1}^e$ é a deformação gerada no material na seção entre os rolos $k-1$ e $k$. Levando em conta também a deformação gerada pela ação da gravidade sobre o material, tens-se:
+	
+\begin{equation}\label{eq:wlk}
+	W_{L_k} = \rho gSL_k = ES\varepsilon_k^w
+\end{equation}
+	
+	Onde $W_{L_k}$ é a tensão causada pela ação da gravidade, $\rho$ representa a densidade ou gramatura da manta, $g$ é a aceleração da gravidade e $\varepsilon_k^w$ é o alongamento gerado no material pela ação da gravidade. Então, a partir da relação \ref{eq:wlk}, pode-se tomar que:
+	
+\begin{equation}\label{eq:ekw}
+	\varepsilon_k^w = \frac{\rho gL_k}{E}
+\end{equation}	
+	
+	Assim, a deformação equivalente $\varepsilon_k$ na seção entre os rolos é dada pela combinação das equações \ref{eq:eke} e \ref{eq:ekw}, logo:
+	
+\begin{equation}
+	\varepsilon_k = \varepsilon_k^e + \varepsilon_k^w
+\end{equation}
+
+	Sendo assim, na figura \ref{fig:webtensionrolls} pode-se observar a representação de todas as variáveis atuantes na seção entre os rolos $k$ e $k+1$:
+
+\begin{figure}[H]
+	\caption{Estresse sobre uma manta elástica em uma seção entre dois rolos consecutivos.}
+	\centering
+	\includegraphics[width = 0.6\linewidth]{i/webtensionrolls.png}
+	\label{fig:webtensionrolls}
+	\fonte{Adaptado de \citeonline{Kuhm2012a}.} 
+\end{figure}
+
+	Já a velocidade observada na manta, considerando que não há escorregamento entre a manta e o rolo, é dada pelo balanço de torques no rolo $k$, onde a velocidade da manta é igual a velocidade periférica do rolo, sendo obtido por \cite{Kuhm2012b}:
+	
+\begin{equation}\label{eq:velk}
+	\frac{d}{d_t}(J_k\omega_k) = C_{mk} - C_{rk} - C_{fk}
+\end{equation}
+
+	Onde, $\omega_k = \frac{V_k}{R_k}$ é a velocidade angular do rolo $k$, $J_k$ é o momento de inércia do rolo, $R_k$ é o raio do rolo, $C_{mk}$ é torque do motor para um rolo acionado, $C_{rk} = R_k(T_k - T_{k-1})$ é o torque fornecido pela manta que envolve o rolo e $C_{fk}$ é o torque gerado pela fricção no eixo do rolo, formado por um componente proporcional à velocidade do rolo. Assim, o uso das equações \ref{eq:eke} e \ref{eq:velk} aplicadas em cada seção e rolo, torna possível a criação de um modelo não linear que descreve a dinâmica da da manta dentro do acumulador. Entretanto, ainda é preciso descrever a dinâmica de movimentação do carro, onde a velocidade $V_{acc}$ do carro é uma função da diferença entre as velocidades de entrada e saída do acumulador e a quantidade de seções \cite{Kuhm2012a}:
+	
+\begin{equation}\label{eq:vacc1}
+	V_{acc} = \frac{1}{n}(V_{in} - V_{out})
+\end{equation}
+	
+	Onde, $n$ representa a quantidade de seções para um acumulador com $n+1$ rolos, $V_{in}$ é velocidade de entrada do material e $V_{out}$ é a velocidade de saída do material. Como pode ser observado pela equação \ref{eq:vacc1}, conclui-se que se a velocidade de entrada for superior a de saída, o acumulador terá a velocidade de acúmulo positiva, e então o carro irá subir, operando na operação acúmulo, enquanto que o contrário, fará o carro descer e assim operar na operação desacumulo. Se as velocidades forem idênticas, o carro permanecerá parado na posição que se encontra. Outra forma de descrever a alteração de velocidade do carro é dada pela variação do comprimento da manta dentro do acumulador, assim \cite{Koc1999}
+	
+\begin{equation}\label{eq:vacc2}
+	V_{acc} = \frac{dL_k}{dt}
+\end{equation}
+
+	Se for considerado a instalação de um motor no topo do acumulador, exercendo torque para movimentar o carro móvel e a representação a seguir:
+	
+\begin{figure}[H]
+	\caption{Representação genérica das forças em um acumulador com motor.}
+	\centering
+	\includegraphics[width = 0.3\linewidth]{i/carriage.png}
+	\label{fig:carriage}
+	\fonte{Adaptado de \citeonline{Kuhm2011}.} 
+\end{figure}
+	
+	Então, $\Sigma T_k$ é o somatório das tensões exercidas pelo material em cada seção $n$ no carro móvel, $R_m$ é o raio do eixo do motor/polia motora, $C_m$ é o torque exercido pelo motor, $m_t$ é a massa do carro e $F_f$ são as forças de fricção do carro. Com isso, pode-se descrever que a dinâmica do carro é dada por \cite{Kuhm2012b}:
+	
+\begin{equation}\label{eq:JmWm}
+	J_m\dot{\omega}_m = C_m - R_m(\Sigma T_k + F_{fv}(\dot{x}) \pm F_{fs} + m_tg)
+\end{equation}
+	
+	Conforme a equação \ref{eq:JmWm}, $J_m$ é o momento de inércia do motor, $\dot{\omega}_m$ é a derivada da velocidade angular do motor, logo é a aceleração angular, $F_{fv}(\dot{x})$ é a força de fricção dinâmica do carro, $\dot{x}$ é a derivada da posição do carro, logo é a velocidade de deslocamento, então também sendo entendida como $V_{acc}$, $F_{fs}$ é a força de fricção estática do carro e $m_tg$ é a força peso do carro, podendo ser entendido como o "peso morto" do sistema, por se tratar de uma massa "inútil" que deve ser considerada no balanço de torques do motor.
+	
+% ----------------------------------------------
+
+\section{Sistemas de Controle}
+
+	O que é controle? Controle pode ser definido de várias formas diferentes de acordo com o contexto, mas no caso da engenharia é tratado como o uso de algoritmos que recebem a realimentação de uma variável de interesse de um sistema qualquer, que irá comparar este valor recebido com o comportamento desejado, calculando uma ação imposta a um atuador com base em um modelo que descreve a resposta do sistema para uma dada entrada, assim corrigindo o comportamento do mesmo e atingindo-se o objetivo. Este modelo de uma entrada, um controlador, um atuador e um sensor que realimenta o controlador é o conceito básico de um sistema de controle em malha fechada \cite{Astrom2008}.
+	
+\begin{figure}[H]
+	\caption{Diagrama de blocos de um sistema com realimentação simples.}
+	\centering
+	\includegraphics[width=0.6\linewidth]{i/SimpleFeedback.png}
+	\label{fig:SimpleFeedback}
+	\fonte{Adaptado de \citeonline{Nise2012}.} 
+\end{figure}
+
+\subsection{Resposta ao Degrau de um Sistema}
+
+	Conhecendo o conceito básico de um sistema de controle, resta entender como se chega ao algoritmo que irá calcular e corrigir os erros na resposta do sistema. Como dito, o cálculo se baseia em um modelo que descreve o comportamento do sistema que pode ser obtido teoricamente através das equações matemáticas que modelam o sistema, mas para isso é necessário conhecer por inteiro a planta a ser controlada. É bastante comum que não se tenha as equações que modelam o sistema e nem se conheça toda a planta, obrigando a ser obtida a lei que descreve o sistema utilizando-se de métodos empíricos, que em geral se baseiam na resposta transiente do sistema a excitação de um pulso, degrau, rampa ou qualquer outro sinal de entrada conhecido \cite{Astrom1995}. Estes métodos empíricos são suficientes para sintonizar controladores como o PID, que será abordado no próximo tópico, mas para sistemas mais complexos a modelagem matemática e o íntimo conhecimento da planta se tornam indispensáveis.
+	
+	O comportamento do sistema é divido entre a resposta transitória e a resposta estacionária. A resposta transitória é entendida como o comportamento do sistema desde o momento zero até a estabilização do mesmo, enquanto a resposta estacionária é o comportamento do sistema quando tendemos o tempo ao infinito. Assim, com a aplicação de um degrau na entrada do sistema, que é uma das formas mais comuns de se levantar os dados do sistema, visto que é um sinal de excitação brusco e fácil de se gerar, e assim calcular a resposta do sistema para quaisquer sinais de entrada. Normalmente, antes de atingir o regime permanente (resposta estacionária), o sistema em geral apresenta oscilações amortecidas, que representam os principais parâmetros observados na resposta ao degrau de um sistema de segunda ordem ou maior, como é visto na figura \ref{fig:StepResponse}:
+
+\begin{figure}[H]
+	\caption{Parâmetros da resposta ao degrau de um sistema de segunda ordem ou superior.}
+	\centering
+	\includegraphics[width=0.7\linewidth]{i/StepResponse.png}
+	\label{fig:StepResponse}
+	\fonte{Adaptado de \citeonline{Levine2011}.} 
+\end{figure}
+
+	Os parâmetros observados tratam-se de: $t_d$ (\textit{delay time}) que representa o tempo necessário para que a resposta atinja metade de seu valor de regime pela primeira vez, $t_r$ (\textit{rise time}) que representa o tempo para a resposta atingir o valor de regime, $t_p$ (\textit{peak time}) que representa o tempo até o pico máximo da resposta, $M_p$ (\textit{maximum overshoot}) que representa o percentual acima do valor de regime que o maior pico da resposta atinge, $t_s$ (\textit{settling time}) que representa o tempo necessário para que a resposta atinja uma oscilação dentro de uma faixa (de 2 a 5\%) em torno do valor de regime \cite{Ogata2011}. Não é apresentado na figura \ref{fig:StepResponse}, mas atingido o regime, a diferença entre o valor da resposta em relação ao desejado é entendido como o erro em regime estacionário $e_{ss}$ (\textit{steady state error}).
+
+	Dependendo da ordem e dos parâmetros da planta e da amplitude do degrau de entrada, a resposta pode apresentar várias dinâmicas diferentes, sendo que na figura \ref{fig:StepTypes} é possível ver alguns tipos de respostas ao degrau observados comumente:
+
+\begin{figure}[H]
+	\caption{Tipos de respostas ao degrau.}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.6\linewidth]{i/Step1.png} 
+		\caption{Suave ou superamortecida.}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.6\linewidth]{i/Step2.png}
+		\caption{Oscilatória ou subamortecida.}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.6\linewidth]{i/Step3.png}
+		\caption{Instável.}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.6\linewidth]{i/Step4.png} 
+		\caption{Instável e oscilatória.}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.6\linewidth]{i/Step5.png} 
+		\caption{Atrasada.}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.6\linewidth]{i/Step6.png} 
+		\caption{Fase não-mínima.}
+	\end{subfigure}
+	\label{fig:StepTypes}
+	\fonte{Adaptado de \citeonline{Paz2001}.} 
+\end{figure}
+
+\subsection{Controlador PID}
+
+	Controlador proporcional-integral-derivativo, ou simplesmente controlador PID, é uma técnica de controle de processos que une as ações derivativa, integral e proporcional fazendo com que o sinal de erro seja minimizado pela ação proporcional, zerado pela ação integral e obtido com uma velocidade antecipativa pela ação derivativa. Este tipo de controlador é um dos controladores mais utilizados em aplicações de automação industrial, sendo encontrado no interior de controladores eletrônicos, em microprocessadores dedicados ou em software de controladores programáveis e outros equipamentos de controle \cite{Levine2011}.
+	
+	Uma forma de entender o controle PID é analisar a analogia com um carro que viaja a uma velocidade constante por um percurso qualquer \cite{Cooper2015}. Se o carro estiver parado e ao sair deseja-se atingir uma velocidade de $\SI{100}{\kilo\metre}/h$, deve-se pressionar o pedal do acelerador de forma que a velocidade do veículo aumente até a velocidade objetivo. A medida que o veículo aproxima-se dela, alivia-se o acelerador proporcionalmente para evitar que o veículo vá além dos $\SI{100}{\kilo\metre}/h$. Neste caso, supõem-se que o carro estabilizou em $\SI{95}{\kilo\metre}/h$ ao fim do alívio do pedal, assim entende-se como o controle proporcional, sendo representado pela equação abaixo:
+
+\begin{equation}
+	u(t) = Ke(t) + u_b
+\end{equation}
+
+	Onde, $u(t)$ é a saída do controlador, $K$ é o ganho proporcional do controlador, $e(t)$ é o erro, entendido como a diferença entre o valor da saída desejada (\textit{Setpoint}) subtraído pelo valor realimentado da saída real do sistema (\textit{Process Variable}) e $u_b$ é dado como uma constante de \textit{Offset}, que ajusta o valor da saída do controlador para quando o sinal de erro for zero \cite{Levine2011}, neste caso:
+	
+\begin{equation}
+	u(t) = u_b
+\end{equation}
+
+	No exemplo do carro, a ausência de $u_b$ se entenderia como se liberasse completamente o acelerador, uma vez que a velocidade desejada fosse alcançada. O que não faria sentido, sabendo que isto acarretaria na redução da velocidade.
+
+	Se não for observado o velocímetro, o carro seria conduzido abaixo da velocidade desejada, apresentando erro em regime. Assim, pode-se usar esta realimentação para corrigir o erro (que no caso é de $\SI{-5}{\kilo\metre}/h$) e acelerar lentamente, aumentando a velocidade e diminuindo o erro até atingir a velocidade desejada. Trata-se da ação integral, que se adicionada a ação proporcional tens-se:
+	
+\begin{equation}
+	u(t) = Ke(t) + u_b + \frac{K}{T_i} \int_{0}^{t} e(t) \,dt
+\end{equation}
+
+	Onde, $T_i$ é o tempo integral e sabe-se que a ação integral tende a apresentar um valor residual que se adiciona ou subtraí $u_b$, formando a saída do controlador \cite{Cooper2015}.
+
+	Com a velocidade real igual a velocidade desejada e mantida através da realimentação do velocímetro, ao ocorrer uma mudança repentina na inclinação da estrada, como uma colina íngreme, é necessário compensar a redução de velocidade devido a subida, acelerando mais. Se após a colina haver outra reta, é necessário desacelerar para evitar que a velocidade ultrapasse os $\SI{100}{\kilo\metre}/h$. A quantidade de correção e o tempo para estabilizar o erro em zero, pode ser comparado a ação derivativa.
+	
+	Neste caso, pode-se genericamente definir o sinal de controle gerado pelo controlador PID como:
+
+\begin{equation}
+	u(t) = Ke(t) + \frac{K}{T_i} \int_{0}^{t} e(t) \,dt + KT_d\frac{de(t)}{dt}
+\end{equation}
+
+	Onde, $T_d$ é o tempo derivativo. Assim, percebe-se que a saída do controlador PID se dá pela a ação combinada dos três parâmetros: o ganho proporcional $K$, o tempo integral $T_i$ e o tempo derivativo $T_d$. Tornando possível o ajuste, ou sintonia, para se controlar a resposta de quase todas as plantas, conforme as especificações requeridas para uma dada entrada. Podendo ser representado em diagrama de blocos como na figura \ref{fig:PID1}:
+
+\begin{figure}[H]
+	\caption{Representação em diagrama de blocos de um controlador PID com distúrbios.}
+	\centering
+	\includegraphics[width = 0.9\linewidth]{i/PID1.png}
+	\label{fig:PID1}
+	\fonte{Adaptado de \citeonline{Ogata2011}.} 
+\end{figure}
+
+	Nesta representação, entenda-se que $SP(s)$ é o valor de referência (\textit{Setpoint}), $PV(s)$ é a variável do processo (\textit{Process Variable}), $D(s)$ e $N(s)$ são distúrbios de saída do controle e de medição, respectivamente, inerentes a qualquer processo real e $B(s)$ é o valor realimentado da saída considerando a ação dos distúrbios de medição. Aqui, os parâmetros são representados como $K_p = K$ que é o ganho proporcional, $K_i = K/T_i$ que é o ganho integral e $K_d = KT_d$ que é o ganho derivativo do controlador. A contribuição de cada um dos parâmetros na resposta dinâmica do sistema é apresentada no quadro \ref{qua:RespSist}.
+
+\begin{quadro}[H]
+	\centering
+	\caption{Contribuição dos parâmetros do PID na resposta do sistema.}
+	\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	Parâmetros & \begin{tabular}[c]{@{}c@{}}Tempo de\\ Subida ($t_r$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Sobressinal\\ ($M_p$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Tempo de\\ Acomodação ($t_s$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Erro em\\ Regime ($e_{ss}$)\end{tabular} \\ \hline
+	\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Aumentando\\ $K_p$\end{tabular}} & \multicolumn{1}{c|}{Diminui} & \multicolumn{1}{c|}{Aumenta} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Aumenta\\ Pouco\end{tabular}} & \multicolumn{1}{c|}{Diminui} \\ \hline
+	\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Aumentando\\ $K_i$\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Diminui\\ Pouco\end{tabular}} & \multicolumn{1}{c|}{Aumenta} & \multicolumn{1}{c|}{Aumenta} & \multicolumn{1}{c|}{Elimina} \\ \hline
+	\begin{tabular}[c]{@{}c@{}}Aumentando\\ $K_d$\end{tabular} & \begin{tabular}[c]{@{}c@{}}Diminui\\ Pouco\end{tabular} & Diminui & Diminui & \begin{tabular}[c]{@{}c@{}}Pouco\\ Altera\end{tabular} \\ \hline
+	\end{tabular}
+	\label{qua:RespSist}
+	\fonte{Adaptado de \citeonline{Ang2005}.}
+\end{quadro}
+
+	Existem algumas variações do controlador PID que são utilizadas de acordo com as características da planta e atuadores controlados. Da mesma forma como o comportamento da planta influi diretamente na metodologia empregada para implementar o controlador, o sinal de referência também pesa ao sistema. A exemplo disto, o PID teórico utiliza um derivador puro, sendo assim, tenderá a amplificar mais agressivamente os sinais de entrada com frequência alta ou em degrau que serão transportadas para a saída do controlador como um impulso. Então, mesmo com amplitudes muito pequenas, o derivador irá causar saturação indesejada no atuador, ou mesmo a instabilização.
+
+	Para resolver este problema, em controladores reais não se utiliza um derivador puro, mas sim um filtrado por um sistema de primeira ordem que atenua os ruídos de alta frequência, melhorando a ação derivativa do controlador, assim empregando o seguinte termo derivativo \cite{Ogata2011}:
+	
+\begin{equation}
+	u(t) = \frac{T_ds}{1 + \gamma T_ds}
+\end{equation}
+
+	Onde o fator $\gamma$ é um valor em torno de 0,1, que quando a entrada do sistema for um degrau ou possui componentes de alta frequência, a saída de controle agirá como uma função pulso estreita, conhecida como \textit{salto do valor de referência}, que também pode ser evitada com outras modificações na estrutura do controlador PID.
+
+	Conforme dito, a dinâmica da planta controlada e o valor de referência são fatores importantes para o controle, assim como a possibilidade do atuador controlado sofrer saturação indesejada. O fenômeno da saturação é um efeito não-linear associado a qualquer atuador real, podendo ser entendido como quando lhe é solicitado além da sua capacidade. Por exemplo, uma válvula proporcional que controla o fluxo de um determinado fluído em uma planta qualquer, que sofre uma ação de controle que solicita um valor de vazão que mesmo com a válvula totalmente aberta (saturada) é incapaz de fornecer. A mesma analogia pode ser obtida quando se deseja acelerar um motor além da sua velocidade máxima ou solicitar para um braço robótico erguer uma massa que gera um torque superior a capacidade do servomotor. Em todos estes casos, perde-se o controle da planta e esta passa a operar em malha aberta.
+	
+	Então, da mesma forma como existem problemas na ação derivativa, para a ação integral a saturação torna-se sua inimiga. Quando um atuador satura, o controle da planta só é retomado quando o atuador receber uma solicitação que seja capaz de fornecer, porém, durante a saturação a ação integral fica integrando o erro associado da planta e com isso acumulando-o no sinal de controle. Quando a planta volta a atingir o patamar desejado, é necessário desacumular todo o erro até dessaturar o atuador e enfim retomar o controle \cite{Ogata2011}. 
+
+\begin{figure}[H]
+	\caption{Resposta ao degrau de um sistema com saturação do atuador.}
+	\centering
+	\includegraphics[width = 0.9\linewidth]{i/SAntiWindup.png}
+	\label{fig:SAntiWindup}
+	\fonte{Elaborado pelo autor.}
+\end{figure}
+
+	Como pode ser observado na imagem \ref{fig:SAntiWindup}, a curva laranja tracejada, que representa o controle, insere um sinal que o atuador não é capaz de responder e acaba saturando, representado pela curva roxa pontilhada, o que causa um efeito indesejado na resposta da planta, inclusive tendo um sobressinal grande, representado pela curva vermelha que tenta buscar a referência representada pela curva azul.
+
+	Uma forma de minimizar este problema é com a implementação do \textit{anti-windup}, que é uma topologia de PID que realimenta a ação integral do controlador com o excesso do sinal de controle que satura o atuador de forma a impedir um acúmulo de erro muito grande.
+
+\begin{figure}[H]
+	\caption{Representação em diagrama de blocos de um controlador PID com \textit{anti-windup}.}
+	\centering
+	\includegraphics[width = 0.9\linewidth]{i/AntiWindup.png}
+	\label{fig:AntiWindup}
+	\fonte{Adaptado de \citeonline{Yu2006}.} 
+\end{figure}
+
+	Como se observa no diagrama de blocos apresentado na figura \ref{fig:AntiWindup}, o sinal $V(s)$ representa o sinal de controle gerado pelo controlador PID e $U(s)$ é o sinal real transmitido do atuador para o sistema a ser controlado. Enquanto o atuador não está saturado as amplitudes de $V(s)$ e $U(s)$ são iguais, então o erro $E_s(s)$ será igual a zero e assim não influenciando no integrador do controlador. Contudo, quando ocorre a saturação do controlador, o sinal de saída do atuador terá uma amplitude inferior ao sinal de controle e, neste caso, $E_s(s)$ assumirá um valor negativo igual a subtração dos sinais de entrada e saída do atuador. Este erro será multiplicado pelo inverso do tempo $T_t$ e será subtraído do ganho integral. Desta forma, evita-se que se acumule muito erro no integrador e assim tornando mais rápida a retomada de controle do sistema. Este efeito pode ser visualizado na figura \ref{fig:CAntiWindup} e se comparado com a figura \ref{fig:SAntiWindup}, é visível a diferença de tempo para dessaturar o atuador e como o sinal de controle é limitado não crescendo demais:
+
+\begin{figure}[H]
+	\caption{Resposta ao degrau de um sistema com saturação e ação anti-windup.}
+	\centering
+	\includegraphics[width = 0.9\linewidth]{i/CAntiWindup.png}
+	\label{fig:CAntiWindup}
+	\fonte{Elaborado pelo autor.}
+\end{figure}
+
+\subsection{Métodos de Sintonia em Malha Fechada}
+
+	Existem diversos métodos de sintonia de controladores para se encontrar os parâmetros do controlador PID, sendo dois dos métodos mais conhecidos e difundidos no mundo foram apresentados em 1942 por Ziegler e Nichols \cite{Yu2006}, sendo ainda muito usados em suas formas originais ou com algumas reformulações. O primeiro método é conhecido como Resposta ao Degrau, sendo aplicado em sistemas com malha aberta e utiliza dois parâmetros medidos na resposta para se calcular o controlador PID, enquanto o segundo método, conhecido como Resposta em Frequência, também utiliza dois parâmetros medidos, mas isto ocorre com a malha fechada. Neste projeto será abordado apenas o método da Resposta à Frequência.
+	
+	Segundo Ziegler e Nichols \cite{Ogata2011}, neste método os parâmetros do controlador são alterados para $T_i = \infty$ e $T_d = 0$ e, usando apenas o controle proporcional, o ganho $K$ é aumentado lentamente de $0$ até atingir o \textit{ganho crítico} da planta, ou $K_u$, onde a resposta da planta passa a ter uma oscilação sustentada, ou seja, alcança-se o ponto de estabilidade marginal. A partir das resposta, é medido o período de oscilação, conhecido como \textit{período crítico}, ou $P_u$, fazendo assim com que os parâmetros da planta sejam tomados experimentalmente. Importante ressaltar que, se para qualquer valor de $K$ a resposta não apresentar oscilação, significa que a planta não possui um $K_u$, tornando este método não aplicável.
+	
+\begin{figure}[H]
+	\caption{Representação da oscilação sustentada com o período $P_u$ medido em segundos.}
+	\centering
+	\includegraphics[width = 0.6\linewidth]{i/FrequencyResponse.png}
+	\label{fig:FrequencyResponse}
+	\fonte{Adaptado de \citeonline{Ogata2011}.} 
+\end{figure}
+
+	Por fim, Ziegler e Nichols \cite{Ogata2011} sugerem que se use as equações disponíveis no quadro \ref{qua:ZieglerNichols} para se calcular os parâmetros $K$, $T_i$ e $T_d$ com base no \textit{ganho crítico} e \textit{período crítico} obtidos pelo método:
+
+\begin{quadro}[H]
+	\centering
+	\caption{Parâmetros de Sintonia em Malha Fechada de Ziegler e Nichols.}
+	\begin{tabular}{|c|c|c|c|}
+	\hline
+	Controlador & $K_p$ & $T_i$ & $T_d$  \\ \hline
+	P & $0,5 \times K_u$ & $\infty$ & $0$  \\ \hline
+	PI & $0,45 \times K_u$ & $\frac{K_u}{1,2}$ & $0$  \\ \hline
+	PID & $0,6 \times K_u$ & $0,5 \times P_u$ & $0,125 \times P_u$  \\ \hline
+	\end{tabular}
+	\label{qua:ZieglerNichols}
+	\fonte{Adaptado de \citeonline{Ogata2011}.} 
+\end{quadro}
+
+	Forçar a operação do sistema no ponto de estabilidade marginal torna este método perigoso de ser implementado na prática, inclusive automatizado para rotinas de auto-sintonia de controladores, pois operar na margem da estabilidade pode levar o sistema facilmente à instabilidade, causando acidentes e danos físicos ou materiais. Assim, para resolver este problema, é utilizada uma alternativa a este método, forçando uma oscilação com um controlador relé.
+	
+\begin{figure}[H]
+	\caption{Representação da oscilação sustentada gerada por um controlador relé.}
+	\centering
+	\includegraphics[width = 0.6\linewidth]{i/RelayResponse.png}
+	\label{fig:RelayResponse}
+	\fonte{Adaptado de \citeonline{Astrom1995}.} 
+\end{figure}	
+	
+	Conforme observado na figura \ref{fig:RelayResponse}, percebe-se que o sinal de controle trata-se de uma onda quadrada enquanto o sinal de saída aproxima-se de uma senoide, tendo uma defasagem de $\SI{180}{\deg}$ entre eles. Se considerar que o sinal quadrado do relé pode ser entendido por uma expansão em série de Fourier, pode-se entender que a planta opera como filtro para as harmônicas de alta frequência, praticamente suficiente para considerar os efeitos apenas da fundamental. Considerando $d$ como sendo o ganho do relé e $a$ sendo a amplitude do sinal de saída, pode-se descrever que o ganho observado é \cite{Yu2006}:
+	
+\begin{equation}
+	K_u = \frac{4d}{\pi a}
+\end{equation}
+
+	Contudo, apesar da eficiência e facilidade envolvidas no uso do relé, existe um método similar onde é utilizado um relé com histerese que torna-se menos suscetível a ruídos, estes que no relé puro, poderiam fazê-lo comutar aleatoriamente. Neste caso, a equação \ref{eq:n(a)} representa o ganho crítico usando um relé com histerese:  
+
+\begin{equation}\label{eq:n(a)}
+  K_u = \frac{4d}{\pi a}\left(\sqrt{1-\left(\frac{\varepsilon}{a}\right)^{2}}-i\frac{\varepsilon}{a}\right) 
+\end{equation}
+
+	Aqui, com a relação entre $d$, o ganho do relé, e $\epsilon$, histerese do relé, é possível obter diversas oscilações com amplitudes e frequências diferentes apenas variando-os e assim usando as equações presentes no quadro \ref{qua:ZieglerNichols} para se obter os parâmetros do controlador. O que torna fácil a implementação de sistemas de sintonia automática que possuem arquitetura típica como a apresentada na figura \ref{fig:RelayFeedback}.
+	
+\begin{figure}[H]
+	\caption{Representação em diagrama de blocos de um sistema com auto-sintonia.}
+	\centering
+	\includegraphics[width = 0.8\linewidth]{i/RelayFeedback.png}
+	\label{fig:RelayFeedback}
+	\fonte{Adaptado de \citeonline{Astrom1995}.} 
+\end{figure}
+
+% ----------------------------------------------

@@ -1,0 +1,45 @@
+% ||||||||||||||||||||||||||||||||||||||||||||||
+% Informações de dados para CAPA e FOLHA DE ROSTO
+% ||||||||||||||||||||||||||||||||||||||||||||||
+\titulo{Desenvolvimento de um Controlador PID com Auto Sintonia e Supervisório para um Sistema de Bobinamento e Desbobinamento de Mantas Acumulador Vertical Miniaturizado com } % Não utilize o ponto final no título
+\autor{Eduardo da Silva Dörr}
+\local{São Leopoldo}
+\data{2019}
+\orientador{Prof. Me. João Olegário de Oliveira Souza}
+%\coorientador{Prof. Dr. Nome Sobrenome} % comente esta linha caso nao tenha coorientador
+\instituicao{%
+  UNIVERSIDADE DO VALE DO RIO DOS SINOS - UNISINOS
+  \par
+  GRADUAÇÃO EM ENGENHARIA ELÉTRICA, ÊNFASE EM CONTROLE E AUTOMAÇÃO}
+\tipotrabalho{Dissertação (Graduação)}
+% O preambulo deve conter o tipo do trabalho, o objetivo, 
+% o nome da instituição e a área de concentração 
+
+\preambulo{Dissertação apresentada como requisito parcial para obtenção do título de Engenheiro Eletricista com ênfase em Controle e Automação, pela Graduação em Engenharia Elétrica da Universidade do Vale do Rio dos Sinos - UNISINOS.}
+
+% ----------------------------------------------
+% Configurações de aparência do PDF final
+% ----------------------------------------------
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% alterando o aspecto da cor cinza
+\definecolor{gray}{RGB}{50,50,50}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\imprimirtitulo}, 
+		pdfauthor={\imprimirautor},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX - abnTeX2 - Overleaf},
+		pdfkeywords={abnt}{latex}{abntex2}{trabalho acadêmico}{unisinos}{ppgee}{mpee}{mestrado profissional},  
+		colorlinks=true, % false: boxed links; true: colored links
+    	linkcolor=black, % color of internal links
+    	citecolor=black, % color of links to bibliography
+    	filecolor=blue,  % color of file links
+		urlcolor=gray,	 % color of url links
+		bookmarksdepth=4
+}
+\makeatother

@@ -1,0 +1,57 @@
+% ||||||||||||||||||||||||||||||||||||||||||||||
+% CAPITULO 4
+% ||||||||||||||||||||||||||||||||||||||||||||||
+\chapter{Cronograma}
+
+	Nesta seção é apresentado o cronograma geral de desenvolvimento deste trabalho, iniciando pela enumeração das etapas a serem cumpridas 
+
+\begin{enumerate}
+	\item \label{escolhatema} Estudo e escolha do tema.
+	\item \label{refteorico} Fundamentação teórica.
+	\item \label{metodologia} Estudo metodológico.
+	\item \label{esctcci} Escrita do TCC I.
+	\item \label{dimemecanica} Projeto mecânico e eletrônico do acumulador e bobinadores.
+	\item \label{simctrl} Simulação e implementação do sistema no ambiente \textit{Matlab}\textcopyright .
+	\item \label{mecanica} Fabricação mecânica e comissionamento da planta.
+	\item \label{implementacao} Implementação do sistema de controle no controlador.
+	\item \label{integracao} Integração da maquete com o controle eletrônico.
+	\item \label{testc} Testes e correções.
+	\item \label{comparacoes} Comparar desempenho entre os diferentes tipos de Sintonia.
+	\item \label{esctccii} Escrita do TCC II.
+\end{enumerate}
+
+\definecolor{midgray}{gray}{.5}
+\begin{table}[H]
+	\centering
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		&\multicolumn{9}{c|}{2018}\\
+		\hline
+		Fev.&Mar.&Abr.&Mai.&Jun.&Jul.&Ago.&Set.&Out.&Nov.\\
+		\hline
+		\ref{escolhatema}&\cellcolor{midgray}&&&&&&&&\\
+		\hline
+		\ref{refteorico}&\cellcolor{midgray}&\cellcolor{midgray}&\cellcolor{midgray}&&&&&&\\
+		\hline
+		\ref{metodologia}&&&\cellcolor{midgray}&\cellcolor{midgray}&&&&&\\
+		\hline
+		\ref{esctcci}&&\cellcolor{midgray}&\cellcolor{midgray}&\cellcolor{midgray}&&&&&\\
+		\hline
+		\ref{dimemecanica}&&&&\cellcolor{midgray}&&&&&\\
+		\hline
+		\ref{simctrl}&&&&\cellcolor{midgray}&\cellcolor{midgray}&&&&\\
+		\hline
+		\ref{mecanica}&&&&&\cellcolor{midgray}&&&&\\
+		\hline	
+		\ref{implementacao}&&&&&&\cellcolor{midgray}&\cellcolor{midgray}&&\\
+		\hline
+		\ref{integracao}&&&&&&&\cellcolor{midgray}&&\\
+		\hline	
+		\ref{testc}&&&&&&&\cellcolor{midgray}&\cellcolor{midgray}&\\
+		\hline	
+		\ref{comparacoes}&&&&&&&&\cellcolor{midgray}&\cellcolor{midgray}&\\
+		\hline
+		\ref{esctccii}&&&&&&&\cellcolor{midgray}&\cellcolor{midgray}&\cellcolor{midgray}\\
+		\hline		
+		\end{tabular}
+\end{table}

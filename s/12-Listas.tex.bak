@@ -1,0 +1,164 @@
+% Diferentes tipos de listas podem ser criadas por meio de macros do memoir.
+
+% ----------------------------------------------
+% inserir lista de ilustrações (ou figuras)
+% ----------------------------------------------
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+
+% ----------------------------------------------
+% inserir lista de tabelas
+% ----------------------------------------------
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage
+
+% ----------------------------------------------
+% inserir lista de quadros (ex.: \begin{quadro} \end{quadro})
+% ----------------------------------------------
+\pdfbookmark[0]{\listofquadrosname}{loq}
+\listofquadros*
+\cleardoublepage
+
+% ----------------------------------------------
+% inserir lista de abreviaturas e siglas
+% ----------------------------------------------
+% Importante: As abreviaturas e siglas devem estar em ordem alfabética
+\begin{siglas}
+%	\item[ABNT] Associação Brasileira de Normas Técnicas
+%	\item[abnTeX] ABsurdas Normas para TeX
+	\item[CC]	Corrente contínua
+	\item[CI]	Componente integrado
+	\item[DSP]	\textit{Digital Signal Processor} (Processamento Digital de Sinal)
+	\item[I/O]	\textit{Inputs/Outputs} (Entradas/Saídas)
+	\item[IDE]	\textit{Integrated Development Environment} (Ambiente de Desenvolvimento Integrado)
+	\item[P]	\textit{Proportional} (Proporcional)
+	\item[PI]	\textit{Proportional and Integral} (Proporcional e Integral)
+	\item[PID]	\textit{Proportional, Integral and Derivative} (Proporcional, Integral e Derivativo)
+	\item[PWM]	\textit{Pulse Width Modulation} (Modulação por Largura de Pulso)
+	\item[RTC]	\textit{Real Time Clock} (Relógio de Tempo Real)
+	\item[USB]	\textit{Universal Serial Bus} (Barramento Serial Universal)
+\end{siglas}
+
+% ----------------------------------------------
+% inserir lista de símbolos
+% ----------------------------------------------
+% Importante: Os símbolos devem estar na ordem de aparecimento no texto.
+\begin{simbolos}
+	\item[$ T_k $] Tensão de índice k sobre o material
+	\item[$ E $] Módulo de \textit{Young}
+	\item[$ S $] Seção transversal do material
+	\item[$ \varepsilon_k $] Alongamento de índice k do material
+	\item[$ L_k $] Comprimento de índice k com alongamento
+	\item[$ L_o $] Comprimento sem alongamento
+	\item[$ \nu $] Viscosidade Cinemática
+	\item[$ \varepsilon_k^e $] Alongamento de índice k do material provocado pela tensão
+	\item[$ \omega_{L_k} $] Tensão de índice k sobre o material provocada pela gravidade 
+	\item[$ \rho $] Densidade de massa do material
+	\item[$ g $] Aceleração da gravidade
+	\item[$ \varepsilon_k^w $] Alongamento de índice k do material provocado pela gravidade
+	\item[$ J_k $] Momento de inércia do rolo de índice k
+	\item[$ \omega_k $] Velocidade angular do rolo de índice k
+	\item[$ C_{mk} $] Torque do motor no rolo de índice k, para um rolo acionado
+	\item[$ C_{rk} $] Torque do material no rolo de índice k
+	\item[$ C_{fk} $] Torque de atrito no rolo de índice k
+	\item[$ V_k $] Velocidade linear do rolo de índice k
+	\item[$ R_k $] Raio do rolo k
+	\item[$ k $] Índice do rolo ou segmento de rolos
+	\item[$ V_{acc} $] Velocidade linear do acumulador
+	\item[$ n $] Número de seções do acumulador
+	\item[$ V_{in} $] Velocidade linear de entrada
+	\item[$ V_{out} $] Velocidade linear de saída
+	\item[$ \Sigma_{Tk} $] Somatório das tensões de índice k sobre o material
+	\item[$ R_m $] Raio do eixo do motor
+	\item[$ C_m $] Torque do motor do acumulador
+	\item[$ m_t $] Massa do carro móvel
+	\item[$ F_f $] Forças de fricção no carro móvel
+	\item[$ J_m $] Momento de inércia do motor do acumulador
+	\item[$ \dot{\omega}_m $] Aceleração angular do motor do acumulador
+	\item[$ F_{fv} $] Força de fricção dinâmica no carro móvel
+	\item[$ F_{fs} $] Força de fricção estática no carro móvel
+	\item[$ m_tg $] Força peso do carro móvel
+	\item[$ t_d $] \textit{Delay Time} (Tempo de atraso)
+	\item[$ t_r $] \textit{Rise Time} (Tempo de subida)
+	\item[$ t_p $] \textit{Peak Time} (Tempo de pico)
+	\item[$ t_s $] \textit{Settling Time} (Tempo de acomodação)
+	\item[$ M_p $] \textit{Maximum Overshoot} (Sobressinal)
+	\item[$ e_{ss} $] \textit{Steady State Error} (Erro em regime permanente)
+	\item[$ u(t) $] Saída do controlador
+	\item[$ e(t) $] Erro de referência
+	\item[$ u_b $] \textit{Offset} (Constante de ajuste)
+	\item[$ T_i $] Tempo integral
+	\item[$ T_d $] Tempo derivativo
+	\item[$ SP(s) $] \textit{Setpoint} (Valor de referência)
+	\item[$ PV(s) $] \textit{Process Variable} (Variável do processo)
+	\item[$ D(s) $] Distúrbio de saída do controlador
+	\item[$ N(s) $] Distúrbio de medição
+	\item[$ B(s) $] Valor realimentado
+	\item[$ U(s) $] Saída do controlador
+	\item[$ K, K_p $] Ganho Proporcional
+	\item[$ K_i $] Ganho Integral
+	\item[$ K_d $] Ganho Derivativo
+	\item[$ \gama $] Fator do filtro do tempo derivativo
+	\item[$ E_s(s) $] Erro de saturação do controlador
+	\item[$ T_t $] Tempo de \textit{anti-windup}
+	\item[$ \infty $] Símbolo de infinito
+	\item[$ K_u $] Ganho crítico
+	\item[$ P_u $] Período crítico
+	\item[$ d $] Ganho do relé
+	\item[$ a $] Amplitude da oscilação
+	\item[$ \varepsilon $] Histerese do relé
+	\item[$ i $] Representação do número imaginário
+	\item[$ y_[sp} $] Valor de referência para o sistema
+	\item[$ e $] Erro de Referência
+	\item[$ u $] Sinal do controlador
+	\item[$ y $] Saída do sistema
+	\item[$ T_o $] Tensão sobre o material na saída do acumulador
+	\item[$ T_i $] Tensão sobre o material na entrada do acumulador
+	\item[$ F_m $] Força do motor no carro móvel do acumulador
+	\item[$ a_{acc} $] Aceleração linear do carro móvel do acumulador
+	\item[$ R_s $] Raio do eixo de transmissão
+	\item[$ \tau_m $] Torque do motor do acumulador
+	\item[$ V_a $] Tensão de armadura
+	\item[$ R_a $] Resistência de armadura
+	\item[$ L_a $] Indutância de armadura
+	\item[$ i_a $] Corrente de armadura
+	\item[$ e_a $] Tensão de armadura
+	\item[$ e_b $] Tensão induzida
+	\item[$ K_w $] Constante de velocidade contra-eletromotriz 
+	\item[$ K_t $] Constante de torque
+	\item[$ B, B_m, B_s $] Atrito viscoso
+	\item[$ J, J_m, J_s $] Momento de inércia
+	\item[$ \teta $] Posição angular
+	\item[$ F_{mb} $] Força do motor do bobinador
+	\item[$ r_1 $] Raio menor da bobina
+	\item[$ r_2 $] Raio maior da bobina
+	\item[$ m_r $] Massa do rolo principal do bobinador
+	\item[$ m_b $] Massa da bobina de material
+	\item[$ \tau_{mb}, \tau_{mbmax}, \tau_{mbmin} $] Torque do motor do bobinador
+	\item[$ \eta_{mbmax}, \eta_{mbmin} $] Rotação do bobinador
+	\item[$ J_{bb} $] Momento de inércia do bobinador
+	\item[$ \dot{\omega}_b $] Aceleração angular do bobinador
+	\item[$ DC_\percent $] \textit{Duty Cycle} percentual
+	\item[$ T_{ON} $] Tempo de \textit{Duty Cycle}
+	\item[$ f_{PWM} $] Frequência do PWM
+	\item[$ V_{CE} $] Tensão coletor-emissor do transistor
+	\item[$ V_{med} $] Tensão média
+
+
+
+	
+
+	\item[$ \tau_m $] Torque do motor
+	
+	
+\end{simbolos}
+
+
+
+
+
+
+
+
