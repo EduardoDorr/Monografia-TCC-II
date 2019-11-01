@@ -88,7 +88,7 @@
 \begin{figure}[H]
 	\caption{Modelo do acumulador proposto por seções.}
 	\centering
-	\includegraphics[width = 0.7\linewidth]{i/acumuladorsecoes.png}
+	\includegraphics[width = 0.6\linewidth]{i/acumuladorsecoes.png}
 	\label{fig:acumuladorsecoes}
 	\fonte{Elaborado pelo autor.} 
 \end{figure}
@@ -96,7 +96,7 @@
 	Pode-se observar a existência de uma dependência de cada seção entre dois rolos consecutivos com a seção seguinte e a anterior através das tensões parciais presentes  nas seções. Se for isolado apenas um rolo e fazer o balanço dos torques que agem nele, chega-se à relação \ref{eq:velk}, já apresentada no referencial:
 
 \begin{equation}
-	\frac{d}{d_t}(J_k\omega_k) = C_{mk} - C_{rk} - C_{fk}
+	\frac{d}{d_t}(J_k\omega_k) = C_{mk} - C_{rk} - C_{fk}\tag{\ref{eq:velk}}
 \end{equation}
 
 	Aqui recorda-se que o termo $C_{mk}$ representa o torque exercido pelo motor para um rolo acionado, $C_{rk}$ representa o torque equivalente exercido pelo material no rolo e $C_{fk}$ que agrega o somatório dos torques exercidos pelas forças de fricção no eixo do rolo. A partir desta equação já é possível fazer algumas simplificações, como referente ao termo $C_{mk}$ que não é aplicável uma vez que os rolos de passagem são livres, assim como o torque $C_{fk}$ também pode ser ignorado, por se tratando da mancalização dos rolos com rolamentos rígidos de esferas que apresenta forças de fricção muito menores do que a exercida pelo material, segundo visto na seção \ref{cap:rolopassagem}. Com isto, o modelo do rolo isolado pode ser representado de acordo com a figura \ref{fig:roloisolado}:
@@ -131,7 +131,7 @@
 	\fonte{Elaborado pelo autor.} 
 \end{figure}
 
-	Uma das primeiras premissas levantadas dizia sobre desconsiderar o alongamento do material, encarando-o como uma manta rígida. Ao aplicar uma força $T_o$ na saída do acumulador com o material preso, esta força deverá aparecer ao longo de todas as seções de forma a impedir a rotação dos rolos. Nesta hipótese, $T_{k+2}$ deverá ter módulo igual ao de $T_o$ de forma que no somatório dos torques sobre o rolo seja zero e assim não haja aceleração. Assim, pode-se concluir que todas as tensões apresentadas na figura \ref{fig:acumuladorcarriage} terão módulos iguais e por isso as acelerações de todos os rolos será nula. Da mesma forma, se fosse instalado um dinamômetro no carro vertical, medindo a força $F_m$, poderia se concluir que:
+	Uma das primeiras premissas levantadas diz sobre desconsiderar o alongamento do material, encarando-o como uma manta rígida. Ao aplicar uma força $T_o$ na saída do acumulador com o material preso, esta força deverá aparecer ao longo de todas as seções de forma a impedir a rotação dos rolos. Nesta hipótese, $T_{k+2}$ deverá ter módulo igual ao de $T_o$ de forma que no somatório dos torques sobre o rolo seja zero e assim não haja aceleração. Assim, pode-se concluir que todas as tensões apresentadas na figura \ref{fig:acumuladorcarriage} terão módulos iguais e por isso as acelerações de todos os rolos será nula. Da mesma forma, se fosse instalado um dinamômetro no carro vertical, medindo a força $F_m$, poderia se concluir que:
 
 \begin{equation}
 	F_m - m_tg - T_{k-1} - T_{k} - T_{k+1} - T_{k+2} = m_tg a_{acc}
@@ -172,9 +172,9 @@
 \begin{equation}
 	J_m\dot{\omega}_m = C_m - R_m(\Sigma T_k + F_{fv}(\dot{x}) \pm F_{fs} + m_tg)
 	\tag{\ref{eq:JmWm}}
-\end{equation}
+\end{equation} 
 
-	Fazendo pequenas adaptações consegue-se mesclar as equações \ref{eq:JmWm} e \ref{eq:Fm3}. Com a utilização de guias de inox e rolamentos lineares que guiam o carro móvel, acaba não havendo contato direto dele com a estrutura, assim, as forças de fricção dinâmica e estática abordadas em \ref{eq:JmWm} como $F_{fv}(\dot{x})$ e $F_{fs}$, podem ser desconsideradas da modelagem visto a pouca influência que exercerão ao sistema. O momento de inércia $J_m$ pode ser reescrito como $J_s$ para representar a inércia de todo o sistema de movimentação e não somente do motor, evitando confusões. A velocidade angular $\dot{\omega}_m$ será reescrita como a velocidade linear de movimentação do carro $\dot{V}_{acc}$. Então:
+	Pode-se fazer pequenas adaptações e mesclar as equações \ref{eq:JmWm} e \ref{eq:Fm3}. Com a utilização de guias, rolamentos lineares e o sistema de nivelamento guiando o carro móvel, acaba por haver um contato quase desprezível dele com a estrutura, assim, as forças de fricção dinâmica e estática abordadas em \ref{eq:JmWm} como $F_{fv}(\dot{x})$ e $F_{fs}$, podem ser desconsideradas da modelagem visto a pouca influência que exercerão ao sistema. O momento de inércia $J_m$ pode ser reescrito como $J_s$ para representar a inércia de todo o sistema de movimentação e não somente do motor, evitando confusões. A velocidade angular $\dot{\omega}_m$ será reescrita como a velocidade linear de movimentação do carro $\dot{V}_{acc}$. Então:
 	
 \begin{equation}\label{eq:dotvacc}
 	\frac{J_s}{R_s} \dot{V}_{acc} = R_s[F_m - (m_tg + nT_k)]
@@ -214,7 +214,7 @@
 
 \subsection{Bobinadores}\label{cap:bobinadores}
 
-	A partir desta seção será apresentado o projeto mecânico do bobinador e desbobinador, que por similaridade serão chamados apenas por bobinadores. Eles terão como dimensões totais de $\SI{20180x200}{{\milli\metre}}$, sendo composto também por perfis de alumínio extrudados de $\SI{20x20}{{\milli\metre}}$, peças de junção modeladas e impressas em impressora 3D, um motor de tensão contínua com uma caixa de redução já embutida, o rolo principal será impressor e o rolo de passagem manterá as mesmas propriedades que os demais rolos do projeto. Na figura \ref{fig:Bobinadorproj}, é apresentado o modelo 3D final do projeto desenvolvido no \textit{software} \textit{SolidWorks}\textcopyright :
+	A partir desta seção será apresentado o projeto mecânico do bobinador e desbobinador, que por similaridade serão chamados apenas por bobinadores. Eles terão como dimensões totais de $\SI{254x60x100}{{\milli\metre}}$, sendo composto apenas por peças impressas, um motoredutor de tensão contínua e o rolo principal terá pontas de eixo quadrado de forma a facilitar a montagem e remoção do rolo de papel. Na figura \ref{fig:Bobinadorproj}, é apresentado o modelo 3D final do projeto desenvolvido no \textit{software} \textit{SolidWorks}\textcopyright :
 
 \begin{figure}[H]
 	\caption{Projeto mecânico do bobinador com todas as partes.}
@@ -224,7 +224,7 @@
 	\fonte{Elaborado pelo autor.} 
 \end{figure}
 
-	Da mesma forma como o acumulador, a estrutura do bobinador é feita com perfis de alumínio e peças impressas que darão sustentação e rigidez para o sistema de forma a minimizar vibrações que possam prejudicar o controle. As junções que unem os perfis são fixadas com uso de parafusos e porcas de mesmo modelo aos empregados no acumulador. Podendo ser vista na figura \ref{fig:Bobinadorestrut} com mais detalhes:
+	A estrutura principal dos bobinadores é formada por dois corpos espelhados e praticamente idênticos que irão sustentar o rolo principal e o motoredutor. Assim como o acumulador, as peças são fixadas com o uso de parafusos \textit{Allen} DIN 912, podendo ser vista na figura \ref{fig:Bobinadorestrut} com mais detalhes:
 	
 \begin{figure}[H]
 	\caption{Diagrama de forças do bobinador.}
@@ -234,7 +234,7 @@
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
 
-	Diferentemente do acumulador, apenas o rolo de passagem contará com mancais com rolamento e fabricado em alumínio. O rolo principal do bobinador, que é acionado, será impresso devido a alteração do diâmetro do rolo e para redução de massa. Os rolos nos quais o material de teste tem contato direto são metálicos e usinados de forma a manter uma superfície lisa e resistente a deformações, procurando manter a uniformidade dele. Contudo, o rolo impresso apresenta boa resistência mecânica e não está em contato direto com o material, mas sim com o tubo interno da bobina. Como a superfície de peças impressas é geralmente ásperas, isto aumenta a aderência entre o rolo e o tubo, melhorando a transferência de força. Na figura \ref{fig:Bobinadorrolo} é apresentado o rolo principal com os mancais secos (sem rolamento):
+	O rolo principal do bobinador é acionado pelo motoredutor, sendo impresso com o diâmetro correto para que o rolo de papel seja bem encaixado, uma vez que o rolo principal apresenta boa resistência mecânica e está em contato com o tubo interno da bobina, evitando que a bobina deslize sobre o rolo ele. Na figura \ref{fig:Bobinadorrolo} é apresentado o rolo principal com os mancais quadrados:
 	
 \begin{figure}[H]
 	\caption{Diagrama de forças do bobinador.}
@@ -277,6 +277,8 @@
 \begin{equation}
 	\tau_{mb} = r_2 T
 \end{equation}
+
+	Para este projeto, será construído apenas um bobinador para fazer o esforço de puxar o papel através do acumulador, mas não faz parte do escopo o controle deste bobinador, sendo acionado diretamente com velocidade constante.
 
 \subsection{Modelo de um Motor de Tensão Contínua}\label{cap:modeomotor}
 
@@ -441,10 +443,10 @@
 	\tau_m = \SI{3690}{\gram f \cdot \centi\metre}
 \end{equation}
 
-	Como o sistema de transmissão conta com um redutor de $1:32$, o torque sentido pelo motor deve ser de aproximadamente $\SI{115,3}{\gram f \cdot \centi\metre}$. Então, com base no torque necessário para movimentar o carro móvel, o modelo de motor CC escolhido é o \textit{AK555/198PL12S4500C} da Neoyama. As características do motor podem ser vistas na tabela \ref{tab:caracmotor}:
+	Como o sistema de transmissão conta com um redutor de $1:64$, o torque sentido pelo motor deve ser de aproximadamente $\SI{57,6}{\gram f \cdot \centi\metre}$. Então, com base no torque necessário para movimentar o carro móvel, o modelo de motor CC escolhido é o \textit{AK360/78.8PL12S7000S} da Neoyama. As características do motor podem ser vistas na tabela \ref{tab:caracmotor}:
 
 \begin{table}[H]
-  \caption{Características do motor AK555/198PL12S4500C.}
+  \caption{Características do motor AK360/78.8PL12S7000S.}
   \label{tab:caracmotor}
   \centering%
   \begin{minipage}{.4\textwidth}
@@ -453,24 +455,24 @@
       Grandeza & Unidade \\ \hline
       \hline
       Tensão Nominal	&	$\SI{12}{{\volt}}$ \\
-      Faixa de Tensão	&	$\SIrange{9}{16}{\volt}$ \\ 
-      Rotação a Vazio	&	$\SI{4500}{RPM}$  \\
-      Corrente a Vazio	&	$\SI{130}{\milli\ampere}$  \\
-      Rotação com Carga	&	$\SI{3700}{RPM}$  \\ 
-      Corrente Máxima	&	$\SI{950}{\milli\ampere}$  \\
-      Torque Máximo		&	$\SI{198}{\gram f \cdot \centi\metre}$  \\
-      Potência Máxima	&	$\SI{8}{\watt}$  \\
-      Rendimento		&	$\SI{59,8}{\percent}$  \\ 
-      Torque de Partida	&	$\SI{917}{\kilogram f \cdot \centi\metre}$  \\ \hline
+      Faixa de Tensão	&	$\SIrange{6}{24}{\volt}$ \\ 
+      Rotação a Vazio	&	$\SI{7000}{RPM}$  \\
+      Corrente a Vazio	&	$\SI{170}{\milli\ampere}$  \\
+      Rotação com Carga	&	$\SI{5700}{RPM}$  \\ 
+      Corrente Máxima	&	$\SI{590}{\milli\ampere}$  \\
+      Torque Máximo		&	$\SI{78,8}{\gram f \cdot \centi\metre}$  \\
+      Potência Máxima	&	$\SI{4,58}{\watt}$  \\
+      Rendimento		&	$\SI{63}{\percent}$  \\ 
+      Torque de Partida	&	$\SI{407}{\kilogram f \cdot \centi\metre}$  \\ \hline
     \end{tabular*}
     \fonte{Adaptado de \citeonline{AK555b}.} 
   \end{minipage}
 \end{table}
 
-	Através da tabela \ref{tab:caracmotor}, verifica-se que o torque nominal do motor é de $\SI{198}{\gram f \cdot \centi\metre}$ e a rotação a plena carga do motor é de $\SI{3700}{RPM}$, logo, com a redução de $1:32$, espera-se na saída um torque de $\SI{6336}{\gram f \cdot \centi\metre}$ e uma rotação de $\SI{115,63}{RPM}$. Se considerar um fator de perda de $20\%$ no redutor, tens-se um torque de $\SI{5068,8}{\gram f \cdot \centi\metre}$ no eixo de saída a uma velocidade linear máxima de:
+	Através da tabela \ref{tab:caracmotor}, verifica-se que o torque nominal do motor é de $\SI{78,8}{\gram f \cdot \centi\metre}$ e a rotação a plena carga do motor é de $\SI{5700}{RPM}$, logo, com a redução de $1:64$, espera-se na saída um torque de $\SI{5043}{\gram f \cdot \centi\metre}$ e uma rotação de $\SI{89,06}{RPM}$. Se considerar um fator de perda de $20\%$ no redutor, tens-se um torque de $\SI{4034,4}{\gram f \cdot \centi\metre}$ no eixo de saída a uma velocidade linear máxima de:
 	
 \begin{equation}
-	V_{acc} = \frac{\pi D_p \eta_a}{60} = \frac{\pi \cdot 12 \cdot 115,63}{60} \approx 73 mm/s
+	V_{acc} = \frac{\pi D_p \eta_a}{60} = \frac{\pi \cdot 12 \cdot 89,06}{60} \approx 56 mm/s
 \end{equation}
 
 	Onde, $D_p$ é o diâmetro do leito da polia sincronizadora, $\eta_a$ é rotação máxima na saída do redutor e $60$ é o fator de conversão de minutos para segundos.
@@ -485,7 +487,7 @@
 	\tau_{mbmin} = r_2 T = 2,3 \cdot 1200 = \SI{2760}{\gram f \cdot \centi\metre}
 \end{equation}
 
-	Foi visto que a velocidade máxima que o carro móvel pode alcançar com a redução é de $73 mm/s$ e pela equação \ref{eq:vacc1} que a velocidade do carro móvel depende da diferença da velocidade de entrada e de saída e do número de seções do acumulador. Então, seguindo pela premissa que a maior diferença de velocidade se dá quando a velocidade de entrada está no máximo e a velocidade de saída no mínimo, reajustando os termos pode-se definir que:
+	Foi visto que a velocidade máxima que o carro móvel pode alcançar com a redução é de $56 mm/s$ e pela equação \ref{eq:vacc1} que a velocidade do carro móvel depende da diferença da velocidade de entrada e de saída e do número de seções do acumulador. Então, seguindo pela premissa que a maior diferença de velocidade se dá quando a velocidade de entrada está no máximo e a velocidade de saída no mínimo, reajustando os termos pode-se definir que:
 	
 \begin{equation}
 	V_{in} = nV_{acc} + V_{out}
@@ -494,46 +496,20 @@
 	Para o valor de $V_{out} = 0$, tens-se:
 	
 \begin{equation}
-	V_{in} = 4 \cdot 73 = 292 mm/s
+	V_{in} = 4 \cdot 56 = 224 mm/s
 \end{equation}
 
 	Da mesma forma como o torque varia com raio, a rotação do bobinador também deve varia para manter a mesma velocidade linear do material, assim:
 
 \begin{equation}
-	\eta_{mbmax} = \frac{60 V_{in}}{2 \pi r_2} = \frac{60 \cdot 292}{2 \pi 23} = \SI{120,4}{RPM}
+	\eta_{mbmax} = \frac{60 V_{in}}{2 \pi r_2} = \frac{60 \cdot 224}{2 \pi 23} = \SI{93}{RPM}
 \end{equation}
 	
 \begin{equation}
-	\eta_{mbmin} = \frac{60 V_{in}}{2 \pi r_2} = \frac{60 \cdot 292}{2 \pi 56} = \SI{49,8}{RPM}
+	\eta_{mbmin} = \frac{60 V_{in}}{2 \pi r_2} = \frac{60 \cdot 224}{2 \pi 56} = \SI{38,2}{RPM}
 \end{equation}
 
-	Então, com base no torque e na rotação calculados, para os bobinadores os motores escolhidos são do modelo \textit{AK555/11.1PF12R83CE-V2}, também da Neoyama, que já possuem caixa de redução e apresentam as características disponíveis na tabela \ref{tab:caracmotor1}:
-
-\begin{table}[H]
-  \caption{Características do motor AK555/11.1PF12R83CE-V2.}
-  \label{tab:caracmotor1}
-  \centering%
-  \begin{minipage}{.4\textwidth}
-    \begin{tabular*}{\textwidth}{cc}
-      \hline
-      Grandeza & Unidade \\ \hline
-      \hline
-      Tensão Nominal	&	$\SI{12}{{\volt}}$ \\
-      Faixa de Tensão	&	$\SIrange{6}{24}{\volt}$ \\ 
-      Rotação a Vazio	&	$\SI{83}{RPM}$  \\
-      Corrente a Vazio	&	$\SI{430}{\milli\ampere}$  \\
-      Rotação com Carga	&	$\SI{65,4}{RPM}$  \\ 
-      Corrente Máxima	&	$\SI{1,6}{\ampere}$  \\
-      Torque Máximo		&	$\SI{11,1}{\kilogram f \cdot \centi\metre}$  \\
-      Potência Máxima	&	$\SI{5}{\watt}$  \\
-      Rendimento		&	$\SI{63}{\percent}$  \\ 
-      Torque de Partida	&	$\SI{53}{\kilogram f \cdot \centi\metre}$  \\ \hline
-    \end{tabular*}
-    \fonte{Adaptado de \citeonline{AK555b}.} 
-  \end{minipage}
-\end{table}
-
-	Apesar da redução na rotação máxima, não será um problema para o sistema, apenas influindo na redução da velocidade máxima de movimentação do acumulador.
+	Então, com base no torque e na rotação calculados, para os bobinadores os motores escolhidos são do modelo \textit{AK360/78.8PL12S7000S}, o mesmo modelo usado no acumulador, mantendo apenas uma referência de motor e redutor para todo o projeto. Apesar da redução na rotação máxima, não será um problema para o sistema, apenas influindo na redução da velocidade máxima de movimentação do acumulador.
 
 % ---------------------------------------------- 
     
@@ -609,9 +585,9 @@
 
 	De acordo com a figura, observa-se a simplicidade da ligação do módulo, que disponibiliza os pinos das entradas digitais para controle. Inclusive, a partir de três \textit{jumpers} é possível habilitar e desabilitar os canais de saída e o circuito regulador de tensão do módulo, onde se o último estiver desabilitado é necessário fornecer a tensão de controle externamente.
 	
-	Serão necessários dois módulos para contemplar os três motores do projeto e assim é possível a concentração dos esforços sobre o entendimento do sistema e da elaboração do controle sem a necessidade de se preocupar com implementação e comissionamento de uma etapa de eletrônica de potência.
+	Serão necessários dois módulos para contemplar os dois motores do projeto e assim é possível a concentração dos esforços sobre o entendimento do sistema e da elaboração do controle sem a necessidade de se preocupar com implementação e comissionamento de uma etapa de eletrônica de potência.
 
-\subsection{Medição de Torque}
+\subsection{Medição de Corrente}
 
 	Conforme observado na seção \ref{cap:modeomotor}, o torque verificado no eixo do motor depende diretamente da constante de torque do motor e da corrente de armadura. Com isso, significa que ao medir-se a corrente do motor e sabendo o valor de $K_T$ é possível calcular o torque $\tau_m$ e assim fazer o controle de torque do motor e, indiretamente, o controle de tensão do material. Para se fazer medição de corrente de motores, comumente usa-se resistores sensores  que são resistores de baixíssima resistência em série com a carga. Então, mede-se a queda de tensão sobre ele, desta forma, sabendo o valor da resistência e a queda de tensão calcula-se a corrente que circula no circuito através da Lei de Ohm:
 	
@@ -619,35 +595,29 @@
 	I = \frac{V}{R}
 \end{equation},
 
-	Contudo, apesar de um método simples e eficaz, acaba sendo pouco eficiente uma vez que, como no controle de velocidade de motores com potenciômetro, o circuito possui um elemento resistivo dissipando constantemente energia na forma de calor. Assim, um método mais eficiente e igualmente eficaz é feito com um sensor Hall. Este tipo de sensor mede o campo magnético gerado pela passagem de corrente no condutor e retorna um valor proporcional de tensão para a leitura feita. Para este projeto, optou-se pela aplicação do segundo método com um módulo baseado no CI \textit{ACS712} de fabricação da \textit{Allegro MicroSystems} com uma faixa de medição de $\SIrange{-5}{5}{\ampere}$ e uma constante de proporcionalidade de $\SI{185}{\milli\volt\per\ampere}$. Então, com base na equação \ref{eq:taum}, tens-se que:
-	
-\begin{equation}
-	\tau_m = \frac{K_T v}{K_A}
-\end{equation}
-
-	Onde $v$ é a tensão medida na saída do sensor em $\SI{}{\milli\volt}$ e $K_A$ é a constante de proporcionalidade do sensor. Na figura \ref{fig:ACS712} é visto o módulo de medição:
+	Para este projeto, optou-se pela aplicação de um módulo baseado no CI \textit{INA219} de fabricação da \textit{Texas Instruments} que é um sensor bidirecional de corrente e monitor de energia com uma interface de comunicação \textit{I2C} com capacidade de retornar informações de corrente, tensão e potência na carga com uma acurácia máxima de $\SI{0,5}{\percent}$ em uma faixa de tensão de $\SIrange{0}{26}{\volt}$ \citeonline{INA219a}. Na figura \ref{fig:INA219} é visto o módulo de medição:
 
 \begin{figure}[H]
-	\caption{Módulo de medição de corrente por efeito Hall.}
+	\caption{Módulo bidirecional de monitoração de corrente por resistor \textit{shunt}.}
 	\centering
-	\includegraphics[width = 0.3\linewidth]{i/ACS712.png}
-	\label{fig:ACS712}
-	\fonte{Adaptado de \citeonline{ACS712}.} 
+	\includegraphics[width = 0.3\linewidth]{i/INA219.png}
+	\label{fig:INA219}
+	\fonte{Adaptado de \citeonline{INA219}.} 
 \end{figure}
 
 \subsection{Medição de Posição e Velocidade}
 
-	Outra realimentação importante para o sistema é a posição onde o carro móvel está, isso pois há um limite tanto para a posição mínima como máxima que ele pode atingir devido às limitações mecânicas do sistema. Para isto, imaginou-se utilizar um sensor de velocidade no carro e aplicando uma integral à medição é possível calcular o deslocamento. A utilização de um sensor de velocidade ao invés de um sensor de posição, deve-se ao reaproveitamento de sistemas, pois será necessário medir as velocidades dos bobinadores também. Existem diversas formas diferentes de se fazer a medição de velocidade de um motor desde métodos sem uso de sensor (\textit{sensorless}) ao uso de diversos tipos de sensores diferentes como óticos e ultrassônicos \cite{Dwivedi2017}.
+	Outra realimentação importante para o sistema é a posição onde o carro móvel está, isso pois há um limite tanto para a posição mínima como máxima que ele pode atingir devido às limitações mecânicas do sistema. Para isto, imagina-se utilizar um sensor de posição no carro e aplicando uma derivada à variação de posição medida é possível calcular a velocidade instantânea. Existem diversas formas diferentes de se fazer a medição de posição e velocidade de um motor desde métodos sem uso de sensor (\textit{sensorless}) ao uso de diversos tipos de sensores diferentes como óticos e ultrassônicos \cite{Dwivedi2017}.
 
 \begin{figure}[H]
-	\caption{Módulo de medição de velocidade por feixe infravermelho.}
+	\caption{Módulo de medição de velocidade por pulsos.}
 	\centering
-	\includegraphics[width = 0.3\linewidth]{i/LM393.png}
-	\label{fig:LM393}
-	\fonte{Adaptado de \citeonline{LM393}.} 
+	\includegraphics[width = 0.3\linewidth]{i/KY-040.png}
+	\label{fig:KY-040}
+	\fonte{Adaptado de \citeonline{KY-040}.} 
 \end{figure}
 
-	Para a fazer as medições decidiu-se pelo uso de outro módulo de medição ótica baseado no CI \textit{LM393} de fabricação da \textit{Texas Instruments} que é um circuito comparador, visto na figura \ref{fig:LM393}. Neste módulo, um sensor ótico em forma de garfo emite uma luz infravermelha para um receptor transistor que toda vez que este feixe é cortado por um objeto emite pulsos na saída. Este tipo de funcionamento é o princípio de um \textit{encoder} que é um dispositivo de medição de velocidade ótica utilizado largamente na indústria. Para poder medir corretamente a velocidade de rotação de um eixo, por exemplo, é necessário construir uma roda perfurada, onde o comprimento do arco formado entre um furo e outro será a medida do deslocamento angular por pulso. Somando a quantidade de pulsos por um intervalo de amostragem é possível obter-se a velocidade angular do eixo \cite{Joshi2014}.
+	Para a fazer as medições decidiu-se pelo uso de um módulo de medição rotativo por pulsos de fabricação \textit{Keyes} que é um sensor muito parecido com um potenciômetro, visto na figura \ref{fig:KY-040}, que possui resolução de 20 pulsos por volta e interface de comunicação a partir de dois canais A e B que enviam um trem de pulsos em código \textit{Gray}, conforme o eixo do sensor é rotacionado. Neste módulo, um sensor ótico emite uma luz infravermelha para um receptor que toda vez que este feixe é cortado por uma roda perfurada emite pulsos na saída. Este tipo de funcionamento é o princípio de um \textit{encoder} padrão de mercado, que é um dispositivo de medição de velocidade/posição ótica utilizado largamente na indústria. Para poder medir corretamente a velocidade de rotação de um eixo, por exemplo, é necessário construir uma roda perfurada, onde o comprimento do arco formado entre um furo e outro será a medida do deslocamento angular por pulso. Somando a quantidade de pulsos por um intervalo de amostragem é possível obter-se a velocidade e posição angular do eixo \cite{Joshi2014}.
 	
 \begin{figure}[H]
 	\caption{Representação de um encoder ótico}
@@ -661,11 +631,11 @@
     
 \section{Controle}
 
-	Nesta seção, é elaborado uma explicação rápida do tipo de controlador embarcado utilizado para este sistema, a representação da topologia empregada e a definição dos pontos chaves na elaboração do software para todo o controle da planta.
+	Nesta seção, é elaborado uma explicação rápida do tipo de controlador embarcado utilizado para este sistema, a representação da topologia empregada e a definição dos pontos chaves na elaboração do software e supervisório para todo o controle da planta.
 
 \subsection{Embarcado}
 
-	Procurando uma plataforma simples para desenvolvimento com uma comunidade ativa e com bastante bibliografia disponível, optou-se pela utilização de um Arduino Mega 2560 Rev3, que é uma das placas de desenvolvimento mais comuns no mercado e altamente empregada em projetos de impressoras 3D e robótica caseira que conta com um microcontrolador embarcado ATmega 2560. Este CI proporciona até $54$ pinos de I/O (\textit{Inputs/Outputs} - Entradas/Saídas) digitais dos quais $15$ deles podem ser parametrizados para operar como saídas PWM e ainda conta com $16$ entradas analógicas de $10 bits$ e \textit{timer} RTC (\textit{Real Time Clock} - Relógio de Tempo Real). A placa pode ser vista na figura \ref{fig:Mega2560} a seguir, sendo observado que ela possui conexão de alimentação externa de $\SI{12}{\volt}$ e comunicação Serial/USB.
+	Procurando uma plataforma simples para desenvolvimento com uma comunidade ativa e com bastante bibliografia disponível, optou-se pela utilização de um Arduino Mega 2560 WiFi, de fabricação da \textit{RobotDyn}, que possui já integrado na placa o chip ESP8266 da \textit{Espressif}. O Arduino Mega é uma das placas de desenvolvimento mais comuns no mercado e altamente empregada em projetos de impressoras 3D e robótica caseira que conta com um microcontrolador embarcado ATmega 2560. Este CI proporciona até $54$ pinos de I/O (\textit{Inputs/Outputs} - Entradas/Saídas) digitais dos quais $15$ deles podem ser parametrizados para operar como saídas PWM e ainda conta com $16$ entradas analógicas de $10 bits$ e \textit{timer} RTC (\textit{Real Time Clock} - Relógio de Tempo Real). A placa pode ser vista na figura \ref{fig:Mega2560} a seguir, sendo observado que ela possui conexão de alimentação externa de $\SI{12}{\volt}$ e comunicação Serial/USB, além da antena para conexão WiFi.
 
 \begin{figure}[H]
 	\caption{Placa de programação Arduino Mega com microcontrolador ATMega 2560.}
@@ -675,7 +645,7 @@
 	\fonte{Adaptado de \citeonline{Mega2019}.} 
 \end{figure}	
 
-	Devido a alta densidade de pontos da placa, torna-se fácil a interligação de todos os sensores e desenvolvimento dos controles planejados que serão melhor exemplificados na seção seguinte. Na figura abaixo é representado simplificadamente a topologia do hardware empregado e a comunicação Serial/USB usada para enviar os comandos via supervisório para a planta, alterando as velocidades dos bobinadores, \textit{setpoint} de tensão do acumulador e a alteração dos parâmetros da planta para possíveis ajustes:
+	Devido a alta densidade de pontos da placa, torna-se fácil a interligação de todos os sensores e desenvolvimento dos controles planejados que serão melhor exemplificados na seção seguinte. Na figura abaixo é representado simplificadamente a topologia do hardware empregado e a comunicação Serial/USB usada para enviar os comandos via supervisório para a planta, \textit{setpoint} de tensão e posição do acumulador e a alteração dos parâmetros da planta para possíveis ajustes:
 
 \begin{figure}[H]
 	\caption{Topologia de hardware empregada para o desenvolvimento do sistema.}
@@ -687,9 +657,9 @@
 
 \subsection{Software}
 
-	Devido a expansão do universo de projetos caseiros com plataformas \textit{OpenSource}, a comunidade do Arduino é extremamente ativa e possui uma grande gama de funções e blocos de códigos prontos disponíveis na rede para serem usados e adaptados conforme a necessidade do programador. Uma outra vantagem do seu uso, deve-se a sua interface IDE (\textit{Integrated Development Environment} - Ambiente de Desenvolvimento Integrado) muito amigável e baseada em linguagem C com uma biblioteca própria que facilita a parametrização do hardware sem necessidade de profundo conhecimento de programação de microcontroladores. Por sua vez, isto também opera como uma desvantagem já que o uso destas bibliotecas aumenta o uso de processamento do dispositivo e assim prejudica a otimização para sistemas mais refinados que buscam trabalhar no limite da capacidade.
+	Devido a expansão do universo de projetos caseiros com plataformas \textit{OpenSource}, a comunidade do Arduino é extremamente ativa e possui uma grande gama de funções e blocos de códigos prontos disponíveis na rede para serem usados e adaptados conforme a necessidade do programador. A interface IDE (\textit{Integrated Development Environment} - Ambiente de Desenvolvimento Integrado) utilizado para a programação é o \textit{Visual Studio Code}\textcopyright que possui uma interface bastante amigável e com suporte a diversas linguagens de programação, inclusive linguagem C e C++, com diversas bibliotecas e suporte a vários modelos de placas de desenvolvimento, como o próprio Arduino Mega. O que facilita a parametrização do hardware sem necessidade de profundo conhecimento de programação de microcontroladores. Por sua vez, isto também opera como uma desvantagem já que o uso destas bibliotecas aumenta o uso de processamento do dispositivo e assim prejudica a otimização para sistemas mais refinados que buscam trabalhar no limite da capacidade.
 	
-	O objetivo do software empregado no sistema é fazer periodicamente a leitura dos sensores e atualizar as entradas analógicas com uma interrupção de tempo, calcular o novo erro do sistema de controle e recalcular a malha de controle PID e atualizar as saídas PWM com um novo valor de \textit{Duty Cycle}.
+	O objetivo do software empregado no sistema é fazer periodicamente a leitura dos sensores, calcular o novo erro do sistema de controle, recalcular a malha de controle PID e atualizar as saídas PWM com um novo valor de \textit{Duty Cycle}, recebendo comandos do sistema supervisório em tempos específicos com uma interrupção de tempo.
 
 \begin{figure}[H]
 	\caption{Fluxo macro do \textit{software} de controle.}

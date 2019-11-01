@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.28)  27 OCT 2019 20:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.28)  1 NOV 2019 01:39
 entering extended mode
 **"./00-Dissertacao TCC II.tex"
 ("00-Dissertacao TCC II.tex"
@@ -2097,12 +2097,12 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 ] [15]) (c/2-RevisaoBibliografica.tex [16] [17
 
 ]
-<i/MAC.png, id=368, 293.59688pt x 184.43906pt>
+<i/MAC.png, id=366, 293.59688pt x 184.43906pt>
 File: i/MAC.png Graphic file (type png)
 <use i/MAC.png>
 Package pdftex.def Info: i/MAC.png  used on input line 30.
 (pdftex.def)             Requested size: 182.00069pt x 114.33414pt.
-<i/MIR.png, id=370, 379.4175pt x 338.76563pt>
+<i/MIR.png, id=368, 379.4175pt x 338.76563pt>
 File: i/MIR.png Graphic file (type png)
 <use i/MIR.png>
 Package pdftex.def Info: i/MIR.png  used on input line 36.
@@ -2113,23 +2113,23 @@ Overfull \hbox (2.28003pt too wide) in paragraph at lines 28--40
  []
 
 [18 <./i/MAC.png> <./i/MIR.png>]
-<i/EPT.png, id=385, 863.47594pt x 252.19218pt>
+<i/EPT.png, id=383, 863.47594pt x 252.19218pt>
 File: i/EPT.png Graphic file (type png)
 <use i/EPT.png>
 Package pdftex.def Info: i/EPT.png  used on input line 52.
 (pdftex.def)             Requested size: 364.00139pt x 106.3125pt.
-<i/CLF.png, id=393, 411.03563pt x 307.1475pt>
+<i/CLF.png, id=391, 411.03563pt x 307.1475pt>
 File: i/CLF.png Graphic file (type png)
 <use i/CLF.png>
 Package pdftex.def Info: i/CLF.png  used on input line 62.
 (pdftex.def)             Requested size: 181.99722pt x 135.99829pt.
  [19 <./i/EPT.png>]
-<i/roller.png, id=407, 321.45094pt x 184.43906pt>
+<i/roller.png, id=405, 321.45094pt x 184.43906pt>
 File: i/roller.png Graphic file (type png)
 <use i/roller.png>
 Package pdftex.def Info: i/roller.png  used on input line 72.
 (pdftex.def)             Requested size: 182.00069pt x 104.43059pt.
-<i/impregnacao.png, id=408, 378.66469pt x 233.37187pt>
+<i/impregnacao.png, id=406, 378.66469pt x 233.37187pt>
 File: i/impregnacao.png Graphic file (type png)
 <use i/impregnacao.png>
 Package pdftex.def Info: i/impregnacao.png  used on input line 78.
@@ -2140,17 +2140,17 @@ Overfull \hbox (2.28003pt too wide) in paragraph at lines 71--83
  []
 
 [20 <./i/CLF.png> <./i/roller.png> <./i/impregnacao.png>]
-<i/amassamento.png, id=423, 414.79968pt x 195.73125pt>
+<i/amassamento.png, id=421, 414.79968pt x 195.73125pt>
 File: i/amassamento.png Graphic file (type png)
 <use i/amassamento.png>
 Package pdftex.def Info: i/amassamento.png  used on input line 102.
 (pdftex.def)             Requested size: 136.50139pt x 64.40932pt.
-<i/enrugamento.png, id=424, 333.49594pt x 185.94469pt>
+<i/enrugamento.png, id=422, 333.49594pt x 185.94469pt>
 File: i/enrugamento.png Graphic file (type png)
 <use i/enrugamento.png>
 Package pdftex.def Info: i/enrugamento.png  used on input line 107.
 (pdftex.def)             Requested size: 136.50139pt x 76.11012pt.
-<i/desalinhamento.png, id=425, 392.96812pt x 182.93344pt>
+<i/desalinhamento.png, id=423, 392.96812pt x 182.93344pt>
 File: i/desalinhamento.png Graphic file (type png)
 <use i/desalinhamento.png>
 Package pdftex.def Info: i/desalinhamento.png  used on input line 112.
@@ -2161,68 +2161,68 @@ Overfull \hbox (2.28003pt too wide) in paragraph at lines 100--116
  []
 
 [21 <./i/amassamento.png> <./i/enrugamento.png> <./i/desalinhamento.png>]
-<i/linha.png, id=436, 864.22874pt x 242.40562pt>
+<i/linha.png, id=434, 864.22874pt x 242.40562pt>
 File: i/linha.png Graphic file (type png)
 <use i/linha.png>
 Package pdftex.def Info: i/linha.png  used on input line 124.
 (pdftex.def)             Requested size: 455.0pt x 127.61993pt.
 
 [22 <./i/linha.png>]
-<i/acumulador.png, id=457, 347.79938pt x 243.91125pt>
+<i/acumulador.png, id=455, 347.79938pt x 243.91125pt>
 File: i/acumulador.png Graphic file (type png)
 <use i/acumulador.png>
 Package pdftex.def Info: i/acumulador.png  used on input line 140.
 (pdftex.def)             Requested size: 227.5pt x 159.5453pt.
  [23 <./i/acumulador.png>]
-<i/webtensionrolls.png, id=479, 702.37407pt x 285.31593pt>
+<i/webtensionrolls.png, id=477, 702.37407pt x 285.31593pt>
 File: i/webtensionrolls.png Graphic file (type png)
 <use i/webtensionrolls.png>
 Package pdftex.def Info: i/webtensionrolls.png  used on input line 185.
 (pdftex.def)             Requested size: 273.00278pt x 110.90271pt.
  [24] [25 <./i/webtensionrolls.png>]
-<i/carriage.png, id=514, 275.52937pt x 423.83344pt>
+<i/carriage.png, id=512, 275.52937pt x 423.83344pt>
 File: i/carriage.png Graphic file (type png)
 <use i/carriage.png>
 Package pdftex.def Info: i/carriage.png  used on input line 213.
 (pdftex.def)             Requested size: 136.50139pt x 209.9825pt.
  [26 <./i/carriage.png>]
-<i/SimpleFeedback.png, id=530, 356.0803pt x 114.4275pt>
+<i/SimpleFeedback.png, id=528, 356.0803pt x 114.4275pt>
 File: i/SimpleFeedback.png Graphic file (type png)
 <use i/SimpleFeedback.png>
 Package pdftex.def Info: i/SimpleFeedback.png  used on input line 235.
 (pdftex.def)             Requested size: 273.00278pt x 87.73404pt.
-<i/StepResponse.png, id=538, 695.59875pt x 478.03593pt>
+<i/StepResponse.png, id=536, 695.59875pt x 478.03593pt>
 File: i/StepResponse.png Graphic file (type png)
 <use i/StepResponse.png>
 Package pdftex.def Info: i/StepResponse.png  used on input line 249.
 (pdftex.def)             Requested size: 318.49861pt x 218.878pt.
  [27 <./i/SimpleFeedback.png>]
-<i/Step1.png, id=554, 639.89063pt x 398.99063pt>
+<i/Step1.png, id=552, 639.89063pt x 398.99063pt>
 File: i/Step1.png Graphic file (type png)
 <use i/Step1.png>
 Package pdftex.def Info: i/Step1.png  used on input line 262.
 (pdftex.def)             Requested size: 136.50139pt x 85.11162pt.
-<i/Step2.png, id=555, 639.89063pt x 398.99063pt>
+<i/Step2.png, id=553, 639.89063pt x 398.99063pt>
 File: i/Step2.png Graphic file (type png)
 <use i/Step2.png>
 Package pdftex.def Info: i/Step2.png  used on input line 267.
 (pdftex.def)             Requested size: 136.50139pt x 85.11162pt.
-<i/Step3.png, id=556, 639.89063pt x 398.99063pt>
+<i/Step3.png, id=554, 639.89063pt x 398.99063pt>
 File: i/Step3.png Graphic file (type png)
 <use i/Step3.png>
 Package pdftex.def Info: i/Step3.png  used on input line 272.
 (pdftex.def)             Requested size: 136.50139pt x 85.11162pt.
-<i/Step4.png, id=557, 639.89063pt x 398.99063pt>
+<i/Step4.png, id=555, 639.89063pt x 398.99063pt>
 File: i/Step4.png Graphic file (type png)
 <use i/Step4.png>
 Package pdftex.def Info: i/Step4.png  used on input line 277.
 (pdftex.def)             Requested size: 136.50139pt x 85.11162pt.
-<i/Step5.png, id=558, 639.89063pt x 398.99063pt>
+<i/Step5.png, id=556, 639.89063pt x 398.99063pt>
 File: i/Step5.png Graphic file (type png)
 <use i/Step5.png>
 Package pdftex.def Info: i/Step5.png  used on input line 282.
 (pdftex.def)             Requested size: 136.50139pt x 85.11162pt.
-<i/Step6.png, id=559, 639.89063pt x 398.99063pt>
+<i/Step6.png, id=557, 639.89063pt x 398.99063pt>
 File: i/Step6.png Graphic file (type png)
 <use i/Step6.png>
 Package pdftex.def Info: i/Step6.png  used on input line 287.
@@ -2244,50 +2244,50 @@ Overfull \hbox (2.28003pt too wide) in paragraph at lines 260--291
 
 [28 <./i/StepResponse.png>] [29 <./i/Step1.png> <./i/Step2.png> <./i/Step3.png>
  <./i/Step4.png> <./i/Step5.png> <./i/Step6.png>] [30]
-<i/PID1.png, id=595, 485.56406pt x 191.9672pt>
+<i/PID1.png, id=593, 485.56406pt x 191.9672pt>
 File: i/PID1.png Graphic file (type png)
 <use i/PID1.png>
 Package pdftex.def Info: i/PID1.png  used on input line 333.
 (pdftex.def)             Requested size: 409.49722pt x 161.89282pt.
  [31 <./i/PID1.png>]
-<i/SAntiWindup.png, id=615, 1443.89438pt x 668.4975pt>
+<i/SAntiWindup.png, id=613, 1443.89438pt x 668.4975pt>
 File: i/SAntiWindup.png Graphic file (type png)
 <use i/SAntiWindup.png>
 Package pdftex.def Info: i/SAntiWindup.png  used on input line 371.
 (pdftex.def)             Requested size: 409.49722pt x 189.58533pt.
 
 [32]
-<i/AntiWindup.png, id=622, 426.09187pt x 216.05719pt>
+<i/AntiWindup.png, id=620, 426.09187pt x 216.05719pt>
 File: i/AntiWindup.png Graphic file (type png)
 <use i/AntiWindup.png>
 Package pdftex.def Info: i/AntiWindup.png  used on input line 383.
 (pdftex.def)             Requested size: 409.49722pt x 207.65318pt.
  [33 <./i/SAntiWindup.png> <./i/AntiWindup.png>]
-<i/CAntiWindup.png, id=636, 1443.89438pt x 668.4975pt>
+<i/CAntiWindup.png, id=634, 1443.89438pt x 668.4975pt>
 File: i/CAntiWindup.png Graphic file (type png)
 <use i/CAntiWindup.png>
 Package pdftex.def Info: i/CAntiWindup.png  used on input line 393.
 (pdftex.def)             Requested size: 409.49722pt x 189.58533pt.
  [34 <./i/CAntiWindup.png>]
-<i/FrequencyResponse.png, id=646, 540.51938pt x 311.66437pt>
+<i/FrequencyResponse.png, id=644, 540.51938pt x 311.66437pt>
 File: i/FrequencyResponse.png Graphic file (type png)
 <use i/FrequencyResponse.png>
 Package pdftex.def Info: i/FrequencyResponse.png  used on input line 407.
 (pdftex.def)             Requested size: 273.00278pt x 157.4154pt.
-<i/RelayResponse.png, id=658, 627.09282pt x 275.52937pt>
+<i/RelayResponse.png, id=656, 627.09282pt x 275.52937pt>
 File: i/RelayResponse.png Graphic file (type png)
 <use i/RelayResponse.png>
 Package pdftex.def Info: i/RelayResponse.png  used on input line 433.
 (pdftex.def)             Requested size: 273.00278pt x 119.9552pt.
 [35 <./i/FrequencyResponse.png>]
-<i/RelayFeedback.png, id=674, 350.81062pt x 85.82062pt>
+<i/RelayFeedback.png, id=672, 350.81062pt x 85.82062pt>
 File: i/RelayFeedback.png Graphic file (type png)
 <use i/RelayFeedback.png>
 Package pdftex.def Info: i/RelayFeedback.png  used on input line 455.
 (pdftex.def)             Requested size: 364.00139pt x 89.05357pt.
  [36 <./i/RelayResponse.png>])
 (c/3-Metodologia.tex [37 <./i/RelayFeedback.png>]
-<i/plantaesboco.png, id=692, 231.86626pt x 245.41687pt>
+<i/plantaesboco.png, id=690, 231.86626pt x 245.41687pt>
 File: i/plantaesboco.png Graphic file (type png)
 <use i/plantaesboco.png>
 Package pdftex.def Info: i/plantaesboco.png  used on input line 13.
@@ -2295,220 +2295,219 @@ Package pdftex.def Info: i/plantaesboco.png  used on input line 13.
  [38
 
  <./i/plantaesboco.png>]
-<i/acumuladorproj.png, id=699, 540.51938pt x 603.0028pt>
+<i/acumuladorproj.png, id=697, 540.51938pt x 603.0028pt>
 File: i/acumuladorproj.png Graphic file (type png)
 <use i/acumuladorproj.png>
 Package pdftex.def Info: i/acumuladorproj.png  used on input line 31.
 (pdftex.def)             Requested size: 318.49861pt x 355.32692pt.
 
 [39 <./i/acumuladorproj.png>]
-<i/acumuladorestrut.png, id=705, 548.0475pt x 593.96906pt>
+<i/acumuladorestrut.png, id=703, 548.0475pt x 593.96906pt>
 File: i/acumuladorestrut.png Graphic file (type png)
 <use i/acumuladorestrut.png>
 Package pdftex.def Info: i/acumuladorestrut.png  used on input line 45.
 (pdftex.def)             Requested size: 227.5pt x 246.56506pt.
-<i/perfilalum20x20.png, id=706, 290.58563pt x 321.45094pt>
+<i/perfilalum20x20.png, id=704, 290.58563pt x 321.45094pt>
 File: i/perfilalum20x20.png Graphic file (type png)
 <use i/perfilalum20x20.png>
 Package pdftex.def Info: i/perfilalum20x20.png  used on input line 55.
 (pdftex.def)             Requested size: 136.50139pt x 151.00348pt.
  [40 <./i/acumuladorestrut.png> <./i/perfilalum20x20.png>]
-<i/mancalrolo.png, id=720, 603.0028pt x 431.36156pt>
+<i/mancalrolo.png, id=718, 603.0028pt x 431.36156pt>
 File: i/mancalrolo.png Graphic file (type png)
 <use i/mancalrolo.png>
 Package pdftex.def Info: i/mancalrolo.png  used on input line 67.
 (pdftex.def)             Requested size: 273.00278pt x 195.2891pt.
-<i/carromovel.png, id=721, 839.38594pt x 566.115pt>
+<i/carromovel.png, id=719, 839.38594pt x 566.115pt>
 File: i/carromovel.png Graphic file (type png)
 <use i/carromovel.png>
 Package pdftex.def Info: i/carromovel.png  used on input line 79.
-(pdftex.def)             Requested size: 364.00139pt x 245.49786pt.
+(pdftex.def)             Requested size: 295.74722pt x 199.46486pt.
  [41 <./i/mancalrolo.png>]
-<i/acumuladorsecoes.png, id=729, 514.92375pt x 405.01312pt>
+<i/acumuladorsecoes.png, id=727, 514.92375pt x 405.01312pt>
 File: i/acumuladorsecoes.png Graphic file (type png)
 <use i/acumuladorsecoes.png>
 Package pdftex.def Info: i/acumuladorsecoes.png  used on input line 91.
-(pdftex.def)             Requested size: 364.00139pt x 286.31296pt.
- [42 <./i/carromovel.png>]
+(pdftex.def)             Requested size: 273.00278pt x 214.73625pt.
+ [42 <./i/carromovel.png> <./i/acumuladorsecoes.png>]
 <i/roloisolado.png, id=739, 128.73094pt x 133.24782pt>
 File: i/roloisolado.png Graphic file (type png)
 <use i/roloisolado.png>
 Package pdftex.def Info: i/roloisolado.png  used on input line 107.
 (pdftex.def)             Requested size: 136.50139pt x 141.303pt.
- [43 <./i/acumuladorsecoes.png>]
-<i/acumuladorcarriage.png, id=746, 517.935pt x 493.845pt>
+<i/acumuladorcarriage.png, id=740, 517.935pt x 493.845pt>
 File: i/acumuladorcarriage.png Graphic file (type png)
 <use i/acumuladorcarriage.png>
 Package pdftex.def Info: i/acumuladorcarriage.png  used on input line 129.
 (pdftex.def)             Requested size: 273.00278pt x 260.3124pt.
- [44 <./i/roloisolado.png>] [45 <./i/acumuladorcarriage.png>]
-[46pdfTeX warning (ext4): destination with the same identifier (name{equation.3
-.1.27}) has been already used, duplicate ignored
+ [43pdfTeX warning (ext4): destination with the same identifier (name{equation.
+3.1.18}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.133 
+       <./i/roloisolado.png>] [44 <./i/acumuladorcarriage.png>] [45pdfTeX warni
+ng (ext4): destination with the same identifier (name{equation.3.1.26}) has bee
+n already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.193 \end{equation}
                     ]
-<i/Bobinadorproj.png, id=787, 793.46437pt x 550.30594pt>
+<i/Bobinadorproj.png, id=781, 700.11563pt x 490.08093pt>
 File: i/Bobinadorproj.png Graphic file (type png)
 <use i/Bobinadorproj.png>
 Package pdftex.def Info: i/Bobinadorproj.png  used on input line 222.
-(pdftex.def)             Requested size: 273.00278pt x 189.34354pt.
- [47]
-<i/Bobinadorestrut.png, id=797, 621.82312pt x 549.55313pt>
+(pdftex.def)             Requested size: 273.00278pt x 191.10088pt.
+ [46]
+<i/Bobinadorestrut.png, id=791, 765.6103pt x 542.025pt>
 File: i/Bobinadorestrut.png Graphic file (type png)
 <use i/Bobinadorestrut.png>
 Package pdftex.def Info: i/Bobinadorestrut.png  used on input line 232.
-(pdftex.def)             Requested size: 227.5pt x 201.059pt.
- [48 <./i/Bobinadorproj.png> <./i/Bobinadorestrut.png>]
-<i/Bobinadorrolo.png, id=806, 565.36218pt x 392.96812pt>
+(pdftex.def)             Requested size: 227.5pt x 161.06213pt.
+<i/Bobinadorrolo.png, id=793, 837.88031pt x 527.72156pt>
 File: i/Bobinadorrolo.png Graphic file (type png)
 <use i/Bobinadorrolo.png>
 Package pdftex.def Info: i/Bobinadorrolo.png  used on input line 242.
-(pdftex.def)             Requested size: 227.5pt x 158.12585pt.
-<i/bobinadormodelo.png, id=807, 331.99031pt x 215.30438pt>
+(pdftex.def)             Requested size: 227.5pt x 143.2839pt.
+ [47 <./i/Bobinadorproj.png> <./i/Bobinadorestrut.png>]
+<i/bobinadormodelo.png, id=800, 331.99031pt x 215.30438pt>
 File: i/bobinadormodelo.png Graphic file (type png)
 <use i/bobinadormodelo.png>
 Package pdftex.def Info: i/bobinadormodelo.png  used on input line 254.
 (pdftex.def)             Requested size: 181.99722pt x 118.0301pt.
- [49 <./i/Bobinadorrolo.png> <./i/bobinadormodelo.png>]
-<i/motormodel.png, id=817, 272.51813pt x 130.98938pt>
+ [48 <./i/Bobinadorrolo.png> <./i/bobinadormodelo.png>]
+<i/motormodel.png, id=813, 272.51813pt x 130.98938pt>
 File: i/motormodel.png Graphic file (type png)
 <use i/motormodel.png>
-Package pdftex.def Info: i/motormodel.png  used on input line 288.
+Package pdftex.def Info: i/motormodel.png  used on input line 290.
 (pdftex.def)             Requested size: 273.00278pt x 131.22888pt.
- [50] [51 <./i/motormodel.png>] [52]
-<i/motorbloco.png, id=866, 1193.20781pt x 154.32657pt>
+ [49 <./i/motormodel.png>] [50]
+<i/motorbloco.png, id=849, 1193.20781pt x 154.32657pt>
 File: i/motorbloco.png Graphic file (type png)
 <use i/motorbloco.png>
-Package pdftex.def Info: i/motorbloco.png  used on input line 382.
+Package pdftex.def Info: i/motorbloco.png  used on input line 384.
 (pdftex.def)             Requested size: 455.0pt x 58.84721pt.
-<i/motorblocos.png, id=871, 889.07156pt x 194.97844pt>
+ [51 <./i/motorbloco.png>]
+<i/motorblocos.png, id=866, 889.07156pt x 194.97844pt>
 File: i/motorblocos.png Graphic file (type png)
 <use i/motorblocos.png>
-Package pdftex.def Info: i/motorblocos.png  used on input line 392.
+Package pdftex.def Info: i/motorblocos.png  used on input line 394.
 (pdftex.def)             Requested size: 455.0pt x 99.78279pt.
- [53 <./i/motorbloco.png> <./i/motorblocos.png>]
-Overfull \hbox (8.62465pt too wide) in alignment at lines 410--423
+
+Overfull \hbox (8.62465pt too wide) in alignment at lines 412--425
 [][] 
  []
 
-
-Underfull \hbox (badness 10000) in alignment at lines 451--465
+[52 <./i/motorblocos.png>]
+Underfull \hbox (badness 10000) in alignment at lines 453--467
 [][] 
  []
 
-[54] [55]
-Underfull \hbox (badness 10000) in alignment at lines 517--531
-[][] 
- []
-
-[56]
-<i/PWMGraph.png, id=931, 605.26125pt x 386.94562pt>
+[53] [54] [55]
+<i/PWMGraph.png, id=921, 605.26125pt x 386.94562pt>
 File: i/PWMGraph.png Graphic file (type png)
 <use i/PWMGraph.png>
-Package pdftex.def Info: i/PWMGraph.png  used on input line 565.
+Package pdftex.def Info: i/PWMGraph.png  used on input line 541.
 (pdftex.def)             Requested size: 273.00278pt x 174.53131pt.
- [57]
-<i/HBridgeFull.png, id=945, 633.86812pt x 350.05782pt>
+ [56 <./i/PWMGraph.png>]
+<i/HBridgeFull.png, id=935, 633.86812pt x 350.05782pt>
 File: i/HBridgeFull.png Graphic file (type png)
 <use i/HBridgeFull.png>
-Package pdftex.def Info: i/HBridgeFull.png  used on input line 583.
+Package pdftex.def Info: i/HBridgeFull.png  used on input line 559.
 (pdftex.def)             Requested size: 273.00278pt x 150.77296pt.
- [58 <./i/PWMGraph.png>]
-<i/L298N.png, id=959, 433.62pt x 436.63126pt>
+<i/L298N.png, id=943, 433.62pt x 436.63126pt>
 File: i/L298N.png Graphic file (type png)
 <use i/L298N.png>
-Package pdftex.def Info: i/L298N.png  used on input line 595.
+Package pdftex.def Info: i/L298N.png  used on input line 571.
 (pdftex.def)             Requested size: 136.50139pt x 137.44629pt.
-<i/SchL298N.png, id=965, 550.30594pt x 548.80031pt>
+ [57 <./i/HBridgeFull.png>]
+<i/SchL298N.png, id=957, 550.30594pt x 548.80031pt>
 File: i/SchL298N.png Graphic file (type png)
 <use i/SchL298N.png>
-Package pdftex.def Info: i/SchL298N.png  used on input line 605.
+Package pdftex.def Info: i/SchL298N.png  used on input line 581.
 (pdftex.def)             Requested size: 181.99722pt x 181.49823pt.
- [59 <./i/HBridgeFull.png> <./i/L298N.png>]
-[60 <./i/SchL298N.png>]
-<i/ACS712.png, id=985, 405.01312pt x 375.65344pt>
-File: i/ACS712.png Graphic file (type png)
-<use i/ACS712.png>
-Package pdftex.def Info: i/ACS712.png  used on input line 633.
-(pdftex.def)             Requested size: 136.50139pt x 126.60846pt.
-<i/LM393.png, id=992, 423.83344pt x 362.10281pt>
-File: i/LM393.png Graphic file (type png)
-<use i/LM393.png>
-Package pdftex.def Info: i/LM393.png  used on input line 645.
-(pdftex.def)             Requested size: 136.50139pt x 116.62117pt.
- [61 <./i/ACS712.png>]
-<i/encoder.png, id=1008, 532.99126pt x 424.58624pt>
+ [58 <./i/L298N.png> <./i/SchL298N.png>]
+<i/INA219.png, id=969, 261.22594pt x 215.30438pt>
+File: i/INA219.png Graphic file (type png)
+<use i/INA219.png>
+Package pdftex.def Info: i/INA219.png  used on input line 603.
+(pdftex.def)             Requested size: 136.50139pt x 112.50755pt.
+<i/KY-040.png, id=976, 301.125pt x 335.00156pt>
+File: i/KY-040.png Graphic file (type png)
+<use i/KY-040.png>
+Package pdftex.def Info: i/KY-040.png  used on input line 615.
+(pdftex.def)             Requested size: 136.50139pt x 151.86365pt.
+ [59 <./i/INA219.png>]
+<i/encoder.png, id=993, 532.99126pt x 424.58624pt>
 File: i/encoder.png Graphic file (type png)
 <use i/encoder.png>
-Package pdftex.def Info: i/encoder.png  used on input line 655.
+Package pdftex.def Info: i/encoder.png  used on input line 625.
 (pdftex.def)             Requested size: 181.99722pt x 144.97935pt.
- [62 <./i/LM393.png> <./i/encoder.png>]
-<i/Mega2560.png, id=1018, 565.36218pt x 288.3272pt>
+ [60 <./i/KY-040.png> <./i/encoder.png>]
+<i/Mega2560.png, id=1004, 565.36218pt x 288.3272pt>
 File: i/Mega2560.png Graphic file (type png)
 <use i/Mega2560.png>
-Package pdftex.def Info: i/Mega2560.png  used on input line 673.
+Package pdftex.def Info: i/Mega2560.png  used on input line 643.
 (pdftex.def)             Requested size: 227.5pt x 116.01955pt.
-<i/Topologia.png, id=1023, 584.1825pt x 553.31718pt>
+<i/Topologia.png, id=1009, 536.75531pt x 551.05875pt>
 File: i/Topologia.png Graphic file (type png)
 <use i/Topologia.png>
-Package pdftex.def Info: i/Topologia.png  used on input line 683.
-(pdftex.def)             Requested size: 364.00139pt x 344.7839pt.
- [63 <./i/Mega2560.png>]
-<i/fluxobasico.png, id=1029, 840.89156pt x 499.11469pt>
+Package pdftex.def Info: i/Topologia.png  used on input line 653.
+(pdftex.def)             Requested size: 364.00139pt x 373.69756pt.
+ [61 <./i/Mega2560.png>] [62 <./i/Topologia.png>]
+<i/fluxobasico.png, id=1020, 840.89156pt x 499.11469pt>
 File: i/fluxobasico.png Graphic file (type png)
 <use i/fluxobasico.png>
-Package pdftex.def Info: i/fluxobasico.png  used on input line 697.
+Package pdftex.def Info: i/fluxobasico.png  used on input line 667.
 (pdftex.def)             Requested size: 409.49722pt x 243.06038pt.
- [64 <./i/Topologia.png>]
-<i/stctrlmotor.png, id=1039, 1070.49937pt x 211.54031pt>
+ [63 <./i/fluxobasico.png>]
+<i/stctrlmotor.png, id=1030, 1070.49937pt x 211.54031pt>
 File: i/stctrlmotor.png Graphic file (type png)
 <use i/stctrlmotor.png>
-Package pdftex.def Info: i/stctrlmotor.png  used on input line 709.
+Package pdftex.def Info: i/stctrlmotor.png  used on input line 679.
 (pdftex.def)             Requested size: 455.0pt x 89.9115pt.
- [65 <./i/fluxobasico.png>]
-<i/stctrlmotor1.png, id=1046, 1026.83624pt x 217.5628pt>
+<i/stctrlmotor1.png, id=1032, 1026.83624pt x 217.5628pt>
 File: i/stctrlmotor1.png Graphic file (type png)
 <use i/stctrlmotor1.png>
-Package pdftex.def Info: i/stctrlmotor1.png  used on input line 719.
+Package pdftex.def Info: i/stctrlmotor1.png  used on input line 689.
 (pdftex.def)             Requested size: 455.0pt x 96.40515pt.
-) (c/4-Simulacao.tex [66 <./i/stctrlmotor.png> <./i/stctrlmotor1.png>]
-[67
+) (c/4-Simulacao.tex [64 <./i/stctrlmotor.png> <./i/stctrlmotor1.png>]
+[65
 
-] [68]) (c/5-Implementacao.tex [69] [70
+] [66]) (c/5-Implementacao.tex [67] [68
 
-] [71]) (c/6-Resultados.tex [72]
-<i/AccStepResponseKp2Ki11-5Kd0.png, id=1081, 1003.49907pt x 542.77782pt>
+] [69]) (c/6-Resultados.tex [70]
+<i/AccStepResponseKp2Ki11-5Kd0.png, id=1066, 1003.49907pt x 542.77782pt>
 File: i/AccStepResponseKp2Ki11-5Kd0.png Graphic file (type png)
 <use i/AccStepResponseKp2Ki11-5Kd0.png>
 Package pdftex.def Info: i/AccStepResponseKp2Ki11-5Kd0.png  used on input line 
 11.
 (pdftex.def)             Requested size: 409.49722pt x 221.4968pt.
-<i/AccStepResponseKp10Ki55Kd0.png, id=1082, 1003.49907pt x 542.77782pt>
+<i/AccStepResponseKp10Ki55Kd0.png, id=1067, 1003.49907pt x 542.77782pt>
 File: i/AccStepResponseKp10Ki55Kd0.png Graphic file (type png)
 <use i/AccStepResponseKp10Ki55Kd0.png>
 Package pdftex.def Info: i/AccStepResponseKp10Ki55Kd0.png  used on input line 1
 9.
 (pdftex.def)             Requested size: 409.49722pt x 221.4968pt.
 
-[73
+[71
 
- <./i/AccStepResponseKp2Ki11-5Kd0.png>]) (c/7-Conclusao.tex [74 <./i/AccStepRes
+ <./i/AccStepResponseKp2Ki11-5Kd0.png>]) (c/7-Conclusao.tex [72 <./i/AccStepRes
 ponseKp10Ki55Kd0.png>]) ("00-Dissertacao TCC II.bbl"
 ("00-Dissertacao TCC II.brf")
 \tf@brf=\write6
 \openout6 = `"00-Dissertacao TCC II.brf"'.
 
- [75
+ [73
 
 ]
 bibitemlist
-[76
+[74
 
-] [77]) 
+] [75]) 
 AED: lastpage setting LastPage
-[78]
+[76]
 \tf@lof=\write7
 \openout7 = `"00-Dissertacao TCC II.lof"'.
 
@@ -2529,14 +2528,14 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 135.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 135.
 Package rerunfilecheck Info: File `"00-Dissertacao TCC II".brf' has not changed
 .
-(rerunfilecheck)             Checksum: 6648929AE6CD6B47EEFE536E88573199;3780.
+(rerunfilecheck)             Checksum: 53C6288B9EC89834DFF325DC3FA89017;3785.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
  ) 
 Here is how much of TeX's memory you used:
- 60272 strings out of 492970
- 1371241 string characters out of 3135854
- 1951213 words of memory out of 3000000
- 62579 multiletter control sequences out of 15000+200000
+ 60276 strings out of 492970
+ 1371302 string characters out of 3135854
+ 1951273 words of memory out of 3000000
+ 62587 multiletter control sequences out of 15000+200000
  618746 words of font info for 271 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,31n,96p,1670b,1137s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2550,9 +2549,9 @@ m Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><D:/Program Files/MiKTeX 2.
 9/fonts/type1/urw/times/utmr8a.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/urw
 /times/utmr8a.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pf
 b>
-Output written on "00-Dissertacao TCC II.pdf" (79 pages, 5532003 bytes).
+Output written on "00-Dissertacao TCC II.pdf" (77 pages, 5818780 bytes).
 PDF statistics:
- 1468 PDF objects out of 1728 (max. 8388607)
- 313 named destinations out of 1000 (max. 500000)
+ 1452 PDF objects out of 1728 (max. 8388607)
+ 309 named destinations out of 1000 (max. 500000)
  44359 words of extra memory for PDF output out of 51595 (max. 10000000)
 

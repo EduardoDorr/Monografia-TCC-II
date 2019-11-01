@@ -1,0 +1,524 @@
+% ||||||||||||||||||||||||||||||||||||||||||||||
+% Livros
+% ||||||||||||||||||||||||||||||||||||||||||||||
+
+@book{Dorf2013,
+	author = {Dorf, Richard C.},
+	title = {Sistemas de Controle Modernos},
+	edition = {12},
+	isbn = {9788521619956},
+	year = {2013},
+	publisher = {LTC}}
+
+@book{Nise2012,
+	author = {Nise, Norman S.},	
+	title = {Engenharia de Sistemas de Controle},
+	edition = {6},
+	isbn = {9788521621355},
+	year = {2012},
+	publisher = {LTC}}
+
+@book{Ogata2011,
+	author = {Ogata, Katsuhiko},	
+	title = {Engenharia de Controle Moderno},
+	edition = {5},
+	isbn = {9788576058106},
+	year = {2011},
+	publisher = {Pearson}}
+
+@book{Franklin2013,
+	author = {Franklin, Gene F. and Powell, J. David and Emami-Naeini, Abbas},
+	title = {{Sistemas De Controle Para Engenharia}},
+	edition = {6},
+	isbn = {978-8582600672},
+	pages = {702},
+	year = {2013},
+	publisher = {Bookman}}
+	
+@book{Astrom1995,
+	author = {{\AA}str{\"{o}}m, Karl Johan and H{\"{a}}gglund, Tore},	
+	title = {PID Controllers: Theory, Design and Tuning},	
+	edition = {2},
+	isbn = {1556175167},
+	year = {1995},
+	publisher = {ISA: Instrument Society of America}}
+	
+@book{Astrom2008,
+	author = {{\AA}str{\"{o}}m, Karl Johan and Murray, Richard M},
+	title = {Feedback Systems: An Introduction for Scientists and Engineers},
+	edition = {2.11b},
+	doi = {10.1086/596297},
+	isbn = {9780691135762},
+	issn = {0033-5770},
+	number = {4},
+	pages = {426--426},
+	year = {2008},
+	publisher = {Princeton University Press}}
+
+@book{Groover2012,
+	author = {Groover, M. P.},	
+	title = {{Fundamentals of Modern Manufacturing}},
+	edition = {4},
+	doi = {10.1007/978-94-010-9506-8_6},
+	isbn = {978-0470-467002},
+	issn = {1098-6596},
+	year = {2012},
+	publisher = {Bookman}}
+	
+@book{Rocha2003,
+	author = {Rocha, Edmundo Cidade and Lovison, Viviane M. H. and Pierozan, Nilso José},
+	title = {Tecnologia de Transformação dos Elastômeros},
+	edition = {2},
+	address = {São Leopoldo},	
+	editor = {SENAI/CETEPO},
+	year = {2003},
+	publisher = {Centro Tecnológico de Polímeros}}
+	
+@book{Levine2011,
+	title = {{The Control Handbook - Control Theory Fundamentals}},	
+	author = {Levine, William S.},
+	edition = {2},
+	isbn = {978-1-4200-7363-8},
+	year = {2011},
+	publisher = {CRC Press}}
+	
+@book{Mark2013,
+	title = {{The Science and Technology of Rubber}},	
+	author = {Mark, James E},
+	edition = {4},
+	isbn = {9780123945846},
+	year = {2013},
+	publisher = {Elsevier Inc.}}
+	
+@book{Yu2006,
+	author = {{Yu}, Cheng-Ching},
+	title = {{Autotuning of PID Controllers: A Relay Feedback Approach}},
+	edition = {2},
+	isbn = {9781846280368},
+	year = {2006}},
+	publisher = {Springer-Verlag London Limited}}
+
+@book{Aidan2009,
+	author = {{Aidan O} and Dwyer},
+	title = {{HANDBOOK OF PI AND PID CONTROLLER TUNING RULES}},
+	edition = {3},
+	isbn = {9781848162426},
+	year = {2009}},
+	publisher = {Imperial College Press}}
+	
+@book{Leonhard2001,
+	author = {Leonhard, Werner},
+	title = {{Control of electrical drives}},
+	edition = {3},
+	doi = {10.1016/0005-1098(86)90073-7},
+	isbn = {3540418202},
+	issn = {00051098},
+	pages = {473},
+	address = {Berlin},
+	year = {2001},
+	publisher = {Springer}}
+
+@book{Hughes2006,
+	author = {Hughes, Austin},
+	title = {Electric Motors and Drives: Fundamentals, Types and Applications},
+	edition = {3},
+	isbn = {978-0-7506-4718-2},
+	pages = {431},
+	address = {Great Britain},
+	year = {2006},
+	publisher = {Elsevier}}
+
+
+% ||||||||||||||||||||||||||||||||||||||||||||||
+% Artigos
+% ||||||||||||||||||||||||||||||||||||||||||||||
+
+@article{Koc1999,
+	author = {Ko{\c{c}}, H. and Knittel, D. and {De Mathelin}, M. and Abba, G. and Gauthier, C. and Ostertag, E.},
+	journal = {European Control Conference (ECC)},
+	doi = {10.23919/ecc.1999.7099294},
+	number = {September},
+	title = {{Modeling and Control of an Industrial Accumulator in a Web Transport System}},
+	year = {1999}}
+
+@article{Koc2002,
+	author = {Ko{\c{c}}, H. and Knittel, D. and {De Mathelin}, M. and Abba, G.},
+	journal = {IEEE Transactions on Control Systems Technology},
+	doi = {10.1109/87.987065},
+	issn = {10636536},
+	number = {2},
+	pages = {197--208},
+	title = {{Modeling and Robust Control of Winding Systems for Elastic Webs}},
+	volume = {10},
+	year = {2002}}
+
+@article{Kuhm2009,
+	author = {Kuhm, David and Knittel, Dominique and Bueno, Marie Ange},
+	doi = {10.1109/IECON.2009.5414754},
+	isbn = {9781424446490},
+	journal = {IEEE Transactions on Control Systems Technology},
+	pages = {1645--1650},
+	title = {{Modelling and robust control of an industrial accumulator in roll to roll systems}},
+	year = {2009}}
+
+@article{Kuhm2011,
+	author = {Kuhm, D. and Knittel, D.},
+	journal = {Elsevier},
+	doi = {10.3182/20110828-6-IT-1002.02458},
+	number = {January},
+	title = {New Design of Robust Industrial Accumulators for Elastic Webs},
+	year = {2011}}
+	
+@article{Kuhm2012a,
+	author = {Kuhm, D. and Knittel, D.},
+	journal = {Elsevier},
+	doi = {10.1016/j.apm.2011.11.060},
+	number = {November},
+	title = {New Mathematical Modelling and Simulation of an Industrial Accumulator for Elastic Webs},
+	year = {2012}}
+	
+@article{Kuhm2012b,
+	author = {Kuhm, David and Knittel, Dominique and Bueno, Marie Ange},
+	doi = {10.1016/j.isatra.2012.05.004},
+	issn = {00190578},
+	journal = {ISA Transactions},
+	number = {6},
+	pages = {732--742},
+	publisher = {Elsevier},
+	title = {{Robust control strategies for an electric motor driven accumulator with elastic webs}},
+	url = {http://dx.doi.org/10.1016/j.isatra.2012.05.004},
+	volume = {51},
+	year = {2012}}
+	
+@article{Kuhm2013,
+	author = {Kuhm, David and Knittel, Dominique},
+	journal = {ASME},
+	doi = {10.1115/esda2012-82798},
+	pages = {289},
+	title = {{New Designs of Industrial Accumulators for Elastic Webs: Structures Comparison}},
+	year = {2013}}
+
+@article{Gent2016,
+	author = {Gent, Alan N.},
+	journal = {Encyclopædia Britannica},
+	number = {1},
+	pages = {1-8},
+	title = {Rubber},
+	subtitle = {Chemical Compound},
+	volume = {1},
+	url = {https://www.britannica.com/science/rubber-chemical-compound},
+	urlaccessdate = {08 Jun 2019},
+	publisher = {Encyclopædia Britannica, inc.},
+	year = {2016}}
+	
+@article{Vijayaram2009,
+	author = {Vijayaram, T. R.},
+	journal = {International Journal on Design and Manufacturing Technologies},
+	pages = {20},
+	title = {{A technical review on rubber}},
+	volume = {3},
+	year = {2009}}
+	
+@article{Pagilla2001,
+	author = {Pagilla, Prabhakar R. and Garimella, Srinivas S. and Dreinhoefer, Louis H. and King, Eugene O.},
+	doi = {10.1109/28.924778},
+	issn = {00939994},
+	journal = {IEEE Transactions on Industry Applications},
+	number = {3},
+	pages = {934--940},
+	title = {{Dynamics and control of accumulators in continuous strip processing lines}},
+	volume = {37},
+	year = {2001}}
+
+@article{Pagilla2004,
+	author = {Pagilla, Prabhakar R. and Singh, Inderpal and Dwivedula, Ramamurthy V.},
+	doi = {10.1115/1.1789532},
+	isbn = {0780378962},
+	issn = {00220434},
+	journal = {Journal of Dynamic Systems, Measurement, and Control},
+	number = {3},
+	pages = {453},
+	title = {{A Study on Control of Accumulators in Web Processing Lines}},
+	volume = {126},
+	year = {2004}}
+		
+@article{Ang2005,
+	author = {Ang, Kiam Heong and Chong, Gregory and Li, Yun},
+	doi = {10.1109/TCST.2005.847331},
+	issn = {10636536},
+	journal = {IEEE Transactions on Control Systems Technology},
+	number = {4},
+	pages = {559--576},
+	title = {{PID control system analysis, design, and technology}},
+	volume = {13},
+	year = {2005}}
+	
+@article{Paz2001,
+	author = {Paz, Robert A.},
+	journal = {Klipsch School of Electrical and Computer Engineering},
+	number = {1},
+	pages = {1--3},
+	title = {{The Design of the PID Controller}},
+	year = {2001}}
+
+@article{Emhemed2012,
+	author = {Emhemed, Abdulrahman A.A. and {Bin Mamat}, Rosbi},
+	doi = {10.1016/j.proeng.2012.07.193},
+	issn = {18777058},
+	journal = {Procedia Engineering},
+	number = {12},
+	pages = {420--425},
+	title = {{Modelling and simulation for Industrial DC Motor using Intelligent control}},
+	volume = {41},
+	year = {2012}}
+	
+@article{Ozer2017,
+	author = {Özer, Tolga and Kivrak, Sinan and O\u{g}uz Yüksel},
+	issn = {2319-8753},
+	journal = {IJERSET: International Journal of Innovative Research in Science,
+Engineering and Technology},
+	number = {5},
+	title = {{H Brıdge DC Motor Drıver Desıgn and Implementatıon with Usıng dsPIC30f4011}},
+	year = {2017}}
+
+@article{Dwivedi2017,
+	author = {Dwivedi, Anurag and Tiwari, A N},
+	doi = {10.13140/RG.2.2.10646.86087},
+	number = {December},
+	title = {{A Review : Speed Control of Brushless DC Motor A Review : Speed Control of Brushless DC Motor}},
+	year = {2017}}
+
+@article{Joshi2014,
+	author = {Joshi, Bharat and Shrestha, Rakesh and Chaudhary, Ramesh},
+	journal = {Proceeding of IOE Graduate Conference},
+	number = {October 2014},
+	pages = {497--505},
+	title = {{Modeling , Simulation and Implementation of Brushed DC Motor Speed Control Using Optical Incremental Encoder Feedback DC Motor Model Simulink Modeling , Simulation and Parameter estimation}},
+	year = {2014}}
+
+
+% ||||||||||||||||||||||||||||||||||||||||||||||
+% Teses e Monografias
+% ||||||||||||||||||||||||||||||||||||||||||||||
+
+@mastersthesis{Clavelario2012,
+	address = {Rio de Janeiro},
+	author = {Renato Ferreira Clavelario},
+	month = {dez.},
+	school = {Centro Universitário Estadual da Zona Oeste},
+	title = {PROCESSAMENTO DE ELASTÔMEROS NA FABRICAÇÃO DE PNEUMÁTICOS},
+	year = {2012}}
+	
+@phdthesis{Kuperman2007,
+	author = {Kuperman, Victor},
+	school = {Läroverket AB},
+	number = {May},
+	pages = {631--653},
+	title = {PROCESSING OF ELASTOMERIC MATERIALS},
+	year = {2007}}
+
+% ||||||||||||||||||||||||||||||||||||||||||||||
+% Manuais e Normas
+% ||||||||||||||||||||||||||||||||||||||||||||||
+	
+@manual{EN12301:2000,
+	address = {United Kingdom},
+	organization = {British Standard European Norm},
+	subtitle = {Plastics and rubber machines. Calenders. Safety requirements},
+	title = {BS EN 12301:2000+A1:2008},
+	year = {2000}}
+		
+@misc{IMC,
+	author = {IMC},
+	publisher = {Cleveland Motion Controls},
+	title = {How To Size and Select Load Cells for Web Process Productivity Introduction the Handbook}}
+
+@manual{Simotion,	
+	address = {Germany},
+	organization = {Siemens AG},
+	title = {SIMOTION Web-Accumulator},
+	year = {2016}}
+
+@manual{Alucek,	
+	address = {Brasil},
+	title = {Catálogo: Perfil de Alumínio},
+	organization = {Alu-Cek},
+	volume = {1},
+	year = {2018}}
+
+@misc{INMETRO2010,
+	address = {Brasil},
+	author = {INMETRO},
+	title = {{Programa de An{\'{a}}lise de Produtos}},
+	subtitle = {Relatório Final Sobre a Análise em Papel Higiênico},
+	organization = {MINISTÉRIO DO DESENVOLVIMENTO, INDÚSTRIA E COMÉRCIO EXTERIOR},
+	pages = {1--13},
+	year = {2010}}
+
+@misc{ROHM2009,
+	address = {United States},
+	author = {{ROHM Semiconductor}},
+	title = {{Controlling DC Brush Motors with H-bridge Driver ICs}},
+	organization = {ROHM Marketing_{USA}},
+	year = {2009}}
+
+
+% ||||||||||||||||||||||||||||||||||||||||||||||
+% URL e Sites
+% ||||||||||||||||||||||||||||||||||||||||||||||
+
+@misc{FIA2018,
+	author = {FIA},
+	date-Added = {2018-07-06},
+	howpublished = {FIA - Fundação Instituto de Administração},
+	title = {Indústria 4.0: o que é, consequências, impactos positivos e negativos [Guia Completo]},
+	url = {https://fia.com.br/blog/industria-4-0/},
+	urlaccessdate = {20 mai 2019},
+	year = {2018}}
+
+@misc{SEBRAE2016,
+	author = {Rizzo, José},
+	date-Added = {2016-12-21},
+	howpublished = {Sebrae Nacional},
+	title = {Saiba o que é a Indústria 4.0 e descubra as oportunidades que ela gera},
+	url = {http://www.sebrae.com.br/sites/PortalSebrae/artigos/saiba-o-que-e-a-industria-40-e-descubra-as-oportunidades-que-ela-gera,11e01bc9c86f8510VgnVCM1000004c00210aRCRD},
+	urlaccessdate = {20 mai 2019},
+	year = {2018}}
+
+@misc{Marto2007,
+	author = {Marto, Giovana Beatriz Theodoro},
+	date-Added = {2007-05-02},
+	howpublished = {IPEF - Instituto de Pesquisas e Estudos Florestais},
+	title = {Hevea brasiliensis (Seringueira)},
+	url = {https://www.ipef.br/identificacao/hevea.brasiliensis.asp},
+	urlaccessdate = {27 mar 2019},
+	year = {2007}}
+
+@misc{Gomes,
+	author = {Gomes, Manuel Morato},
+	howpublished = {RubberPedia - Portal da Indústria da Borracha},
+	title = {Negro de Carbono},
+	url = {http://www.rubberpedia.com/negro-carbono.php},
+	urlaccessdate = {13 abr 2019}}
+	
+@misc{Cooper2015,
+	author = {Cooper, Douglas},
+	date-Added = {2015-04-07},
+	howpublished = {Control Guru - Practical Process Control},
+	title = {The P-Only Algorithm},
+	url = {https://controlguru.com/the-p-only-control-algorithm/},
+	urlaccessdate = {04 abr 2019},
+	year = {2015}}
+	
+@misc{SKF,
+	author = {SKF},
+	howpublished = {Rolamentos rígidos de esferas},
+	title = {608},
+	url = {https://www.skf.com/br/products/bearings-units-housings/ball-bearings/deep-groove-ball-bearings/deep-groove-ball-bearings/index.html?designation=608},
+	urlaccessdate = {01 abr 2019},
+	year = {2019}}
+
+@misc{Mega2019,
+	author = {RobotDyn},
+	howpublished = {MEGA+WiFi R3 ATmega2560+ESP8266, flash 32MB, USB-TTL CH340G, Micro-USB},
+	title = {Mega+WiFi},
+	url = {https://robotdyn.com/mega-wifi-r3-atmega2560-esp8266-flash-32mb-usb-ttl-ch340g-micro-usb.html},
+	urlaccessdate = {11 Jun 2019},
+	year = {2019}}
+
+@misc{L298N,
+	author = {{Baú da Eletrônica}},
+	howpublished = {Driver Motores},
+	title = {Driver Motor ponte-H - L298N},
+	url = {http://www.baudaeletronica.com.br/driver-motor-ponte-h-l298n.html},
+	urlaccessdate = {11 Jun 2019},
+	year = {2019}}
+	
+@misc{L298HBridge,
+	organization = {STMicroeletronics},
+	title = {L298},
+	subtitle = {DUAL FULL-BRIDGE DRIVER},
+	url = {https://www.sparkfun.com/datasheets/Robotics/L298_H_Bridge.pdf},
+	urlaccessdate = {25 mai 2019},
+	month = {Jan},
+	year = {2000}}
+
+@misc{AK555a,
+	author = {{Baú da Eletrônica}},
+	howpublished = {Micro Motores},
+	title = {Micro Motor DC 12V / 18200rpm},
+	url = {http://www.baudaeletronica.com.br/micro-motor-dc-12v-18200rpm.html},
+	urlaccessdate = {05 Abr 2019},
+	year = {2019}}
+
+@misc{AK555b,
+	author = {{Neoyama}},
+	howpublished = {Neomotion},
+	title = {SÉRIE AK555},
+	url = {https://neomotion.com.br/wp-content/uploads/2019/03/MMDC-R3-Sem-Red.pdf},
+	urlaccessdate = {05 Abr 2019},
+	year = {2019}}
+	
+@misc{AK360,
+	author = {{Baú da Eletrônica}},
+	howpublished = {Micro Motores},
+	title = {Micro Motor DC 12V / 7000rpm},
+	url = {http://www.baudaeletronica.com.br/micro-motor-dc-12v-7000rpm.html},
+	urlaccessdate = {05 Abr 2019},
+	year = {2019}}
+	
+@misc{ACS712,
+	author = {{Baú da Eletrônica}},
+	howpublished = {Módulos},
+	title = {Sensor de corrente ACS712 -5A a +5A},
+	url = {http://www.baudaeletronica.com.br/sensor-de-corrente-acs712-5a-a-5a.html},
+	urlaccessdate = {05 Abr 2019},
+	year = {2019}}
+	
+@misc{LM393,
+	author = {{Baú da Eletrônica}},
+	howpublished = {Módulos},
+	title = {Sensor de Velocidade Encoder},
+	url = {http://www.baudaeletronica.com.br/sensor-de-velocidade-encoder.html},
+	urlaccessdate = {05 Abr 2019},
+	year = {2019}}
+
+@misc{INA219a,
+	author = {{Texas Instruments}},
+	howpublished = {Datasheet},
+	title = {INA219 Zerø-Drift, Bidirectional Current/Power Monitor With I2C Interface},
+	url = {http://www.ti.com/lit/ds/symlink/ina219.pdf},
+	urlaccessdate = {08 Ago 2019},
+	year = {2019}}
+
+@misc{INA219,
+	author = {{Baú da Eletrônica}},
+	howpublished = {Módulos},
+	title = {Sensor de Corrente DC INA219 I2C},
+	url = {https://www.baudaeletronica.com.br/sensor-de-corrente-dc-ina219-i2c.html},
+	urlaccessdate = {08 Ago 2019},
+	year = {2019}}
+
+@misc{KY-040,
+	author = {{Baú da Eletrônica}},
+	howpublished = {Módulos},
+	title = {Encoder Decoder KY-040 Rotacional},
+	url = {https://www.baudaeletronica.com.br/encoder-decoder-ky-040-rotacional.html},
+	urlaccessdate = {08 Ago 2019},
+	year = {2019}}
+
+@misc{Arduino,
+	author = {{Arduino}},
+	howpublished = {SOFTWARE},
+	title = {Download the Arduino IDE},
+	url = {https://www.arduino.cc/en/Main/Software},
+	urlaccessdate = {08 Jun 2019},
+	year = {2019}}
+	
+@Unpublished{Fagundes2019,
+	author = {Fagundes, Jonas},
+	title = {Propriedades Mecânicas Papel Higiênico},
+	note = {[mensagem pessoal]},
+	url = {jonas.fagundes@mili.com.br},
+	urlaccessdate = {11 Jun 2019},
+	year = {2019}}

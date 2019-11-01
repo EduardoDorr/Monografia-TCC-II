@@ -18,12 +18,6 @@ Brasil, 2018. v.~1.}
   559--576, 2005.
 ISSN 10636536.}
 
-\bibitem[Arduino 2019]{Mega2019}
-\abntrefinfo{Arduino}{ARDUINO}{2019}
-{ARDUINO. \emph{Mega 2560}. 2019. Arduino Mega 2560 Rev3.
-Dispon{\'\i}vel em: \url{https://store.arduino.cc/usa/mega-2560-r3}. Acesso em:
-  11 Jun 2019.}
-
 \bibitem[{\AA}str{\"{o}}m e H{\"{a}}gglund 1995]{Astrom1995}
 \abntrefinfo{{\AA}str{\"{o}}m e H{\"{a}}gglund}{{\AA}STR{\"{O}}M;
   H{\"{A}}GGLUND}{1995}
@@ -47,20 +41,21 @@ Dispon{\'\i}vel em:
   \url{http://www.baudaeletronica.com.br/driver-motor-ponte-h-l298n.html}.
   Acesso em: 11 Jun 2019.}
 
-\bibitem[{Baú da Eletrônica} 2019]{ACS712}
+\bibitem[{Baú da Eletrônica} 2019]{KY-040}
 \abntrefinfo{{Baú da Eletrônica}}{{Baú da Eletrônica}}{2019b}
-{{Baú da Eletrônica}. \emph{Sensor de corrente ACS712 -5A a +5A}. 2019.
+{{Baú da Eletrônica}. \emph{Encoder Decoder KY-040 Rotacional}. 2019.
   Módulos.
 Dispon{\'\i}vel em:
-  \url{http://www.baudaeletronica.com.br/sensor-de-corrente-acs712-5a-a-5a.html}.
-  Acesso em: 05 Abr 2019.}
+  \url{https://www.baudaeletronica.com.br/encoder-decoder-ky-040-rotacional.html}.
+  Acesso em: 08 Ago 2019.}
 
-\bibitem[{Baú da Eletrônica} 2019]{LM393}
+\bibitem[{Baú da Eletrônica} 2019]{INA219}
 \abntrefinfo{{Baú da Eletrônica}}{{Baú da Eletrônica}}{2019c}
-{{Baú da Eletrônica}. \emph{Sensor de Velocidade Encoder}. 2019. Módulos.
+{{Baú da Eletrônica}. \emph{Sensor de Corrente DC INA219 I2C}. 2019.
+  Módulos.
 Dispon{\'\i}vel em:
-  \url{http://www.baudaeletronica.com.br/sensor-de-velocidade-encoder.html}.
-  Acesso em: 05 Abr 2019.}
+  \url{https://www.baudaeletronica.com.br/sensor-de-corrente-dc-ina219-i2c.html}.
+  Acesso em: 08 Ago 2019.}
 
 \bibitem[British Standard European Norm 2000]{EN12301:2000}
 \abntrefinfo{British Standard European Norm}{BRITISH STANDARD EUROPEAN
@@ -249,6 +244,14 @@ Dispon{\'\i}vel em:
   \url{http://www.sebrae.com.br/sites/PortalSebrae/artigos/saiba-o-que-e-a-industria-40-e-descubra-as-oportunidades-que-ela-gera,11e01bc9c86f8510VgnVCM1000004c00210aRCRD}.
   Acesso em: 20 mai 2019.}
 
+\bibitem[RobotDyn 2019]{Mega2019}
+\abntrefinfo{RobotDyn}{ROBOTDYN}{2019}
+{ROBOTDYN. \emph{Mega+WiFi}. 2019. MEGA+WiFi R3 ATmega2560+ESP8266, flash 32MB,
+  USB-TTL CH340G, Micro-USB.
+Dispon{\'\i}vel em:
+  \url{https://robotdyn.com/mega-wifi-r3-atmega2560-esp8266-flash-32mb-usb-ttl-ch340g-micro-usb.html}.
+  Acesso em: 11 Jun 2019.}
+
 \bibitem[Rocha, Lovison e Pierozan 2003]{Rocha2003}
 \abntrefinfo{Rocha, Lovison e Pierozan}{ROCHA; LOVISON; PIEROZAN}{2003}
 {ROCHA, E.~C.; LOVISON, V. M.~H.; PIEROZAN, N.~J. \emph{Tecnologia de
@@ -271,6 +274,13 @@ Germany, 2016.}
 Dispon{\'\i}vel em:
   \url{https://www.skf.com/br/products/bearings-units-housings/ball-bearings/deep-groove-ball-bearings/deep-groove-ball-bearings/index.html?designation=608}.
   Acesso em: 01 abr 2019.}
+
+\bibitem[{Texas Instruments} 2019]{INA219a}
+\abntrefinfo{{Texas Instruments}}{{Texas Instruments}}{2019}
+{{Texas Instruments}. \emph{INA219 Zerø-Drift, Bidirectional Current/Power
+  Monitor With I2C Interface}. 2019. Datasheet.
+Dispon{\'\i}vel em: \url{http://www.ti.com/lit/ds/symlink/ina219.pdf}. Acesso
+  em: 08 Ago 2019.}
 
 \bibitem[{Yu} 2006]{Yu2006}
 \abntrefinfo{{Yu}}{{Yu}}{2006}
