@@ -216,6 +216,8 @@
 
 	A partir desta seção será apresentado o projeto mecânico do bobinador e desbobinador, que por similaridade serão chamados apenas por bobinadores. Eles terão como dimensões totais de $\SI{254x60x100}{{\milli\metre}}$, sendo composto apenas por peças impressas, um motoredutor de tensão contínua e o rolo principal terá pontas de eixo quadrado de forma a facilitar a montagem e remoção do rolo de papel. Na figura \ref{fig:Bobinadorproj}, é apresentado o modelo 3D final do projeto desenvolvido no \textit{software} \textit{SolidWorks}\textcopyright :
 
+\todo[inline, color=red!80]{Ver com João $\SI{254x60x100}{{\milli\metre}}$}
+
 \begin{figure}[H]
 	\caption{Projeto mecânico do bobinador com todas as partes.}
 	\centering
@@ -396,7 +398,7 @@
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
 
-	Agora com o diagrama da figura \ref{fig:motorblocos} pode-se acessar diretamente a leitura de corrente e aplicação de torque ao eixo do motor, visto como $T_d$.
+	Agora com o diagrama da figura \ref{fig:motorblocos} pode-se acessar diretamente a leitura de corrente e velocidade, além da aplicação de torque ao eixo do motor, visto como $T_d$.
 
 \subsection{Material de Teste}
 
@@ -593,7 +595,7 @@
 	
 \begin{equation}
 	I = \frac{V}{R}
-\end{equation},
+\end{equation}
 
 	Para este projeto, optou-se pela aplicação de um módulo baseado no CI \textit{INA219} de fabricação da \textit{Texas Instruments} que é um sensor bidirecional de corrente e monitor de energia com uma interface de comunicação \textit{I2C} com capacidade de retornar informações de corrente, tensão e potência na carga com uma acurácia máxima de $\SI{0,5}{\percent}$ em uma faixa de tensão de $\SIrange{0}{26}{\volt}$ \citeonline{INA219a}. Na figura \ref{fig:INA219} é visto o módulo de medição:
 
@@ -604,6 +606,31 @@
 	\label{fig:INA219}
 	\fonte{Adaptado de \citeonline{INA219}.} 
 \end{figure}
+
+\subsection{Medição de Tensão}
+
+	Apesar da possibilidade de controle indireto de tensão no material, optou-se por utilizar um método de medição direta com o uso de \textit{strain gauges}, que são sensores resistivos para medição da distância de deformação de corpos, assim podendo obter informações como força, pressão e aceleração atuantes sobre o corpo medido. Os  \textit{strain gauges} são extremamente úteis no campo de análise de estresse nos mais diversos tipos de corpos, funcionando por um princípio descoberto por William Thompson em 1856, de que fios de cobre ou de ferro tinham a sua resistência elétrica alterada quando eram esticados ou comprimidos por alguma força externa \citeonline{Strain2009}.
+	
+	Graças a esta descoberto, hoje os \textit{strain gauges} são largamente utilizados na criação de células de carga, inclusive sendo aplicados em linhas de processamento com sistemas de acúmulo para medição da tensão do material e controle em malha fechada \citeonline{Gilbert2018}. Para isto, foi instalado nos mancais centrais da cama fixa de rolos, sensores \textit{strain gauges} para a medição direta da deformação do mancal, causada pelo esforço do papel sendo tracionado pelo carro móvel.
+
+\begin{figure}[H]
+	\caption{Célula de carga e medição de tensão no acumulador.}
+	\centering
+	\includegraphics[width = 0.6\linewidth]{i/acumuladorstrain.png}
+	\label{fig:acumuladorstrain}
+	\fonte{Elaborado pelo autor.} 
+\end{figure}
+
+	Conforme a figura \ref{fig:acumuladorstrain}, com o sensor montado nesta posição, é possível fazer a medição direta da tensão no material, sendo esta duas vezes maior, devido ao laço de papel que envolve o rolo de alumínio. Para este projeto, optou-se pela utilização de um módulo baseado no CI \textit{HX711} de fabricação da \textit{Mouser Electronics} que é um conversor analógico digital (\textit{ADC}) de 24 bits para medição de células de carga. Na figura \ref{fig:HX711} é visto o módulo de medição:
+
+\begin{figure}[H]
+	\caption{Módulo conversor de célula de carga.}
+	\centering
+	\includegraphics[width = 0.3\linewidth]{i/HX711.png}
+	\label{fig:HX711}
+	\fonte{Adaptado de \citeonline{HX711}.} 
+\end{figure}
+
 
 \subsection{Medição de Posição e Velocidade}
 
@@ -669,31 +696,29 @@
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
 
-	Os bobinadores operarão em uma malha em cascata de torque e velocidade, procurando manter uma velocidade constante e um torque variável conforme o material é desbobinado ou bobinado no sistema. Como visto na seção \ref{cap:bobinadores}, a medida que o material é desenrolado do bobinador $\sharp1$, tanto o raio como o momento de inércia do sistema diminuem, assim, procurando manter uma tensão constante sobre o material, torna-se necessário reduzir o torque de saída proporcionalmente. Em contrapartida, no bobinador $\sharp2$ este deve aumentar o torque, mantendo a velocidade, pois o raio e o momento de inércia devem aumentar. Com a medição de velocidade e conhecendo a densidade de massa e espessura do material, disponíveis na tabela \ref{tab:caracpapel}, é possível estimar os novos valores de raio e momento de inércia e, assim, recalcular o torque necessário para se manter uma força constante. Para o acumulador, existe a vantagem de que a inércia do sistema é sempre constante, não havendo necessidade de se preocupar com parâmetros variáveis no controle do sistema. A malha deste sistema deve manter o torque constante no motor e verificar a posição onde o carro se encontra, gerando alarmes para os limites mecânicos superior e inferior, evitando avarias à planta. Conforme graficamente exemplificado na figura \ref{fig:fluxobasico}, e comentado no parágrafo anterior, o programa deverá ficar constantemente corrigindo a saída de controle de acordo com as mudanças lidas, sendo que está dividido em 3 malhas de controle, uma para cada equipamento.
-	
-	Os bobinadores possuem a malha da figura \ref{fig:stctrlmotor}, onde $V_{SP}$ é a referência de velocidade linear do bobinador, $V_{PV}$ é a velocidade linear efetiva do bobinador, $K_V$ é o fator de conversão de velocidade angular para linear e $T_b$ é o torque da carga montada no eixo do motor.
-	
-\begin{figure}[H]
-	\caption{Diagrama de blocos da malha de controle dos bobinadores.}
-	\centering
-	\includegraphics[width = 1\linewidth]{i/stctrlmotor.png}
-	\label{fig:stctrlmotor}
-	\fonte{Elaborado pelo Autor.} 
-\end{figure}
-	
-	Já o acumulador possui uma malha similar, vista na figura \ref{fig:stctrlmotor1}, onde $\tau_{SP}$ é a referência de torque no eixo do sistema de transmissão, $\tau_{PV}$ é o torque efetivo visto no sistema de transmissão, $T_c$ é o torque do carro vertical e da carga e $L$ é a posição do carro.
+	O bobinador de saída operará isoladamente do sistema de controle, sendo controlado manualmente com aplicação direta de tensão em seus terminais. Enquanto que na entrada do acumulador o papel será desenrolado e freado manualmente para controlar a variação de tensão no material e assim permitir que o controle do acumulador atue e possa ser analisado e validado. O acumulador possui a opção de duas malhas de controle diferentes, sendo uma malha de posição, vista na figura \ref{fig:ctrlacumulador}, onde $P_{SP}$ é a referência de posição do carro móvel e $P_{PV}$ é a posição efetiva do carro móvel.
 
 \begin{figure}[H]
-	\caption{Diagrama de blocos da malha de controle do acumulador.}
+	\caption{Diagrama de blocos da malha de posição do acumulador.}
 	\centering
-	\includegraphics[width = 1\linewidth]{i/stctrlmotor1.png}
-	\label{fig:stctrlmotor1}
+	\includegraphics[width = 0.9\linewidth]{i/ctrlacumulador.PNG}
+	\label{fig:ctrlacumulador}
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
 
-	O sistema supervisório é desenvolvido em linguagem $C\sharp$ no ambiente do \textit{VisualStudio}\textcopyright e servirá para alterar os valores de referência do sistema, como torque, velocidade e os ganhos $K_p$, $K_i$ e $K_d$ das malhas de controle para eventuais ajustes manuais, assim como visualização das leituras das entradas analógicas e saídas da planta. Através do supervisório também será possível carregar diferentes de tipos de processo, alternando entre operação contínua, acúmulo e desacúmulo do acumulador, ativar o sistema de auto-sintonia, inserir os valores iniciais de diâmetro nas bobinas, iniciar e desligar o sistema.
+	Já a segunda malha de controle é uma malha de tensão, vista na figura \ref{fig:ctrlacumulador1}, onde $T_{SP}$ é a referência de tensão no material sendo esticado e $T_{PV}$ é a tensão efetiva medida pela célula de carga.
+
+\begin{figure}[H]
+	\caption{Diagrama de blocos da malha de tensão do acumulador.}
+	\centering
+	\includegraphics[width = 0.9\linewidth]{i/ctrlacumulador1.PNG}
+	\label{fig:ctrlacumulador1}
+	\fonte{Elaborado pelo Autor.} 
+\end{figure}
+
+	O sistema supervisório é desenvolvido em linguagem $C\sharp$ no ambiente do \textit{VisualStudio}\textcopyright  e servirá para alterar os valores de referência do sistema, como tensão e posição, além dos ganhos $K_p$, $K_i$ e $K_d$ das malhas de controle para eventuais ajustes manuais. A partir dele também é possível visualizar o valor das principais variáveis de processo como corrente do motor, tensão na célula de carga, velocidade e posição do carro móvel. Através do supervisório será possível selecionar o tipo de modo de controle como manual, por tensão ou por posição, além de gerar relatórios do funcionamento da planta.
 	
-	O método de sintonia escolhido para encontrar os parâmetros da planta e parametrizar o controlador PID é o método do relé com histerese já comentado neste trabalho. Desta forma, colocando o carro móvel e os bobinadores a oscilarem sem carga e lendo a frequência e amplitude da oscilação, pode-se obter os ganhos do controlador utilizando a equação \ref{eq:n(a)} e o quadro \ref{qua:ZieglerNichols}, assim tendo um ponto de partida para ajustar e otimizar o sistema com outras formas de controle mais robustas e refinadas.
+	O método de sintonia escolhido para encontrar os parâmetros da planta e parametrizar o controlador PID é o método do relé com histerese já comentado neste trabalho. Desta forma, colocando o carro móvel a oscilar sem carga e lendo a frequência e amplitude da oscilação, pode-se obter os ganhos do controlador utilizando a equação \ref{eq:n(a)} e o quadro \ref{qua:ZieglerNichols}, assim tendo um ponto de partida para ajustar e otimizar o sistema com outras formas de controle mais robustas e refinadas, sendo que a função relé pode ser executada através do sistema supervisório.
 
 % ----------------------------------------------
 

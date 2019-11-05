@@ -36,33 +36,32 @@
 \contentsline {section}{\numberline {3.2}Acionamento e Instrumenta\IeC {\c c}\IeC {\~a}o}{55}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Acionamento dos Motores}{55}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Medi\IeC {\c c}\IeC {\~a}o de Corrente}{59}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Medi\IeC {\c c}\IeC {\~a}o de Posi\IeC {\c c}\IeC {\~a}o e Velocidade}{59}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Controle}{61}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Embarcado}{61}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Software}{62}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.2.3}Medi\IeC {\c c}\IeC {\~a}o de Tens\IeC {\~a}o}{59}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Medi\IeC {\c c}\IeC {\~a}o de Posi\IeC {\c c}\IeC {\~a}o e Velocidade}{61}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}Controle}{62}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Embarcado}{62}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Software}{63}{subsection.3.3.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Simula\IeC {\c c}\IeC {\~a}o do Modelo em Tempo Cont\IeC {\'\i }nuo}}{65}{chapter.4}
-\contentsline {section}{\numberline {4.1}Identifica\IeC {\c c}\IeC {\~a}o dos Par\IeC {\^a}metros do Motor}{65}{section.4.1}
-\contentsline {section}{\numberline {4.2}Modelagem do Sistema em Ambiente Simulink}{65}{section.4.2}
-\contentsline {section}{\numberline {4.3}Comportamento com Controle Proporcional}{66}{section.4.3}
-\contentsline {section}{\numberline {4.4}Comportamento com Controle Proporcional-Integral}{66}{section.4.4}
-\contentsline {section}{\numberline {4.5}Comportamento com Controle Proporcional-Integral-Derivativo}{66}{section.4.5}
-\contentsline {section}{\numberline {4.6}Compara\IeC {\c c}\IeC {\~a}o entre os Controladores}{66}{section.4.6}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Simula\IeC {\c c}\IeC {\~a}o do Modelo em Tempo Cont\IeC {\'\i }nuo}}{66}{chapter.4}
+\contentsline {section}{\numberline {4.1}Identifica\IeC {\c c}\IeC {\~a}o dos Par\IeC {\^a}metros do Motor}{67}{section.4.1}
+\contentsline {section}{\numberline {4.2}Comportamento com Controle Proporcional}{68}{section.4.2}
+\contentsline {section}{\numberline {4.3}Comportamento com Controle Proporcional-Integral}{69}{section.4.3}
+\contentsline {section}{\numberline {4.4}Comportamento com Controle Proporcional-Integral-Derivativo}{70}{section.4.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Implementa\IeC {\c c}\IeC {\~a}o do Controle em Tempo Discreto}}{68}{chapter.5}
-\contentsline {section}{\numberline {5.1}Organiza\IeC {\c c}\IeC {\~a}o e Estrutura do Software}{68}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Software Embarcado}{68}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Software Supervis\IeC {\'o}rio}{69}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Comportamento com Controle Proporcional}{69}{section.5.2}
-\contentsline {section}{\numberline {5.3}Comportamento com Controle Proporcional-Integral}{69}{section.5.3}
-\contentsline {section}{\numberline {5.4}Comportamento com Controle Proporcional-Integral-Derivativo}{69}{section.5.4}
-\contentsline {section}{\numberline {5.5}Compara\IeC {\c c}\IeC {\~a}o entre os Controladores}{70}{section.5.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Implementa\IeC {\c c}\IeC {\~a}o do Controle em Tempo Discreto}}{72}{chapter.5}
+\contentsline {section}{\numberline {5.1}Organiza\IeC {\c c}\IeC {\~a}o e Estrutura do Software}{72}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Software Embarcado}{72}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Software Supervis\IeC {\'o}rio}{73}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Comportamento com Controle Proporcional}{73}{section.5.2}
+\contentsline {section}{\numberline {5.3}Comportamento com Controle Proporcional-Integral}{73}{section.5.3}
+\contentsline {section}{\numberline {5.4}Comportamento com Controle Proporcional-Integral-Derivativo}{73}{section.5.4}
+\contentsline {section}{\numberline {5.5}Compara\IeC {\c c}\IeC {\~a}o entre os Controladores}{74}{section.5.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Resultados}}{71}{chapter.6}
-\contentsline {section}{\numberline {6.1}An\IeC {\'a}lise dos Resultados}{72}{section.6.1}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Resultados}}{75}{chapter.6}
+\contentsline {section}{\numberline {6.1}An\IeC {\'a}lise dos Resultados}{76}{section.6.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Conclus\IeC {\~a}o}}{73}{chapter.7}
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Conclus\IeC {\~a}o}}{77}{chapter.7}
 \vspace {\cftbeforechapterskip }
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase {Refer\^encias Bibliogr\'aficas}}{74}{section*.64}
+\contentsline {chapter}{\MakeTextUppercase {Refer\^encias Bibliogr\'aficas}}{78}{section*.75}

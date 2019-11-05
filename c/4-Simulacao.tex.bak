@@ -1,0 +1,126 @@
+% ||||||||||||||||||||||||||||||||||||||||||||||
+% CAPITULO 4
+% ||||||||||||||||||||||||||||||||||||||||||||||
+\chapter{Simulação do Modelo em Tempo Contínuo}
+
+	Para a simulação do sistema do acumulador, decidiu-se pela utilização do \textit{software} \textit{MATLAB}\textcopyright , devido a simplicidade da utilização das bibliotecas do pacote \textit{Simulink} que vem integrado ao programa. Utilizando a modelagem do motor de corrente contínua já apresentado neste trabalho, foram feitas algumas adições ao modelo contemplando a ação da carga do sistema e a ação do redutor acoplador ao motor de forma a obter-se uma representação em blocos do sistema conforme a figura \ref{fig:matlabctrl}:
+	
+\begin{figure}[H]
+	\caption{Diagrama de blocos do acumulador.}
+	\centering
+	\includegraphics[width = 0.9\linewidth]{i/matlabctrl.png}
+	\label{fig:matlabctrl}
+	\fonte{Elaborado pelo Autor.} 
+\end{figure}
+
+	Como pode-se observar no modelo, a partir do acumulador é possível retirar quatro informações importantes, que são o torque do motor, a corrente de armadura e a velocidade e posição do carro móvel, este último está identificado como \textit{Carriage}, sendo adicionado ao sistema como uma força peso. Ao expandir o bloco do acumulador, pode-se ver os detalhes de como a inércia refletida e o peso da carga atuam sobre o motor do acumulador.
+	
+\begin{figure}[H]
+	\caption{Diagrama de blocos do acumulador explodido.}
+	\centering
+	\includegraphics[width = 0.9\linewidth]{i/matlabctrl1.png}
+	\label{fig:matlabctrl1}
+	\fonte{Elaborado pelo Autor.} 
+\end{figure}
+
+	Na figura \ref{fig:matlabctrl1}, $J_p$ é a inércia das polias sincronizadoras, $M_l$ é a força peso do carro móvel e $R_p$ é o raio da polia. Estes termos retornam em forma de torque consumido para o motor, sendo reduzidos por $N^{2}$, onde $N$ é o fator de redução do redutor, neste caso 1:64. Importante também perceber que a rotação de saída do motoredutor é derivada para calcular a inércia refletida.
+	
+% ----------------------------------------------	
+
+\section{Identificação dos Parâmetros do Motor}
+
+	Antes de simular o sistema, é necessário encontrar os parâmetros do motor, sendo eles: resistência de armadura ($R_a$), indutância de armadura ($L_a$), constante de torque ($K_T$), constante de velocidade ($K_{\omega}$), inércia do rotor ($J_m$) e o atrito viscoso do motor ($B_m$). Para isto, seguiu-se os passos descritos na dissertação de \citeauthor{Russolo2011}, onde com o uso de multímetro, osciloscópio e uma fonte variável, foi possível encontrar valores aproximados para os parâmetros do motor.
+	
+\begin{table}[H]
+  \caption{Parâmetros do motor AK360/78.8PL12S7000S.}
+  \label{tab:parmotor}
+  \centering%
+  \begin{minipage}{.55\textwidth}
+    \begin{tabular*}{\textwidth}{cc}
+      \hline
+      Grandeza & Unidade \\ \hline
+      \hline
+      Resistência de Armadura	&	$\SI{7,5}{{\ohm}}$ \\
+      Indutância de Armadura	&	$\SI{13,3}{\milli\henry}$ \\ 
+      Constante de Torque		&	$\SI{0,01502}{\newton \cdot \metre} / A$  \\
+      Constante de Velocidade	&	$\SI{0,01502}{\volt \cdot \second} / rad$  \\
+      Momento de Inércia 		&	$\SI{1,9d-6}{\kilogram\square\metre}$  \\ 
+      Atrito Viscoso			&	$\SI{1,6d-6}{\newton \cdot \metre \cdot \second} / rad$  \\ \hline
+    \end{tabular*}
+    \fonte{Elaborado pelo Autor.} 
+  \end{minipage}
+\end{table}
+
+	Aplicando os dados encontrados para o motor e conhecendo a força peso e inércia do sistema mecânico, obtidos com o \textit{software} \textit{SolidWorks}\textcopyright , pode-se obter a resposta ao degrau vista na figura \ref{fig:MatlabStepResponseKp1Ki0Kd0}:
+
+\begin{figure}[H]
+	\caption{Resposta ao degrau simulada do acumulador com ganho proporcional unitário.}
+	\centering
+	\includegraphics[width = 0.9\linewidth]{i/MatlabStepResponseKp1Ki0Kd0.png}
+	\label{fig:MatlabStepResponseKp1Ki0Kd0}
+	\fonte{Elaborado pelo Autor.} 
+\end{figure}
+
+	Conforme observa-se na figura \ref{fig:MatlabStepResponseKp1Ki0Kd0}, a partir do momento que é dada a referência o sistema tentar buscar, mas apresenta um grande erro em regime para um ganho unitário no controlador.
+	
+% ----------------------------------------------
+
+\section{Comportamento com Controle Proporcional}
+
+	Simulando novamente, mas desta vez variando o ganho proporcional para verificar o comportamento do sistema a medido que o ganho $K_p$ é aumentado, obtêm-se a resposta:
+	
+\begin{figure}[H]
+	\caption{Resposta ao degrau simulada do acumulador variando o ganho proporcional.}
+	\centering
+	\includegraphics[width = 0.9\linewidth]{i/MatlabStepResponseKp2Kp5Kp10Kp25Kp50.png}
+	\label{fig:MatlabStepResponseKp2Kp5Kp10Kp25Kp50}
+	\fonte{Elaborado pelo Autor.} 
+\end{figure}
+
+	Conforme observa-se na figura \ref{fig:MatlabStepResponseKp2Kp5Kp10Kp25Kp50}, a medida que é aumentado o ganho sistema, ele se torna cada vez mais rápido, atingindo o limite do tempo de subida com ganho $K_p = 10$, a partir deste ponto o sistema começa a apresentar cada vez mais oscilação e um menor erro em regime, mas nunca de fato alcançando a referência.
+
+% ----------------------------------------------
+
+\section{Comportamento com Controle Proporcional-Integral}
+
+	Efetuando uma nova série de simulações, fixando o ganho proporcional em 25 e alterando somente o ganho integral, obtêm-se a resposta:
+	
+\begin{figure}[H]
+	\caption{Resposta ao degrau simulada do acumulador variando o ganho integral.}
+	\centering
+	\includegraphics[width = 0.9\linewidth]{i/MatlabStepResponseKi2Ki5Ki10Ki25Ki50.png}
+	\label{fig:MatlabStepResponseKi2Ki5Ki10Ki25Ki50}
+	\fonte{Elaborado pelo Autor.} 
+\end{figure}
+
+	Conforme observa-se na figura \ref{fig:MatlabStepResponseKi2Ki5Ki10Ki25Ki50}, a medida que é aumentado o ganho integral, maior fica o sobressinal do sistema, mas todos em determinado ponto estabilizam ainda mais próximo da referência e com uma oscilação muito menor do que apenas com o uso do controle proporcional. Considerando o grande sobressinal observado para os maiores ganhos, torna-se muito interessante a aplicação de um \textit{anti-windup}, para diminuir o erro de controle acumulado devido a saturação da fonte, limitada em $\SI{12}{\volt}$:
+	
+\begin{figure}[H]
+	\caption{Resposta ao degrau simulada do acumulador variando o ganho integral e ação anti-windup.}
+	\centering
+	\includegraphics[width = 0.9\linewidth]{i/MatlabStepResponseKi2Ki5Ki10Ki25Ki50WU.png}
+	\label{fig:MatlabStepResponseKi2Ki5Ki10Ki25Ki50WU}
+	\fonte{Elaborado pelo Autor.} 
+\end{figure}
+
+	Agora com a ação do \textit{anti-windup} operando o sobressinal para todos os ganhos diminuíram e para $K_i = 50$ e $K_i = 25$, especificamente, o sistema apresentou praticamente nenhum erro em regime com um tempo de acomodação menor do que sem a ação operando.
+	
+% ----------------------------------------------
+
+\section{Comportamento com Controle Proporcional-Integral-Derivativo}
+
+	Para adicionar o controle derivativo ao sistema, foi fixado o valor dos ganhos proporcional e integral em 25 e 25, respectivamente, e alterando somente o ganho derivativo, para se obter a resposta:
+	
+\begin{figure}[H]
+	\caption{Resposta ao degrau simulada do acumulador variando o ganho derivativo.}
+	\centering
+	\includegraphics[width = 0.9\linewidth]{i/MatlabStepResponseKd0,02Kd0,05Kd0,1Kd0,25Kd0,5WU.png}
+	\label{fig:MatlabStepResponseKd0,02Kd0,05Kd0,1Kd0,25Kd0,5WU}
+	\fonte{Elaborado pelo Autor.} 
+\end{figure}
+
+	Observando a figura \ref{fig:MatlabStepResponseKd0,02Kd0,05Kd0,1Kd0,25Kd0,5WU}, a adição do ganho derivativo reduziu ainda mais o sobressinal do sistema em todas as respostas, além de levar as respostas ao regime mais rapidamente e próximo da referência e com pouquíssima oscilação.
+	
+	Comparando todas as respostas obtidas, pode-se concluir que o sistema que apresentou a melhor resposta, visto sobressinal, tempo de acomodação e erro em regime, utilizou os ganhos de controlador $K_p = 25$, $K_i = 25$ e $K_d = 0,5$, com a ação \textit{anti-windup} ativa.
+
+% ----------------------------------------------

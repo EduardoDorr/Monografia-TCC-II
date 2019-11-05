@@ -1,0 +1,59 @@
+% ||||||||||||||||||||||||||||||||||||||||||||||
+% CAPITULO 5
+% ||||||||||||||||||||||||||||||||||||||||||||||
+\chapter{Implementação do Controle em Tempo Discreto}
+
+	\lipsum[1]
+	
+	\begin{lstlisting}[caption={Minimização da função do controlador PID}]
+funcao(Kp, Ti, Td, n, dados_objetivo, y_original, soma_erro) :
+    erro = referencia - dados_objetivo[n]
+    se (n>0) :
+        soma_erro += erro
+        derivada =  ({}dados_objetivo[n] -  dados_objetivo[n-1]/dt
+        saida_controlador = Kp * erro + (Kp/Ti)*soma_erro*dt - Kp*Td*derivada
+    se nao :
+        saida_controlador = 0
+    n += 1
+    retorna saida_controlador - y_original
+\end{lstlisting}
+	
+% ----------------------------------------------
+	
+\section{Organização e Estrutura do Software}
+
+	\lipsum[1]
+
+\subsection{Software Embarcado}
+
+	\lipsum[1]
+	
+\subsection{Software Supervisório}
+
+	\lipsum[1]
+	
+% ----------------------------------------------	
+
+\section{Comportamento com Controle Proporcional}
+
+	\lipsum[1]
+
+% ----------------------------------------------
+
+\section{Comportamento com Controle Proporcional-Integral}
+
+	\lipsum[1]
+	
+% ----------------------------------------------
+
+\section{Comportamento com Controle Proporcional-Integral-Derivativo}
+
+	\lipsum[1]
+
+% ----------------------------------------------
+
+\section{Comparação entre os Controladores}
+
+	\lipsum[1]
+
+% ----------------------------------------------

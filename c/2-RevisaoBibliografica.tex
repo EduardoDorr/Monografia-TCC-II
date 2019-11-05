@@ -291,6 +291,8 @@
 	\fonte{Adaptado de \citeonline{Paz2001}.} 
 \end{figure}
 
+\todo[inline, color=red!80]{Inserir abaixo da figura um texto sobre cada sistema apresentado}
+
 \subsection{Controlador PID}
 
 	Controlador proporcional-integral-derivativo, ou simplesmente controlador PID, é uma técnica de controle de processos que une as ações derivativa, integral e proporcional fazendo com que o sinal de erro seja minimizado pela ação proporcional, zerado pela ação integral e obtido com uma velocidade antecipativa pela ação derivativa. Este tipo de controlador é um dos controladores mais utilizados em aplicações de automação industrial, sendo encontrado no interior de controladores eletrônicos, em microprocessadores dedicados ou em software de controladores programáveis e outros equipamentos de controle \cite{Levine2011}.
@@ -373,7 +375,7 @@
 	\fonte{Elaborado pelo autor.}
 \end{figure}
 
-	Como pode ser observado na imagem \ref{fig:SAntiWindup}, a curva laranja tracejada, que representa o controle, insere um sinal que o atuador não é capaz de responder e acaba saturando, representado pela curva roxa pontilhada, o que causa um efeito indesejado na resposta da planta, inclusive tendo um sobressinal grande, representado pela curva vermelha que tenta buscar a referência representada pela curva azul.
+	Como pode ser observado na figura \ref{fig:SAntiWindup}, a curva laranja tracejada, que representa o controle, insere um sinal que o atuador não é capaz de responder e acaba saturando, representado pela curva roxa pontilhada, o que causa um efeito indesejado na resposta da planta, inclusive tendo um sobressinal grande, representado pela curva vermelha que tenta buscar a referência representada pela curva azul.
 
 	Uma forma de minimizar este problema é com a implementação do \textit{anti-windup}, que é uma topologia de PID que realimenta a ação integral do controlador com o excesso do sinal de controle que satura o atuador de forma a impedir um acúmulo de erro muito grande.
 
@@ -399,7 +401,7 @@
 
 	Existem diversos métodos de sintonia de controladores para se encontrar os parâmetros do controlador PID, sendo dois dos métodos mais conhecidos e difundidos no mundo foram apresentados em 1942 por Ziegler e Nichols \cite{Yu2006}, sendo ainda muito usados em suas formas originais ou com algumas reformulações. O primeiro método é conhecido como Resposta ao Degrau, sendo aplicado em sistemas com malha aberta e utiliza dois parâmetros medidos na resposta para se calcular o controlador PID, enquanto o segundo método, conhecido como Resposta em Frequência, também utiliza dois parâmetros medidos, mas isto ocorre com a malha fechada. Neste projeto será abordado apenas o método da Resposta à Frequência.
 	
-	Segundo Ziegler e Nichols \cite{Ogata2011}, neste método os parâmetros do controlador são alterados para $T_i = \infty$ e $T_d = 0$ e, usando apenas o controle proporcional, o ganho $K$ é aumentado lentamente de $0$ até atingir o \textit{ganho crítico} da planta, ou $K_u$, onde a resposta da planta passa a ter uma oscilação sustentada, ou seja, alcança-se o ponto de estabilidade marginal. A partir das resposta, é medido o período de oscilação, conhecido como \textit{período crítico}, ou $P_u$, fazendo assim com que os parâmetros da planta sejam tomados experimentalmente. Importante ressaltar que, se para qualquer valor de $K$ a resposta não apresentar oscilação, significa que a planta não possui um $K_u$, tornando este método não aplicável.
+	Segundo Ziegler e Nichols \cite{Ogata2011}, neste método os parâmetros do controlador são alterados para $T_i = \infty$ e $T_d = 0$ e, usando apenas o controle proporcional, o ganho $K$ é aumentado lentamente de $0$ até atingir o \textit{ganho crítico} da planta, ou $K_u$, onde a resposta da planta passa a ter uma oscilação sustentada, ou seja, alcança-se o ponto de estabilidade marginal. A partir das resposta, é medido o período de oscilação, conhecido como \textit{período crítico}, ou $P_u$, fazendo assim com que os parâmetros da planta sejam tomados experimentalmente, conforme a figura \ref{fig:FrequencyResponse}. Importante ressaltar que, se para qualquer valor de $K$ a resposta não apresentar oscilação, significa que a planta não possui um $K_u$, tornando este método não aplicável.
 	
 \begin{figure}[H]
 	\caption{Representação da oscilação sustentada com o período $P_u$ medido em segundos.}

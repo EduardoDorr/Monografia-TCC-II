@@ -49,13 +49,27 @@ Dispon{\'\i}vel em:
   \url{https://www.baudaeletronica.com.br/encoder-decoder-ky-040-rotacional.html}.
   Acesso em: 08 Ago 2019.}
 
-\bibitem[{Baú da Eletrônica} 2019]{INA219}
+\bibitem[{Baú da Eletrônica} 2019]{HX711}
 \abntrefinfo{{Baú da Eletrônica}}{{Baú da Eletrônica}}{2019c}
+{{Baú da Eletrônica}. \emph{Módulo Conversor HX711 para Sensor de Peso}.
+  2019. Módulos.
+Dispon{\'\i}vel em:
+  \url{https://www.baudaeletronica.com.br/modulo-conversor-hx711-para-sensor-de-peso.html}.
+  Acesso em: 10 Out 2019.}
+
+\bibitem[{Baú da Eletrônica} 2019]{INA219}
+\abntrefinfo{{Baú da Eletrônica}}{{Baú da Eletrônica}}{2019d}
 {{Baú da Eletrônica}. \emph{Sensor de Corrente DC INA219 I2C}. 2019.
   Módulos.
 Dispon{\'\i}vel em:
   \url{https://www.baudaeletronica.com.br/sensor-de-corrente-dc-ina219-i2c.html}.
   Acesso em: 08 Ago 2019.}
+
+\bibitem[Britannica 2009]{Strain2009}
+\abntrefinfo{Britannica}{BRITANNICA}{2009}
+{BRITANNICA, T.~E. of E. \emph{Strain Gauge}. 2009. Encyclopædia Britannica.
+Dispon{\'\i}vel em: \url{https://www.britannica.com/technology/strain-gauge}.
+  Acesso em: 15 out 2019.}
 
 \bibitem[British Standard European Norm 2000]{EN12301:2000}
 \abntrefinfo{British Standard European Norm}{BRITISH STANDARD EUROPEAN
@@ -100,6 +114,11 @@ Dispon{\'\i}vel em: \url{https://fia.com.br/blog/industria-4-0/}. Acesso em: 20
 Dispon{\'\i}vel em:
   \url{https://www.britannica.com/science/rubber-chemical-compound}. Acesso em:
   08 Jun 2019.}
+
+\bibitem[Gilbert 2018]{Gilbert2018}
+\abntrefinfo{Gilbert}{GILBERT}{2018}
+{GILBERT, W. Web tension control fundamentals.
+2018.}
 
 \bibitem[Gomes]{Gomes}
 \abntrefinfo{Gomes}{GOMES}{}
@@ -281,6 +300,14 @@ Dispon{\'\i}vel em:
   Monitor With I2C Interface}. 2019. Datasheet.
 Dispon{\'\i}vel em: \url{http://www.ti.com/lit/ds/symlink/ina219.pdf}. Acesso
   em: 08 Ago 2019.}
+
+\bibitem[{Tiago de Arruda Russolo} 2011]{Russolo2011}
+\abntrefinfo{{Tiago de Arruda Russolo}}{{Tiago de Arruda Russolo}}{2011}
+{{Tiago de Arruda Russolo}.
+\emph{{Sistema de Controle de Posi{\c{c}}{\~{a}}o Microprocessado com
+  Servomotor CC}}.
+84~p. Disserta\c{c}\~{a}o (Mestrado) --- Escola de Engenharia de São Carlos,da
+  Universidade de São Paulo, São Paulo, 2011.}
 
 \bibitem[{Yu} 2006]{Yu2006}
 \abntrefinfo{{Yu}}{{Yu}}{2006}
