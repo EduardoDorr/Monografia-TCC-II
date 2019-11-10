@@ -1,59 +1,68 @@
 \babel@toc {brazil}{}
 \babel@toc {brazil}{}
-\contentsline {figure}{\numberline {1}{\ignorespaces Tipos de misturadores de borracha.\relax }}{19}{figure.caption.8}
-\contentsline {figure}{\numberline {2}{\ignorespaces Processo de extrus\IeC {\~a}o.\relax }}{20}{figure.caption.9}
-\contentsline {figure}{\numberline {3}{\ignorespaces Processo de calandragem.\relax }}{21}{figure.caption.10}
-\contentsline {figure}{\numberline {4}{\ignorespaces Tipos de processos de conforma\IeC {\c c}\IeC {\~a}o.\relax }}{21}{figure.caption.11}
-\contentsline {figure}{\numberline {5}{\ignorespaces Tipos de problemas de tensionamento.\relax }}{22}{figure.caption.12}
-\contentsline {figure}{\numberline {6}{\ignorespaces Linha de processamento de mantas.\relax }}{23}{figure.caption.13}
-\contentsline {figure}{\numberline {7}{\ignorespaces Esquema de um acumulador industrial.\relax }}{24}{figure.caption.14}
-\contentsline {figure}{\numberline {8}{\ignorespaces Estresse sobre uma manta el\IeC {\'a}stica em uma se\IeC {\c c}\IeC {\~a}o entre dois rolos consecutivos.\relax }}{26}{figure.caption.15}
-\contentsline {figure}{\numberline {9}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o gen\IeC {\'e}rica das for\IeC {\c c}as em um acumulador com motor.\relax }}{27}{figure.caption.16}
-\contentsline {figure}{\numberline {10}{\ignorespaces Diagrama de blocos de um sistema com realimenta\IeC {\c c}\IeC {\~a}o simples.\relax }}{28}{figure.caption.17}
-\contentsline {figure}{\numberline {11}{\ignorespaces Tipos de respostas ao degrau.\relax }}{30}{figure.caption.19}
-\contentsline {figure}{\numberline {12}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o em diagrama de blocos de um controlador PID com dist\IeC {\'u}rbios.\relax }}{32}{figure.caption.21}
-\contentsline {figure}{\numberline {13}{\ignorespaces Resposta ao degrau de um sistema com satura\IeC {\c c}\IeC {\~a}o do atuador.\relax }}{34}{figure.caption.23}
-\contentsline {figure}{\numberline {14}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o em diagrama de blocos de um controlador PID com \textit {anti-windup}.\relax }}{34}{figure.caption.24}
-\contentsline {figure}{\numberline {15}{\ignorespaces Resposta ao degrau de um sistema com satura\IeC {\c c}\IeC {\~a}o e a\IeC {\c c}\IeC {\~a}o anti-windup.\relax }}{35}{figure.caption.25}
-\contentsline {figure}{\numberline {16}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o da oscila\IeC {\c c}\IeC {\~a}o sustentada com o per\IeC {\'\i }odo $P_u$ medido em segundos.\relax }}{36}{figure.caption.26}
-\contentsline {figure}{\numberline {17}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o da oscila\IeC {\c c}\IeC {\~a}o sustentada gerada por um controlador rel\IeC {\'e}.\relax }}{37}{figure.caption.28}
-\contentsline {figure}{\numberline {18}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o em diagrama de blocos de um sistema com auto-sintonia.\relax }}{38}{figure.caption.29}
-\contentsline {figure}{\numberline {19}{\ignorespaces Esbo\IeC {\c c}o idealizado da planta proposta.\relax }}{39}{figure.caption.30}
-\contentsline {figure}{\numberline {20}{\ignorespaces Projeto mec\IeC {\^a}nico do acumulador vertical com todas as partes.\relax }}{40}{figure.caption.31}
-\contentsline {figure}{\numberline {21}{\ignorespaces Estrutura do acumulador vertical.\relax }}{41}{figure.caption.32}
-\contentsline {figure}{\numberline {22}{\ignorespaces Perfil de alum\IeC {\'\i }nio extrudado padronizado.\relax }}{41}{figure.caption.33}
-\contentsline {figure}{\numberline {23}{\ignorespaces Mancais e rolo desviador.\relax }}{42}{figure.caption.34}
-\contentsline {figure}{\numberline {24}{\ignorespaces Carro m\IeC {\'o}vel.\relax }}{43}{figure.caption.35}
-\contentsline {figure}{\numberline {25}{\ignorespaces Modelo do acumulador proposto por se\IeC {\c c}\IeC {\~o}es.\relax }}{43}{figure.caption.36}
-\contentsline {figure}{\numberline {26}{\ignorespaces Modelo de um rolo isolado.\relax }}{44}{figure.caption.37}
-\contentsline {figure}{\numberline {27}{\ignorespaces Modelo do acumulador est\IeC {\'a}tico.\relax }}{45}{figure.caption.38}
-\contentsline {figure}{\numberline {28}{\ignorespaces Projeto mec\IeC {\^a}nico do bobinador com todas as partes.\relax }}{48}{figure.caption.39}
-\contentsline {figure}{\numberline {29}{\ignorespaces Diagrama de for\IeC {\c c}as do bobinador.\relax }}{48}{figure.caption.40}
-\contentsline {figure}{\numberline {30}{\ignorespaces Diagrama de for\IeC {\c c}as do bobinador.\relax }}{49}{figure.caption.41}
-\contentsline {figure}{\numberline {31}{\ignorespaces Diagrama de for\IeC {\c c}as do bobinador.\relax }}{49}{figure.caption.42}
-\contentsline {figure}{\numberline {32}{\ignorespaces Modelo de um motor de corrente cont\IeC {\'\i }nua.\relax }}{50}{figure.caption.43}
-\contentsline {figure}{\numberline {33}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o em diagrama de blocos de um motor CC.\relax }}{52}{figure.caption.44}
-\contentsline {figure}{\numberline {34}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o em diagrama de blocos explodido de um motor CC.\relax }}{53}{figure.caption.45}
-\contentsline {figure}{\numberline {35}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o do sinal PWM nos terminais de um motor CC.\relax }}{57}{figure.caption.48}
-\contentsline {figure}{\numberline {36}{\ignorespaces Esquema de uma ponte H com representa\IeC {\c c}\IeC {\~a}o da altera\IeC {\c c}\IeC {\~a}o de sentido de rota\IeC {\c c}\IeC {\~a}o.\relax }}{58}{figure.caption.49}
-\contentsline {figure}{\numberline {37}{\ignorespaces Driver com dupla ponte H completa para acionamento de motores CC.\relax }}{59}{figure.caption.50}
-\contentsline {figure}{\numberline {38}{\ignorespaces Esquema de liga\IeC {\c c}\IeC {\~a}o do driver L298N elaborado na ferramenta \textit {Fritzing}\textcopyright .\relax }}{59}{figure.caption.51}
-\contentsline {figure}{\numberline {39}{\ignorespaces M\IeC {\'o}dulo bidirecional de monitora\IeC {\c c}\IeC {\~a}o de corrente por resistor \textit {shunt}.\relax }}{60}{figure.caption.52}
-\contentsline {figure}{\numberline {40}{\ignorespaces C\IeC {\'e}lula de carga e medi\IeC {\c c}\IeC {\~a}o de tens\IeC {\~a}o no acumulador.\relax }}{61}{figure.caption.53}
-\contentsline {figure}{\numberline {41}{\ignorespaces M\IeC {\'o}dulo conversor de c\IeC {\'e}lula de carga.\relax }}{61}{figure.caption.54}
-\contentsline {figure}{\numberline {42}{\ignorespaces M\IeC {\'o}dulo de medi\IeC {\c c}\IeC {\~a}o de velocidade por pulsos.\relax }}{62}{figure.caption.55}
-\contentsline {figure}{\numberline {43}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o de um encoder \IeC {\'o}tico\relax }}{63}{figure.caption.56}
-\contentsline {figure}{\numberline {44}{\ignorespaces Placa de programa\IeC {\c c}\IeC {\~a}o Arduino Mega com microcontrolador ATMega 2560.\relax }}{63}{figure.caption.57}
-\contentsline {figure}{\numberline {45}{\ignorespaces Topologia de hardware empregada para o desenvolvimento do sistema.\relax }}{64}{figure.caption.58}
-\contentsline {figure}{\numberline {46}{\ignorespaces Fluxo macro do \textit {software} de controle.\relax }}{65}{figure.caption.59}
-\contentsline {figure}{\numberline {47}{\ignorespaces Diagrama de blocos da malha de posi\IeC {\c c}\IeC {\~a}o do acumulador.\relax }}{66}{figure.caption.60}
-\contentsline {figure}{\numberline {48}{\ignorespaces Diagrama de blocos da malha de tens\IeC {\~a}o do acumulador.\relax }}{66}{figure.caption.61}
-\contentsline {figure}{\numberline {49}{\ignorespaces Diagrama de blocos do acumulador.\relax }}{67}{figure.caption.62}
-\contentsline {figure}{\numberline {50}{\ignorespaces Diagrama de blocos do acumulador explodido.\relax }}{67}{figure.caption.63}
-\contentsline {figure}{\numberline {51}{\ignorespaces Resposta ao degrau simulada do acumulador com ganho proporcional unit\IeC {\'a}rio.\relax }}{69}{figure.caption.65}
-\contentsline {figure}{\numberline {52}{\ignorespaces Resposta ao degrau simulada do acumulador variando o ganho proporcional.\relax }}{69}{figure.caption.66}
-\contentsline {figure}{\numberline {53}{\ignorespaces Resposta ao degrau simulada do acumulador variando o ganho integral.\relax }}{70}{figure.caption.67}
-\contentsline {figure}{\numberline {54}{\ignorespaces Resposta ao degrau simulada do acumulador variando o ganho integral e a\IeC {\c c}\IeC {\~a}o anti-windup.\relax }}{71}{figure.caption.68}
-\contentsline {figure}{\numberline {55}{\ignorespaces Resposta ao degrau simulada do acumulador variando o ganho derivativo.\relax }}{71}{figure.caption.69}
-\contentsline {figure}{\numberline {56}{\ignorespaces Resposta ao degrau do acumulador com $K_p$ = 2, $K_i$ = 11,5 e $K_d$ = 0.\relax }}{76}{figure.caption.70}
-\contentsline {figure}{\numberline {57}{\ignorespaces Resposta ao degrau do acumulador com $K_p$ = 10, $K_i$ = 55 e $K_d$ = 0.\relax }}{77}{figure.caption.71}
+\contentsline {figure}{\numberline {1}{\ignorespaces Tipos de misturadores de borracha.\relax }}{19}{figure.caption.9}
+\contentsline {figure}{\numberline {2}{\ignorespaces Processo de extrus\IeC {\~a}o.\relax }}{20}{figure.caption.10}
+\contentsline {figure}{\numberline {3}{\ignorespaces Processo de calandragem.\relax }}{21}{figure.caption.11}
+\contentsline {figure}{\numberline {4}{\ignorespaces Tipos de processos de conforma\IeC {\c c}\IeC {\~a}o.\relax }}{21}{figure.caption.12}
+\contentsline {figure}{\numberline {5}{\ignorespaces Tipos de problemas de tensionamento.\relax }}{22}{figure.caption.13}
+\contentsline {figure}{\numberline {6}{\ignorespaces Linha de processamento de mantas.\relax }}{23}{figure.caption.14}
+\contentsline {figure}{\numberline {7}{\ignorespaces Esquema de um acumulador industrial.\relax }}{24}{figure.caption.15}
+\contentsline {figure}{\numberline {8}{\ignorespaces Estresse sobre uma manta el\IeC {\'a}stica em uma se\IeC {\c c}\IeC {\~a}o entre dois rolos consecutivos.\relax }}{26}{figure.caption.16}
+\contentsline {figure}{\numberline {9}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o gen\IeC {\'e}rica das for\IeC {\c c}as em um acumulador com motor.\relax }}{27}{figure.caption.17}
+\contentsline {figure}{\numberline {10}{\ignorespaces Diagrama de blocos de um sistema com realimenta\IeC {\c c}\IeC {\~a}o simples.\relax }}{28}{figure.caption.18}
+\contentsline {figure}{\numberline {11}{\ignorespaces Par\IeC {\^a}metros da resposta ao degrau de um sistema de segunda ordem ou superior.\relax }}{29}{figure.caption.19}
+\contentsline {figure}{\numberline {12}{\ignorespaces Tipos de respostas ao degrau.\relax }}{30}{figure.caption.20}
+\contentsline {figure}{\numberline {13}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o em diagrama de blocos de um controlador PID com dist\IeC {\'u}rbios.\relax }}{32}{figure.caption.21}
+\contentsline {figure}{\numberline {14}{\ignorespaces Resposta ao degrau de um sistema com satura\IeC {\c c}\IeC {\~a}o do atuador.\relax }}{34}{figure.caption.23}
+\contentsline {figure}{\numberline {15}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o em diagrama de blocos de um controlador PID com \textit {anti-windup}.\relax }}{35}{figure.caption.24}
+\contentsline {figure}{\numberline {16}{\ignorespaces Resposta ao degrau de um sistema com satura\IeC {\c c}\IeC {\~a}o e a\IeC {\c c}\IeC {\~a}o anti-windup.\relax }}{36}{figure.caption.25}
+\contentsline {figure}{\numberline {17}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o da oscila\IeC {\c c}\IeC {\~a}o sustentada com o per\IeC {\'\i }odo $P_u$ medido em segundos.\relax }}{37}{figure.caption.26}
+\contentsline {figure}{\numberline {18}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o da oscila\IeC {\c c}\IeC {\~a}o sustentada gerada por um controlador rel\IeC {\'e}.\relax }}{37}{figure.caption.28}
+\contentsline {figure}{\numberline {19}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o em diagrama de blocos de um sistema com auto-sintonia.\relax }}{38}{figure.caption.29}
+\contentsline {figure}{\numberline {20}{\ignorespaces Esbo\IeC {\c c}o idealizado da planta proposta.\relax }}{39}{figure.caption.30}
+\contentsline {figure}{\numberline {21}{\ignorespaces Projeto mec\IeC {\^a}nico do acumulador vertical com todas as partes.\relax }}{40}{figure.caption.31}
+\contentsline {figure}{\numberline {22}{\ignorespaces Estrutura do acumulador vertical.\relax }}{41}{figure.caption.32}
+\contentsline {figure}{\numberline {23}{\ignorespaces Perfil de alum\IeC {\'\i }nio extrudado padronizado.\relax }}{41}{figure.caption.33}
+\contentsline {figure}{\numberline {24}{\ignorespaces Mancais e rolo desviador.\relax }}{42}{figure.caption.34}
+\contentsline {figure}{\numberline {25}{\ignorespaces Carro m\IeC {\'o}vel.\relax }}{43}{figure.caption.35}
+\contentsline {figure}{\numberline {26}{\ignorespaces Modelo do acumulador proposto por se\IeC {\c c}\IeC {\~o}es.\relax }}{43}{figure.caption.36}
+\contentsline {figure}{\numberline {27}{\ignorespaces Modelo de um rolo isolado.\relax }}{44}{figure.caption.37}
+\contentsline {figure}{\numberline {28}{\ignorespaces Modelo do acumulador est\IeC {\'a}tico.\relax }}{45}{figure.caption.38}
+\contentsline {figure}{\numberline {29}{\ignorespaces Projeto mec\IeC {\^a}nico do bobinador com todas as partes.\relax }}{48}{figure.caption.39}
+\contentsline {figure}{\numberline {30}{\ignorespaces Diagrama de for\IeC {\c c}as do bobinador.\relax }}{48}{figure.caption.40}
+\contentsline {figure}{\numberline {31}{\ignorespaces Diagrama de for\IeC {\c c}as do bobinador.\relax }}{49}{figure.caption.41}
+\contentsline {figure}{\numberline {32}{\ignorespaces Diagrama de for\IeC {\c c}as do bobinador.\relax }}{49}{figure.caption.42}
+\contentsline {figure}{\numberline {33}{\ignorespaces Modelo de um motor de corrente cont\IeC {\'\i }nua.\relax }}{50}{figure.caption.43}
+\contentsline {figure}{\numberline {34}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o em diagrama de blocos de um motor CC.\relax }}{52}{figure.caption.44}
+\contentsline {figure}{\numberline {35}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o em diagrama de blocos explodido de um motor CC.\relax }}{53}{figure.caption.45}
+\contentsline {figure}{\numberline {36}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o do sinal PWM nos terminais de um motor CC.\relax }}{57}{figure.caption.48}
+\contentsline {figure}{\numberline {37}{\ignorespaces Esquema de uma ponte H com representa\IeC {\c c}\IeC {\~a}o da altera\IeC {\c c}\IeC {\~a}o de sentido de rota\IeC {\c c}\IeC {\~a}o.\relax }}{58}{figure.caption.49}
+\contentsline {figure}{\numberline {38}{\ignorespaces Driver com dupla ponte H completa para acionamento de motores CC.\relax }}{59}{figure.caption.50}
+\contentsline {figure}{\numberline {39}{\ignorespaces Esquema de liga\IeC {\c c}\IeC {\~a}o do driver L298N elaborado na ferramenta \textit {Fritzing}\textcopyright .\relax }}{59}{figure.caption.51}
+\contentsline {figure}{\numberline {40}{\ignorespaces M\IeC {\'o}dulo bidirecional de monitora\IeC {\c c}\IeC {\~a}o de corrente por resistor \textit {shunt}.\relax }}{60}{figure.caption.52}
+\contentsline {figure}{\numberline {41}{\ignorespaces C\IeC {\'e}lula de carga e medi\IeC {\c c}\IeC {\~a}o de tens\IeC {\~a}o no acumulador.\relax }}{61}{figure.caption.53}
+\contentsline {figure}{\numberline {42}{\ignorespaces M\IeC {\'o}dulo conversor de c\IeC {\'e}lula de carga.\relax }}{61}{figure.caption.54}
+\contentsline {figure}{\numberline {43}{\ignorespaces M\IeC {\'o}dulo de medi\IeC {\c c}\IeC {\~a}o de velocidade por pulsos.\relax }}{62}{figure.caption.55}
+\contentsline {figure}{\numberline {44}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o de um encoder \IeC {\'o}tico\relax }}{63}{figure.caption.56}
+\contentsline {figure}{\numberline {45}{\ignorespaces Placa de programa\IeC {\c c}\IeC {\~a}o Arduino Mega com microcontrolador ATMega 2560.\relax }}{63}{figure.caption.57}
+\contentsline {figure}{\numberline {46}{\ignorespaces Topologia de hardware empregada para o desenvolvimento do sistema.\relax }}{64}{figure.caption.58}
+\contentsline {figure}{\numberline {47}{\ignorespaces Fluxo macro do \textit {software} de controle.\relax }}{65}{figure.caption.59}
+\contentsline {figure}{\numberline {48}{\ignorespaces Diagrama de blocos da malha de posi\IeC {\c c}\IeC {\~a}o do acumulador.\relax }}{66}{figure.caption.60}
+\contentsline {figure}{\numberline {49}{\ignorespaces Diagrama de blocos da malha de tens\IeC {\~a}o do acumulador.\relax }}{66}{figure.caption.61}
+\contentsline {figure}{\numberline {50}{\ignorespaces Diagrama de blocos do acumulador.\relax }}{67}{figure.caption.62}
+\contentsline {figure}{\numberline {51}{\ignorespaces Diagrama de blocos do acumulador explodido.\relax }}{67}{figure.caption.63}
+\contentsline {figure}{\numberline {52}{\ignorespaces Resposta ao degrau simulada do acumulador com ganho proporcional unit\IeC {\'a}rio.\relax }}{69}{figure.caption.65}
+\contentsline {figure}{\numberline {53}{\ignorespaces Resposta ao degrau simulada do acumulador variando o ganho proporcional.\relax }}{69}{figure.caption.66}
+\contentsline {figure}{\numberline {54}{\ignorespaces Resposta ao degrau simulada do acumulador variando o ganho integral.\relax }}{70}{figure.caption.67}
+\contentsline {figure}{\numberline {55}{\ignorespaces Resposta ao degrau simulada do acumulador variando o ganho integral e a\IeC {\c c}\IeC {\~a}o anti-windup.\relax }}{71}{figure.caption.68}
+\contentsline {figure}{\numberline {56}{\ignorespaces Resposta ao degrau simulada do acumulador variando o ganho derivativo.\relax }}{71}{figure.caption.69}
+\contentsline {figure}{\numberline {57}{\ignorespaces Planta real do acumulador com um bobinador.\relax }}{73}{figure.caption.70}
+\contentsline {figure}{\numberline {58}{\ignorespaces Tela de comunica\IeC {\c c}\IeC {\~a}o do sistema supervis\IeC {\'o}rio.\relax }}{74}{figure.caption.71}
+\contentsline {figure}{\numberline {59}{\ignorespaces Tela de controle do sistema supervis\IeC {\'o}rio.\relax }}{75}{figure.caption.72}
+\contentsline {figure}{\numberline {60}{\ignorespaces Resposta ao degrau real do acumulador variando o ganho proporcional.\relax }}{76}{figure.caption.73}
+\contentsline {figure}{\numberline {61}{\ignorespaces Resposta ao degrau real do acumulador variando o ganho integral.\relax }}{77}{figure.caption.74}
+\contentsline {figure}{\numberline {62}{\ignorespaces Resposta ao degrau real do acumulador variando o ganho derivativo.\relax }}{78}{figure.caption.75}
+\contentsline {figure}{\numberline {63}{\ignorespaces M\IeC {\'e}todo de Sintonia com rel\IeC {\'e}.\relax }}{79}{figure.caption.76}
+\contentsline {figure}{\numberline {64}{\ignorespaces Resposta ao degrau do acumulador com os par\IeC {\^a}metros do m\IeC {\'e}todo do rel\IeC {\'e}.\relax }}{80}{figure.caption.78}
+\contentsline {figure}{\numberline {65}{\ignorespaces Controle de tens\IeC {\~a}o do material com Kp = 10, Ki = 5,5 e Kd = 0.\relax }}{81}{figure.caption.80}
+\contentsline {figure}{\numberline {66}{\ignorespaces Medi\IeC {\c c}\IeC {\~a}o indireta da tens\IeC {\~a}o no material com uso de \textit {dancer} mec\IeC {\^a}nico.\relax }}{84}{figure.caption.81}

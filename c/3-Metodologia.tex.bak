@@ -1,7 +1,7 @@
 % ||||||||||||||||||||||||||||||||||||||||||||||
 % CAPITULO 3
 % ||||||||||||||||||||||||||||||||||||||||||||||
-\chapter{Metodologia}
+\chapter{Metodologia}\label{cap:metodologia}
 
 	Dado todo o embasamento levantado até aqui, inicia-se a etapa da descrição do projeto, manufatura e controle da planta proposta ainda na introdução desta monografia. Este capítulo ficará dividido de forma a apresentar o modelo de cada das partes constituintes do acumulador, apresentando seu projeto e dimensionamento e todas as premissas estipuladas para montagem da planta e controle e os indicadores utilizados para atestar o funcionamento e o cumprimento dos objetivos propostos.
 	
@@ -215,8 +215,6 @@
 \subsection{Bobinadores}\label{cap:bobinadores}
 
 	A partir desta seção será apresentado o projeto mecânico do bobinador e desbobinador, que por similaridade serão chamados apenas por bobinadores. Eles terão como dimensões totais de $\SI{254x60x100}{{\milli\metre}}$, sendo composto apenas por peças impressas, um motoredutor de tensão contínua e o rolo principal terá pontas de eixo quadrado de forma a facilitar a montagem e remoção do rolo de papel. Na figura \ref{fig:Bobinadorproj}, é apresentado o modelo 3D final do projeto desenvolvido no \textit{software} \textit{SolidWorks}\textcopyright :
-
-\todo[inline, color=red!80]{Ver com João $\SI{254x60x100}{{\milli\metre}}$}
 
 \begin{figure}[H]
 	\caption{Projeto mecânico do bobinador com todas as partes.}

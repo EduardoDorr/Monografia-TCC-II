@@ -3,39 +3,39 @@
 \setlength{\labelsep}{0pt}\begin{thebibliography}{}
 \providecommand{\abntrefinfo}[3]{}
 \providecommand{\abntbstabout}[1]{}
-\abntbstabout{v-1.9.6 }
+\abntbstabout{v-1.9.7 }
 
 \bibitem[Alu-Cek 2018]{Alucek}
 \abntrefinfo{Alu-Cek}{ALU-CEK}{2018}
-{ALU-CEK. \emph{Catálogo: Perfil de Alumínio}.
+{ALU-CEK. \textbf{Catálogo: Perfil de Alumínio}.
 Brasil, 2018. v.~1.}
 
 \bibitem[Ang, Chong e Li 2005]{Ang2005}
 \abntrefinfo{Ang, Chong e Li}{ANG; CHONG; LI}{2005}
 {ANG, K.~H.; CHONG, G.; LI, Y. {PID control system analysis, design, and
   technology}.
-\emph{IEEE Transactions on Control Systems Technology}, v.~13, n.~4, p.
+\textbf{IEEE Transactions on Control Systems Technology}, v.~13, n.~4, p.
   559--576, 2005.
 ISSN 10636536.}
 
 \bibitem[{\AA}str{\"{o}}m e H{\"{a}}gglund 1995]{Astrom1995}
 \abntrefinfo{{\AA}str{\"{o}}m e H{\"{a}}gglund}{{\AA}STR{\"{O}}M;
   H{\"{A}}GGLUND}{1995}
-{{\AA}STR{\"{O}}M, K.~J.; H{\"{A}}GGLUND, T. \emph{PID Controllers: Theory,
+{{\AA}STR{\"{O}}M, K.~J.; H{\"{A}}GGLUND, T. \textbf{PID Controllers: Theory,
   Design and Tuning}. 2. ed. [S.l.]: ISA: Instrument Society of America, 1995.
 ISBN 1556175167.}
 
 \bibitem[{\AA}str{\"{o}}m e Murray 2008]{Astrom2008}
 \abntrefinfo{{\AA}str{\"{o}}m e Murray}{{\AA}STR{\"{O}}M; MURRAY}{2008}
-{{\AA}STR{\"{O}}M, K.~J.; MURRAY, R.~M. \emph{Feedback Systems: An Introduction
-  for Scientists and Engineers}. 2.11b. ed. [S.l.]: Princeton University Press,
-  2008. 426--426~p.
+{{\AA}STR{\"{O}}M, K.~J.; MURRAY, R.~M. \textbf{Feedback Systems: An
+  Introduction for Scientists and Engineers}. 2.11b. ed. [S.l.]: Princeton
+  University Press, 2008. 426--426~p.
 ISSN 0033-5770.
 ISBN 9780691135762.}
 
 \bibitem[{Baú da Eletrônica} 2019]{L298N}
 \abntrefinfo{{Baú da Eletrônica}}{{Baú da Eletrônica}}{2019a}
-{{Baú da Eletrônica}. \emph{Driver Motor ponte-H - L298N}. 2019. Driver
+{{Baú da Eletrônica}. \textbf{Driver Motor ponte-H - L298N}. 2019. Driver
   Motores.
 Dispon{\'\i}vel em:
   \url{http://www.baudaeletronica.com.br/driver-motor-ponte-h-l298n.html}.
@@ -43,7 +43,7 @@ Dispon{\'\i}vel em:
 
 \bibitem[{Baú da Eletrônica} 2019]{KY-040}
 \abntrefinfo{{Baú da Eletrônica}}{{Baú da Eletrônica}}{2019b}
-{{Baú da Eletrônica}. \emph{Encoder Decoder KY-040 Rotacional}. 2019.
+{{Baú da Eletrônica}. \textbf{Encoder Decoder KY-040 Rotacional}. 2019.
   Módulos.
 Dispon{\'\i}vel em:
   \url{https://www.baudaeletronica.com.br/encoder-decoder-ky-040-rotacional.html}.
@@ -51,7 +51,7 @@ Dispon{\'\i}vel em:
 
 \bibitem[{Baú da Eletrônica} 2019]{HX711}
 \abntrefinfo{{Baú da Eletrônica}}{{Baú da Eletrônica}}{2019c}
-{{Baú da Eletrônica}. \emph{Módulo Conversor HX711 para Sensor de Peso}.
+{{Baú da Eletrônica}. \textbf{Módulo Conversor HX711 para Sensor de Peso}.
   2019. Módulos.
 Dispon{\'\i}vel em:
   \url{https://www.baudaeletronica.com.br/modulo-conversor-hx711-para-sensor-de-peso.html}.
@@ -59,7 +59,7 @@ Dispon{\'\i}vel em:
 
 \bibitem[{Baú da Eletrônica} 2019]{INA219}
 \abntrefinfo{{Baú da Eletrônica}}{{Baú da Eletrônica}}{2019d}
-{{Baú da Eletrônica}. \emph{Sensor de Corrente DC INA219 I2C}. 2019.
+{{Baú da Eletrônica}. \textbf{Sensor de Corrente DC INA219 I2C}. 2019.
   Módulos.
 Dispon{\'\i}vel em:
   \url{https://www.baudaeletronica.com.br/sensor-de-corrente-dc-ina219-i2c.html}.
@@ -67,21 +67,21 @@ Dispon{\'\i}vel em:
 
 \bibitem[Britannica 2009]{Strain2009}
 \abntrefinfo{Britannica}{BRITANNICA}{2009}
-{BRITANNICA, T.~E. of E. \emph{Strain Gauge}. 2009. Encyclopædia Britannica.
+{BRITANNICA, T.~E. of E. \textbf{Strain Gauge}. 2009. Encyclopædia Britannica.
 Dispon{\'\i}vel em: \url{https://www.britannica.com/technology/strain-gauge}.
   Acesso em: 15 out 2019.}
 
 \bibitem[British Standard European Norm 2000]{EN12301:2000}
 \abntrefinfo{British Standard European Norm}{BRITISH STANDARD EUROPEAN
   NORM}{2000}
-{BRITISH STANDARD EUROPEAN NORM. \emph{BS EN 12301:2000+A1:2008}: Plastics and
-  rubber machines. calenders. safety requirements.
+{BRITISH STANDARD EUROPEAN NORM. \textbf{BS EN 12301:2000+A1:2008}: Plastics
+  and rubber machines. calenders. safety requirements.
 United Kingdom, 2000.}
 
 \bibitem[Cooper 2015]{Cooper2015}
 \abntrefinfo{Cooper}{COOPER}{2015}
-{COOPER, D. \emph{The P-Only Algorithm}. 2015. Control Guru - Practical Process
-  Control.
+{COOPER, D. \textbf{The P-Only Algorithm}. 2015. Control Guru - Practical
+  Process Control.
 Dispon{\'\i}vel em:
   \url{https://controlguru.com/the-p-only-control-algorithm/}. Acesso em: 04
   abr 2019.}
@@ -100,7 +100,7 @@ n. December, 2017.}
 
 \bibitem[FIA 2018]{FIA2018}
 \abntrefinfo{FIA}{FIA}{2018}
-{FIA. \emph{Indústria 4.0: o que é, consequências, impactos positivos e
+{FIA. \textbf{Indústria 4.0: o que é, consequências, impactos positivos e
   negativos [Guia Completo]}. 2018. FIA - Fundação Instituto de
   Administração.
 Dispon{\'\i}vel em: \url{https://fia.com.br/blog/industria-4-0/}. Acesso em: 20
@@ -109,7 +109,7 @@ Dispon{\'\i}vel em: \url{https://fia.com.br/blog/industria-4-0/}. Acesso em: 20
 \bibitem[Gent 2016]{Gent2016}
 \abntrefinfo{Gent}{GENT}{2016}
 {GENT, A.~N. Rubber: Chemical compound.
-\emph{Encyclopædia Britannica}, Encyclopædia Britannica, inc., v.~1, n.~1,
+\textbf{Encyclopædia Britannica}, Encyclopædia Britannica, inc., v.~1, n.~1,
   p.~1--8, 2016.
 Dispon{\'\i}vel em:
   \url{https://www.britannica.com/science/rubber-chemical-compound}. Acesso em:
@@ -122,27 +122,27 @@ Dispon{\'\i}vel em:
 
 \bibitem[Gomes]{Gomes}
 \abntrefinfo{Gomes}{GOMES}{}
-{GOMES, M.~M. \emph{Negro de Carbono}. RubberPedia - Portal da Indústria da
+{GOMES, M.~M. \textbf{Negro de Carbono}. RubberPedia - Portal da Indústria da
   Borracha.
 Dispon{\'\i}vel em: \url{http://www.rubberpedia.com/negro-carbono.php}. Acesso
   em: 13 abr 2019.}
 
 \bibitem[Groover 2012]{Groover2012}
 \abntrefinfo{Groover}{GROOVER}{2012}
-{GROOVER, M.~P. \emph{{Fundamentals of Modern Manufacturing}}. 4. ed. [S.l.]:
+{GROOVER, M.~P. \textbf{{Fundamentals of Modern Manufacturing}}. 4. ed. [S.l.]:
   Bookman, 2012.
 ISSN 1098-6596.
 ISBN 978-0470-467002.}
 
 \bibitem[Hughes 2006]{Hughes2006}
 \abntrefinfo{Hughes}{HUGHES}{2006}
-{HUGHES, A. \emph{Electric Motors and Drives: Fundamentals, Types and
+{HUGHES, A. \textbf{Electric Motors and Drives: Fundamentals, Types and
   Applications}. 3. ed. Great Britain: Elsevier, 2006. 431~p.
 ISBN 978-0-7506-4718-2.}
 
 \bibitem[IMC]{IMC}
 \abntrefinfo{IMC}{IMC}{}
-{IMC. \emph{How To Size and Select Load Cells for Web Process Productivity
+{IMC. \textbf{How To Size and Select Load Cells for Web Process Productivity
   Introduction the Handbook}. [S.l.]: Cleveland Motion Controls.}
 
 \bibitem[Joshi, Shrestha e Chaudhary 2014]{Joshi2014}
@@ -151,20 +151,20 @@ ISBN 978-0-7506-4718-2.}
   Implementation of Brushed DC Motor Speed Control Using Optical Incremental
   Encoder Feedback DC Motor Model Simulink Modeling , Simulation and Parameter
   estimation}.
-\emph{Proceeding of IOE Graduate Conference}, n. October 2014, p. 497--505,
+\textbf{Proceeding of IOE Graduate Conference}, n. October 2014, p. 497--505,
   2014.}
 
-\bibitem[Ko{\c{c}} \textit{et al.} 1999]{Koc1999}
-\abntrefinfo{Ko{\c{c}} \textit{et al.}}{KO{\c{C}} \textit{et al.}}{1999}
-{KO{\c{C}}, H. \textit{et al.} {Modeling and Control of an Industrial
-  Accumulator in a Web Transport System}.
-\emph{European Control Conference (ECC)}, n. September, 1999.}
+\bibitem[Ko{\c{c}} et al. 1999]{Koc1999}
+\abntrefinfo{Ko{\c{c}} et al.}{KO{\c{C}} et al.}{1999}
+{KO{\c{C}}, H. et al. {Modeling and Control of an Industrial Accumulator in a
+  Web Transport System}.
+\textbf{European Control Conference (ECC)}, n. September, 1999.}
 
-\bibitem[Ko{\c{c}} \textit{et al.} 2002]{Koc2002}
-\abntrefinfo{Ko{\c{c}} \textit{et al.}}{KO{\c{C}} \textit{et al.}}{2002}
-{KO{\c{C}}, H. \textit{et al.} {Modeling and Robust Control of Winding Systems
-  for Elastic Webs}.
-\emph{IEEE Transactions on Control Systems Technology}, v.~10, n.~2, p.
+\bibitem[Ko{\c{c}} et al. 2002]{Koc2002}
+\abntrefinfo{Ko{\c{c}} et al.}{KO{\c{C}} et al.}{2002}
+{KO{\c{C}}, H. et al. {Modeling and Robust Control of Winding Systems for
+  Elastic Webs}.
+\textbf{IEEE Transactions on Control Systems Technology}, v.~10, n.~2, p.
   197--208, 2002.
 ISSN 10636536.}
 
@@ -172,44 +172,44 @@ ISSN 10636536.}
 \abntrefinfo{Kuhm e Knittel}{KUHM; KNITTEL}{2011}
 {KUHM, D.; KNITTEL, D. New design of robust industrial accumulators for elastic
   webs.
-\emph{Elsevier}, n. January, 2011.}
+\textbf{Elsevier}, n. January, 2011.}
 
 \bibitem[Kuhm e Knittel 2012]{Kuhm2012a}
 \abntrefinfo{Kuhm e Knittel}{KUHM; KNITTEL}{2012}
 {KUHM, D.; KNITTEL, D. New mathematical modelling and simulation of an
   industrial accumulator for elastic webs.
-\emph{Elsevier}, n. November, 2012.}
+\textbf{Elsevier}, n. November, 2012.}
 
 \bibitem[Kuhm, Knittel e Bueno 2012]{Kuhm2012b}
 \abntrefinfo{Kuhm, Knittel e Bueno}{KUHM; KNITTEL; BUENO}{2012}
 {KUHM, D.; KNITTEL, D.; BUENO, M.~A. {Robust control strategies for an electric
   motor driven accumulator with elastic webs}.
-\emph{ISA Transactions}, Elsevier, v.~51, n.~6, p. 732--742, 2012.
+\textbf{ISA Transactions}, Elsevier, v.~51, n.~6, p. 732--742, 2012.
 ISSN 00190578.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/j.isatra.2012.05.004}.}
 
 \bibitem[Leonhard 2001]{Leonhard2001}
 \abntrefinfo{Leonhard}{LEONHARD}{2001}
-{LEONHARD, W. \emph{{Control of electrical drives}}. 3. ed. Berlin: Springer,
+{LEONHARD, W. \textbf{{Control of electrical drives}}. 3. ed. Berlin: Springer,
   2001. 473~p.
 ISSN 00051098.
 ISBN 3540418202.}
 
 \bibitem[Levine 2011]{Levine2011}
 \abntrefinfo{Levine}{LEVINE}{2011}
-{LEVINE, W.~S. \emph{{The Control Handbook - Control Theory Fundamentals}}. 2.
-  ed. [S.l.]: CRC Press, 2011.
+{LEVINE, W.~S. \textbf{{The Control Handbook - Control Theory Fundamentals}}.
+  2. ed. [S.l.]: CRC Press, 2011.
 ISBN 978-1-4200-7363-8.}
 
 \bibitem[Mark 2013]{Mark2013}
 \abntrefinfo{Mark}{MARK}{2013}
-{MARK, J.~E. \emph{{The Science and Technology of Rubber}}. 4. ed. [S.l.]:
+{MARK, J.~E. \textbf{{The Science and Technology of Rubber}}. 4. ed. [S.l.]:
   Elsevier Inc., 2013.
 ISBN 9780123945846.}
 
 \bibitem[Marto 2007]{Marto2007}
 \abntrefinfo{Marto}{MARTO}{2007}
-{MARTO, G. B.~T. \emph{Hevea brasiliensis (Seringueira)}. 2007. IPEF -
+{MARTO, G. B.~T. \textbf{Hevea brasiliensis (Seringueira)}. 2007. IPEF -
   Instituto de Pesquisas e Estudos Florestais.
 Dispon{\'\i}vel em:
   \url{https://www.ipef.br/identificacao/hevea.brasiliensis.asp}. Acesso em: 27
@@ -217,27 +217,28 @@ Dispon{\'\i}vel em:
 
 \bibitem[{Neoyama} 2019]{AK555b}
 \abntrefinfo{{Neoyama}}{{Neoyama}}{2019}
-{{Neoyama}. \emph{SÉRIE AK555}. 2019. Neomotion.
+{{Neoyama}. \textbf{SÉRIE AK555}. 2019. Neomotion.
 Dispon{\'\i}vel em:
   \url{https://neomotion.com.br/wp-content/uploads/2019/03/MMDC-R3-Sem-Red.pdf}.
   Acesso em: 05 Abr 2019.}
 
 \bibitem[Nise 2012]{Nise2012}
 \abntrefinfo{Nise}{NISE}{2012}
-{NISE, N.~S. \emph{Engenharia de Sistemas de Controle}. 6. ed. [S.l.]: LTC,
+{NISE, N.~S. \textbf{Engenharia de Sistemas de Controle}. 6. ed. [S.l.]: LTC,
   2012.
 ISBN 9788521621355.}
 
 \bibitem[Ogata 2011]{Ogata2011}
 \abntrefinfo{Ogata}{OGATA}{2011}
-{OGATA, K. \emph{Engenharia de Controle Moderno}. 5. ed. [S.l.]: Pearson, 2011.
+{OGATA, K. \textbf{Engenharia de Controle Moderno}. 5. ed. [S.l.]: Pearson,
+  2011.
 ISBN 9788576058106.}
 
-\bibitem[Pagilla \textit{et al.} 2001]{Pagilla2001}
-\abntrefinfo{Pagilla \textit{et al.}}{PAGILLA \textit{et al.}}{2001}
-{PAGILLA, P.~R. \textit{et al.} {Dynamics and control of accumulators in
-  continuous strip processing lines}.
-\emph{IEEE Transactions on Industry Applications}, v.~37, n.~3, p. 934--940,
+\bibitem[Pagilla et al. 2001]{Pagilla2001}
+\abntrefinfo{Pagilla et al.}{PAGILLA et al.}{2001}
+{PAGILLA, P.~R. et al. {Dynamics and control of accumulators in continuous
+  strip processing lines}.
+\textbf{IEEE Transactions on Industry Applications}, v.~37, n.~3, p. 934--940,
   2001.
 ISSN 00939994.}
 
@@ -245,19 +246,19 @@ ISSN 00939994.}
 \abntrefinfo{Pagilla, Singh e Dwivedula}{PAGILLA; SINGH; DWIVEDULA}{2004}
 {PAGILLA, P.~R.; SINGH, I.; DWIVEDULA, R.~V. {A Study on Control of
   Accumulators in Web Processing Lines}.
-\emph{Journal of Dynamic Systems, Measurement, and Control}, v.~126, n.~3,
+\textbf{Journal of Dynamic Systems, Measurement, and Control}, v.~126, n.~3,
   p.~453, 2004.
 ISSN 00220434.}
 
 \bibitem[Paz 2001]{Paz2001}
 \abntrefinfo{Paz}{PAZ}{2001}
 {PAZ, R.~A. {The Design of the PID Controller}.
-\emph{Klipsch School of Electrical and Computer Engineering}, n.~1, p.~1--3,
+\textbf{Klipsch School of Electrical and Computer Engineering}, n.~1, p.~1--3,
   2001.}
 
 \bibitem[Rizzo 2018]{SEBRAE2016}
 \abntrefinfo{Rizzo}{RIZZO}{2018}
-{RIZZO, J. \emph{Saiba o que é a Indústria 4.0 e descubra as oportunidades
+{RIZZO, J. \textbf{Saiba o que é a Indústria 4.0 e descubra as oportunidades
   que ela gera}. 2018. Sebrae Nacional.
 Dispon{\'\i}vel em:
   \url{http://www.sebrae.com.br/sites/PortalSebrae/artigos/saiba-o-que-e-a-industria-40-e-descubra-as-oportunidades-que-ela-gera,11e01bc9c86f8510VgnVCM1000004c00210aRCRD}.
@@ -265,38 +266,38 @@ Dispon{\'\i}vel em:
 
 \bibitem[RobotDyn 2019]{Mega2019}
 \abntrefinfo{RobotDyn}{ROBOTDYN}{2019}
-{ROBOTDYN. \emph{Mega+WiFi}. 2019. MEGA+WiFi R3 ATmega2560+ESP8266, flash 32MB,
-  USB-TTL CH340G, Micro-USB.
+{ROBOTDYN. \textbf{Mega+WiFi}. 2019. MEGA+WiFi R3 ATmega2560+ESP8266, flash
+  32MB, USB-TTL CH340G, Micro-USB.
 Dispon{\'\i}vel em:
   \url{https://robotdyn.com/mega-wifi-r3-atmega2560-esp8266-flash-32mb-usb-ttl-ch340g-micro-usb.html}.
   Acesso em: 11 Jun 2019.}
 
 \bibitem[Rocha, Lovison e Pierozan 2003]{Rocha2003}
 \abntrefinfo{Rocha, Lovison e Pierozan}{ROCHA; LOVISON; PIEROZAN}{2003}
-{ROCHA, E.~C.; LOVISON, V. M.~H.; PIEROZAN, N.~J. \emph{Tecnologia de
+{ROCHA, E.~C.; LOVISON, V. M.~H.; PIEROZAN, N.~J. \textbf{Tecnologia de
   Transformação dos Elastômeros}. 2. ed. São Leopoldo: Centro Tecnológico
   de Polímeros, 2003.}
 
 \bibitem[{ROHM Semiconductor} 2009]{ROHM2009}
 \abntrefinfo{{ROHM Semiconductor}}{{ROHM Semiconductor}}{2009}
-{{ROHM Semiconductor}. \emph{{Controlling DC Brush Motors with H-bridge Driver
-  ICs}}. United States, 2009.}
+{{ROHM Semiconductor}. \textbf{{Controlling DC Brush Motors with H-bridge
+  Driver ICs}}. United States, 2009.}
 
 \bibitem[Siemens AG 2016]{Simotion}
 \abntrefinfo{Siemens AG}{SIEMENS AG}{2016}
-{SIEMENS AG. \emph{SIMOTION Web-Accumulator}.
+{SIEMENS AG. \textbf{SIMOTION Web-Accumulator}.
 Germany, 2016.}
 
 \bibitem[SKF 2019]{SKF}
 \abntrefinfo{SKF}{SKF}{2019}
-{SKF. \emph{608}. 2019. Rolamentos rígidos de esferas.
+{SKF. \textbf{608}. 2019. Rolamentos rígidos de esferas.
 Dispon{\'\i}vel em:
   \url{https://www.skf.com/br/products/bearings-units-housings/ball-bearings/deep-groove-ball-bearings/deep-groove-ball-bearings/index.html?designation=608}.
   Acesso em: 01 abr 2019.}
 
 \bibitem[{Texas Instruments} 2019]{INA219a}
 \abntrefinfo{{Texas Instruments}}{{Texas Instruments}}{2019}
-{{Texas Instruments}. \emph{INA219 Zerø-Drift, Bidirectional Current/Power
+{{Texas Instruments}. \textbf{INA219 Zerø-Drift, Bidirectional Current/Power
   Monitor With I2C Interface}. 2019. Datasheet.
 Dispon{\'\i}vel em: \url{http://www.ti.com/lit/ds/symlink/ina219.pdf}. Acesso
   em: 08 Ago 2019.}
@@ -304,22 +305,22 @@ Dispon{\'\i}vel em: \url{http://www.ti.com/lit/ds/symlink/ina219.pdf}. Acesso
 \bibitem[{Tiago de Arruda Russolo} 2011]{Russolo2011}
 \abntrefinfo{{Tiago de Arruda Russolo}}{{Tiago de Arruda Russolo}}{2011}
 {{Tiago de Arruda Russolo}.
-\emph{{Sistema de Controle de Posi{\c{c}}{\~{a}}o Microprocessado com
+\textbf{{Sistema de Controle de Posi{\c{c}}{\~{a}}o Microprocessado com
   Servomotor CC}}.
 84~p. Disserta\c{c}\~{a}o (Mestrado) --- Escola de Engenharia de São Carlos,da
   Universidade de São Paulo, São Paulo, 2011.}
 
 \bibitem[{Yu} 2006]{Yu2006}
 \abntrefinfo{{Yu}}{{Yu}}{2006}
-{{Yu}, C.-C. \emph{{Autotuning of PID Controllers: A Relay Feedback Approach}}.
-  2. ed. [S.l.: s.n.], 2006.
+{{Yu}, C.-C. \textbf{{Autotuning of PID Controllers: A Relay Feedback
+  Approach}}. 2. ed. [S.l.: s.n.], 2006.
 ISBN 9781846280368.}
 
 \bibitem[Özer, Kivrak e Yüksel 2017]{Ozer2017}
 \abntrefinfo{Özer, Kivrak e Yüksel}{ÖZER; KIVRAK; YüKSEL}{2017}
 {ÖZER, T.; KIVRAK, S.; YüKSEL, O. {H Brıdge DC Motor Drıver Desıgn and
   Implementatıon with Usıng dsPIC30f4011}.
-\emph{IJERSET: International Journal of Innovative Research in Science,
+\textbf{IJERSET: International Journal of Innovative Research in Science,
   Engineering and Technology}, n.~5, 2017.
 ISSN 2319-8753.}
 

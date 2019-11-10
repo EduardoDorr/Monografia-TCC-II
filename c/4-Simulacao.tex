@@ -23,19 +23,27 @@
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
 
-	Na figura \ref{fig:matlabctrl1}, $J_p$ é a inércia das polias sincronizadoras, $M_l$ é a força peso do carro móvel e $R_p$ é o raio da polia. Estes termos retornam em forma de torque consumido para o motor, sendo reduzidos por $N^{2}$, onde $N$ é o fator de redução do redutor, neste caso 1:64. Importante também perceber que a rotação de saída do motoredutor é derivada para calcular a inércia refletida.
+	Na figura \ref{fig:matlabctrl1}, $J_p$ é a inércia das polias sincronizadoras, $M_l$ é a força peso do carro móvel e $R_p$ é o raio da polia. Estes termos retornam em forma de torque consumido para o motor, sendo reduzidos por $N^{2}$, onde $N$ é o fator de redução do redutor, neste caso 1:64. Importante também perceber que a velocidade angular de saída do motoredutor é derivada para calcular a inércia refletida, usando a aceleração angular do sistema, conforme o cálculo de forças em sistemas rotacionais:
+	
+\begin{equation}
+	\tau = J \frac{d \omega}{dt} = J \alpha
+\end{equation}
+
+	Onde $\tau$ é o torque produzido pela imposição de uma aceleração angular $\alpha$ sobre um corpo qualquer com momento de inércia $J$.
+	
+	A simulação de controle dos bobinadores não será abordada neste trabalho, tendo o enfoque total apenas no acumulador.
 	
 % ----------------------------------------------	
 
 \section{Identificação dos Parâmetros do Motor}
 
-	Antes de simular o sistema, é necessário encontrar os parâmetros do motor, sendo eles: resistência de armadura ($R_a$), indutância de armadura ($L_a$), constante de torque ($K_T$), constante de velocidade ($K_{\omega}$), inércia do rotor ($J_m$) e o atrito viscoso do motor ($B_m$). Para isto, seguiu-se os passos descritos na dissertação de \citeauthor{Russolo2011}, onde com o uso de multímetro, osciloscópio e uma fonte variável, foi possível encontrar valores aproximados para os parâmetros do motor.
+	Antes de simular o sistema, é necessário encontrar os parâmetros do motor, sendo eles: resistência de armadura ($R_a$), indutância de armadura ($L_a$), constante de torque ($K_T$), constante de velocidade ($K_{\omega}$), inércia do rotor ($J_m$) e o atrito viscoso do motor ($B_m$). Para isto, seguiu-se os passos descritos na dissertação de \citeonline{Russolo2011}, onde com o uso de multímetro, osciloscópio e uma fonte variável, foi possível encontrar valores aproximados para os parâmetros do motor.
 	
 \begin{table}[H]
   \caption{Parâmetros do motor AK360/78.8PL12S7000S.}
   \label{tab:parmotor}
   \centering%
-  \begin{minipage}{.55\textwidth}
+  \begin{minipage}{.57\textwidth}
     \begin{tabular*}{\textwidth}{cc}
       \hline
       Grandeza & Unidade \\ \hline
@@ -67,7 +75,7 @@
 
 \section{Comportamento com Controle Proporcional}
 
-	Simulando novamente, mas desta vez variando o ganho proporcional para verificar o comportamento do sistema a medido que o ganho $K_p$ é aumentado, obtêm-se a resposta:
+	Simulando novamente, mas desta vez variando o ganho proporcional para verificar o comportamento do sistema a medida que o ganho $K_p$ é aumentado, obtêm-se a resposta:
 	
 \begin{figure}[H]
 	\caption{Resposta ao degrau simulada do acumulador variando o ganho proporcional.}

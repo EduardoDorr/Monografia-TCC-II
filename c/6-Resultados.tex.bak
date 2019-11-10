@@ -3,26 +3,11 @@
 % ||||||||||||||||||||||||||||||||||||||||||||||
 \chapter{Resultados}
 
-	\lipsum[1]
+	Visto que nos testes iniciais o ganho derivativo não apresentou muita relevância para o controle da planta, decidiu-se testar usando apenas um controlador PI.
 	
-	\begin{figure}[H]
-	\caption{Resposta ao degrau do acumulador com $K_p$ = 2, $K_i$ = 11,5 e $K_d$ = 0.}
-	\centering
-	\includegraphics[width = 0.9\linewidth]{i/AccStepResponseKp2Ki11-5Kd0.png}
-	\label{fig:AccStepResponseKp2Ki11-5Kd0}
-	\fonte{Elaborado pelo autor.} 
-\end{figure}
-
-\begin{figure}[H]
-	\caption{Resposta ao degrau do acumulador com $K_p$ = 10, $K_i$ = 55 e $K_d$ = 0.}
-	\centering
-	\includegraphics[width = 0.9\linewidth]{i/AccStepResponseKp10Ki55Kd0.png}
-	\label{fig:AccStepResponseKp10Ki55Kd0}
-	\fonte{Elaborado pelo autor.} 
-\end{figure}
+	
 
 	\lipsum[1]
 	
-\section{Análise dos Resultados}
-
-	\lipsum[1]
+% ----------------------------------------------
+	

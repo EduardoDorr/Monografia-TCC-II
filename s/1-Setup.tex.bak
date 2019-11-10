@@ -78,6 +78,18 @@
 \renewcommand*{\cftquadroaftersnum}{\hfill--\hfill}
 
 % ----------------------------------------------
+% Para criar Gráficos
+% ----------------------------------------------
+\newcommand{\graphname}{Gráfico}
+\newcommand{\listofgraphname}{Lista de gráficos}
+\newfloat[chapter]{graph}{lob}{\graphname}
+\newlistof{listofgraph}{lob}{\listofgraphname}
+\newlistentry{graph}{lob}{0}
+\counterwithout{graph}{chapter}
+\renewcommand{\cftgraphname}{\graphname\space}
+\renewcommand*{\cftgraphaftersnum}{\hfill--\hfill}
+
+% ----------------------------------------------
 % Equações com numeração sequencial
 % ----------------------------------------------
 \counterwithout{equation}{chapter}

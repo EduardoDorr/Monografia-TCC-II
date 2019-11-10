@@ -1,7 +1,7 @@
 % ||||||||||||||||||||||||||||||||||||||||||||||
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ||||||||||||||||||||||||||||||||||||||||||||||
-\titulo{Desenvolvimento de um Controlador PID com Auto Sintonia e Supervisório para um Sistema de Bobinamento e Desbobinamento de Mantas Acumulador Vertical Miniaturizado com } % Não utilize o ponto final no título
+\titulo{Desenvolvimento de um Controlador PID e Sistema de Supervisão para o Controle de Tensão ou Posição em uma Planta Miniaturizada de um Acumulador Vertical Motorizado com Bobinamento de Papel} % Não utilize o ponto final no título
 \autor{Eduardo da Silva Dörr}
 \local{São Leopoldo}
 \data{2019}

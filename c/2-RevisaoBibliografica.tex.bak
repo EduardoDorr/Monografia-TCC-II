@@ -241,17 +241,17 @@
 
 	Conhecendo o conceito básico de um sistema de controle, resta entender como se chega ao algoritmo que irá calcular e corrigir os erros na resposta do sistema. Como dito, o cálculo se baseia em um modelo que descreve o comportamento do sistema que pode ser obtido teoricamente através das equações matemáticas que modelam o sistema, mas para isso é necessário conhecer por inteiro a planta a ser controlada. É bastante comum que não se tenha as equações que modelam o sistema e nem se conheça toda a planta, obrigando a ser obtida a lei que descreve o sistema utilizando-se de métodos empíricos, que em geral se baseiam na resposta transiente do sistema a excitação de um pulso, degrau, rampa ou qualquer outro sinal de entrada conhecido \cite{Astrom1995}. Estes métodos empíricos são suficientes para sintonizar controladores como o PID, que será abordado no próximo tópico, mas para sistemas mais complexos a modelagem matemática e o íntimo conhecimento da planta se tornam indispensáveis.
 	
-	O comportamento do sistema é divido entre a resposta transitória e a resposta estacionária. A resposta transitória é entendida como o comportamento do sistema desde o momento zero até a estabilização do mesmo, enquanto a resposta estacionária é o comportamento do sistema quando tendemos o tempo ao infinito. Assim, com a aplicação de um degrau na entrada do sistema, que é uma das formas mais comuns de se levantar os dados do sistema, visto que é um sinal de excitação brusco e fácil de se gerar, e assim calcular a resposta do sistema para quaisquer sinais de entrada. Normalmente, antes de atingir o regime permanente (resposta estacionária), o sistema em geral apresenta oscilações amortecidas, que representam os principais parâmetros observados na resposta ao degrau de um sistema de segunda ordem ou maior, como é visto na figura \ref{fig:StepResponse}:
+	O comportamento do sistema é divido entre a resposta transitória e a resposta estacionária. A resposta transitória é entendida como o comportamento do sistema desde o momento zero até a estabilização do mesmo, enquanto a resposta estacionária é o comportamento do sistema quando tendemos o tempo ao infinito. Assim, com a aplicação de um degrau na entrada do sistema, que é uma das formas mais comuns de se levantar os dados do sistema, visto que é um sinal de excitação brusco e fácil de se gerar, e assim calcular a resposta do sistema para quaisquer sinais de entrada. Normalmente, antes de atingir o regime permanente (resposta estacionária), o sistema em geral apresenta oscilações amortecidas, que representam os principais parâmetros observados na resposta ao degrau de um sistema de segunda ordem ou maior, como é visto no gráfico \ref{graph:StepResponse}:
 
 \begin{figure}[H]
 	\caption{Parâmetros da resposta ao degrau de um sistema de segunda ordem ou superior.}
 	\centering
 	\includegraphics[width=0.7\linewidth]{i/StepResponse.png}
-	\label{fig:StepResponse}
+	\label{graph:StepResponse}
 	\fonte{Adaptado de \citeonline{Levine2011}.} 
 \end{figure}
 
-	Os parâmetros observados tratam-se de: $t_d$ (\textit{delay time}) que representa o tempo necessário para que a resposta atinja metade de seu valor de regime pela primeira vez, $t_r$ (\textit{rise time}) que representa o tempo para a resposta atingir o valor de regime, $t_p$ (\textit{peak time}) que representa o tempo até o pico máximo da resposta, $M_p$ (\textit{maximum overshoot}) que representa o percentual acima do valor de regime que o maior pico da resposta atinge, $t_s$ (\textit{settling time}) que representa o tempo necessário para que a resposta atinja uma oscilação dentro de uma faixa (de 2 a 5\%) em torno do valor de regime \cite{Ogata2011}. Não é apresentado na figura \ref{fig:StepResponse}, mas atingido o regime, a diferença entre o valor da resposta em relação ao desejado é entendido como o erro em regime estacionário $e_{ss}$ (\textit{steady state error}).
+	Os parâmetros observados tratam-se de: $t_d$ (\textit{delay time}) que representa o tempo necessário para que a resposta atinja metade de seu valor de regime pela primeira vez, $t_r$ (\textit{rise time}) que representa o tempo para a resposta atingir o valor de regime, $t_p$ (\textit{peak time}) que representa o tempo até o pico máximo da resposta, $M_p$ (\textit{maximum overshoot}) que representa o percentual acima do valor de regime que o maior pico da resposta atinge, $t_s$ (\textit{settling time}) que representa o tempo necessário para que a resposta atinja uma oscilação dentro de uma faixa (de 2 a 5\%) em torno do valor de regime \cite{Ogata2011}. Não é apresentado no gráfico \ref{graph:StepResponse}, mas atingido o regime, a diferença entre o valor da resposta em relação ao desejado é entendido como o erro em regime estacionário $e_{ss}$ (\textit{steady state error}).
 
 	Dependendo da ordem e dos parâmetros da planta e da amplitude do degrau de entrada, a resposta pode apresentar várias dinâmicas diferentes, sendo que na figura \ref{fig:StepTypes} é possível ver alguns tipos de respostas ao degrau observados comumente:
 
@@ -261,35 +261,47 @@
 		\centering
 		\includegraphics[width=0.6\linewidth]{i/Step1.png} 
 		\caption{Suave ou superamortecida.}
+		\label{fig:Step1}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.5\textwidth}
 		\centering
 		\includegraphics[width=0.6\linewidth]{i/Step2.png}
 		\caption{Oscilatória ou subamortecida.}
+		\label{fig:Step2}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.5\textwidth}
 		\centering
-		\includegraphics[width=0.6\linewidth]{i/Step3.png}
+		\includegraphics[width=0.6\linewidth]{i/Step3.png} 
 		\caption{Instável.}
+		\label{fig:Step3}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.5\textwidth}
 		\centering
 		\includegraphics[width=0.6\linewidth]{i/Step4.png} 
 		\caption{Instável e oscilatória.}
+		\label{fig:Step4}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.5\textwidth}
 		\centering
-		\includegraphics[width=0.6\linewidth]{i/Step5.png} 
+		\includegraphics[width=0.6\linewidth]{i/Step5.png}  
 		\caption{Atrasada.}
+		\label{fig:Step5}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.5\textwidth}
 		\centering
 		\includegraphics[width=0.6\linewidth]{i/Step6.png} 
 		\caption{Fase não-mínima.}
+		\label{fig:Step6}
 	\end{subfigure}
 	\label{fig:StepTypes}
 	\fonte{Adaptado de \citeonline{Paz2001}.} 
 \end{figure}
+
+	Para cada uma destas respostas, os polos e zeros do sistema se encontram em posições diferentes do plano complexo, e assim acabam resultando nestas diferenças. A exemplo disso, sistemas superamortecidos de segunda ordem, como o representado na figura \ref{fig:Step1}, possuem dois polos reais e negativos que geram uma resposta ao degrau muito parecida com a resposta de um sistema de primeira ordem. Em contrapartida, sistemas com resposta oscilatória e estável, como o representado na figura \ref{fig:Step2}, possuem dois polos complexos, onde a posição deles no plano \textit{s} complexo produz duas formas de resposta diferentes: subamortecido e não amortecido \cite{Nise2012}.
+	
+	O primeiro citado, apresenta dois polos complexos conjugados com parte real negativa e produz uma resposta como a da figura \ref{fig:Step2}, com um pequeno sobressinal, seguido de uma oscilação amortecida. Entretanto, se a parte real destes polos fosse nula, ou seja, fosse um par de polos imaginário puro, a oscilação nunca iria ser amortecida e assim o sistema permaneceria oscilando indefinidamente, mas estável.
+	
+	Ambas as respostas das figuras \ref{fig:Step3} e \ref{fig:Step4}, representam sistemas instáveis, ou seja, com polos no semi-plano direito do plano \textit{s}. Para a figura \ref{fig:Step3}, esta resposta é em decorrência de polos reais e positivos, enquanto a resposta da figura \ref{fig:Step4}, ocorre quando o sistema tem um par de polos complexos conjugados e positivos, oscilando indefinidamente de forma instável. A resposta da figura \ref{fig:Step6}, por sua vez, apresenta um zero no semi-plano direito, causando com que ao receber o degrau de entrada, o sistema primeiro responda no sentido oposto ao do sinal de entrada e depois siga no sentido correto, onde este fenômeno é conhecido como \textit{undershoot}, ou fase não-mínima \cite{Nise2012}.
 
 \subsection{Controlador PID}
 
@@ -373,7 +385,7 @@
 	\fonte{Elaborado pelo autor.}
 \end{figure}
 
-	Como pode ser observado na imagem \ref{fig:SAntiWindup}, a curva laranja tracejada, que representa o controle, insere um sinal que o atuador não é capaz de responder e acaba saturando, representado pela curva roxa pontilhada, o que causa um efeito indesejado na resposta da planta, inclusive tendo um sobressinal grande, representado pela curva vermelha que tenta buscar a referência representada pela curva azul.
+	Como pode ser observado na figura \ref{fig:SAntiWindup}, a curva laranja tracejada, que representa o controle, insere um sinal que o atuador não é capaz de responder e acaba saturando, representado pela curva roxa pontilhada, o que causa um efeito indesejado na resposta da planta, inclusive tendo um sobressinal grande, representado pela curva vermelha que tenta buscar a referência representada pela curva azul.
 
 	Uma forma de minimizar este problema é com a implementação do \textit{anti-windup}, que é uma topologia de PID que realimenta a ação integral do controlador com o excesso do sinal de controle que satura o atuador de forma a impedir um acúmulo de erro muito grande.
 
@@ -399,7 +411,7 @@
 
 	Existem diversos métodos de sintonia de controladores para se encontrar os parâmetros do controlador PID, sendo dois dos métodos mais conhecidos e difundidos no mundo foram apresentados em 1942 por Ziegler e Nichols \cite{Yu2006}, sendo ainda muito usados em suas formas originais ou com algumas reformulações. O primeiro método é conhecido como Resposta ao Degrau, sendo aplicado em sistemas com malha aberta e utiliza dois parâmetros medidos na resposta para se calcular o controlador PID, enquanto o segundo método, conhecido como Resposta em Frequência, também utiliza dois parâmetros medidos, mas isto ocorre com a malha fechada. Neste projeto será abordado apenas o método da Resposta à Frequência.
 	
-	Segundo Ziegler e Nichols \cite{Ogata2011}, neste método os parâmetros do controlador são alterados para $T_i = \infty$ e $T_d = 0$ e, usando apenas o controle proporcional, o ganho $K$ é aumentado lentamente de $0$ até atingir o \textit{ganho crítico} da planta, ou $K_u$, onde a resposta da planta passa a ter uma oscilação sustentada, ou seja, alcança-se o ponto de estabilidade marginal. A partir das resposta, é medido o período de oscilação, conhecido como \textit{período crítico}, ou $P_u$, fazendo assim com que os parâmetros da planta sejam tomados experimentalmente. Importante ressaltar que, se para qualquer valor de $K$ a resposta não apresentar oscilação, significa que a planta não possui um $K_u$, tornando este método não aplicável.
+	Segundo Ziegler e Nichols \cite{Ogata2011}, neste método os parâmetros do controlador são alterados para $T_i = \infty$ e $T_d = 0$ e, usando apenas o controle proporcional, o ganho $K$ é aumentado lentamente de $0$ até atingir o \textit{ganho crítico} da planta, ou $K_u$, onde a resposta da planta passa a ter uma oscilação sustentada, ou seja, alcança-se o ponto de estabilidade marginal. A partir das resposta, é medido o período de oscilação, conhecido como \textit{período crítico}, ou $P_u$, fazendo assim com que os parâmetros da planta sejam tomados experimentalmente, conforme a figura \ref{fig:FrequencyResponse}. Importante ressaltar que, se para qualquer valor de $K$ a resposta não apresentar oscilação, significa que a planta não possui um $K_u$, tornando este método não aplicável.
 	
 \begin{figure}[H]
 	\caption{Representação da oscilação sustentada com o período $P_u$ medido em segundos.}

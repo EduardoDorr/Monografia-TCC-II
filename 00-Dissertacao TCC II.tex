@@ -43,6 +43,56 @@
 % Folha de Rosto
 % ----------------------------------------------
 \include{s/4-FolhaRosto}
+% Folha de rosto (o * indica que haverá a ficha bibliográfica)
+\makeatletter
+\renewcommand{\folhaderostocontent}{
+\begin{center}
+  {\ABNTEXchapterfont\large\imprimirautor}
+  \vspace*{\fill}%\vspace*{\fill}
+  \begin{center}
+  \ABNTEXchapterfont\bfseries\Large\imprimirtitulo
+  \end{center}
+  \vspace*{\fill}
+  
+  \abntex@ifnotempty{\imprimirpreambulo}{%
+    \hspace{.45\textwidth}
+    \begin{minipage}{.5\textwidth}
+    \SingleSpacing
+    \imprimirpreambulo
+    \end{minipage}%
+    \vspace*{\fill}
+  }%
+
+  \abntex@ifnotempty{\imprimirorientador}{%
+  \hspace{.45\textwidth}
+  \begin{minipage}{.5\textwidth}
+  {\large\imprimirorientadorRotulo \\ 
+     \imprimirorientador
+     \par}%
+  \end{minipage}%
+  }%
+  
+  \abntex@ifnotempty{\imprimircoorientador}{%
+  \hspace{.45\textwidth}
+  \begin{minipage}{.5\textwidth}
+  {\large\imprimircoorientadorRotulo \\ 
+     \imprimircoorientador
+     \par}%
+  \end{minipage}%
+  }%
+  
+  \vspace*{\fill}
+%{\abntex@ifnotempty{\imprimirinstituicao}{\imprimirinstituicao\vspace*{\fill}}}
+  {\large\imprimirlocal}
+  \par
+  {\large\imprimirdata}
+  \vspace*{1cm}
+  \end{center}
+  }
+\makeatother
+% Folha de rosto (o * indica que haverá a ficha bibliográfica)
+ \imprimirfolhaderosto*
+ 
 % ----------------------------------------------
 % Ficha Bibliografica Catalográfica
 % ----------------------------------------------
@@ -96,7 +146,7 @@
 %\include{c/4-Cronograma}
 \input{c/4-Simulacao}
 \input{c/5-Implementacao}
-\input{c/6-Resultados}
+%\input{c/6-Resultados}
 \input{c/7-Conclusao}
 \phantompart
 % ----------------------------------------------
