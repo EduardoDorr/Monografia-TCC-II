@@ -32,8 +32,8 @@
 \contentsline {figure}{\numberline {30}{\ignorespaces Diagrama de for\IeC {\c c}as do bobinador.\relax }}{48}{figure.caption.40}
 \contentsline {figure}{\numberline {31}{\ignorespaces Diagrama de for\IeC {\c c}as do bobinador.\relax }}{49}{figure.caption.41}
 \contentsline {figure}{\numberline {32}{\ignorespaces Diagrama de for\IeC {\c c}as do bobinador.\relax }}{49}{figure.caption.42}
-\contentsline {figure}{\numberline {33}{\ignorespaces Modelo de um motor de corrente cont\IeC {\'\i }nua.\relax }}{50}{figure.caption.43}
-\contentsline {figure}{\numberline {34}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o em diagrama de blocos de um motor CC.\relax }}{52}{figure.caption.44}
+\contentsline {figure}{\numberline {33}{\ignorespaces Modelo de um motor de corrente cont\IeC {\'\i }nua.\relax }}{51}{figure.caption.43}
+\contentsline {figure}{\numberline {34}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o em diagrama de blocos de um motor CC.\relax }}{53}{figure.caption.44}
 \contentsline {figure}{\numberline {35}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o em diagrama de blocos explodido de um motor CC.\relax }}{53}{figure.caption.45}
 \contentsline {figure}{\numberline {36}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o do sinal PWM nos terminais de um motor CC.\relax }}{57}{figure.caption.48}
 \contentsline {figure}{\numberline {37}{\ignorespaces Esquema de uma ponte H com representa\IeC {\c c}\IeC {\~a}o da altera\IeC {\c c}\IeC {\~a}o de sentido de rota\IeC {\c c}\IeC {\~a}o.\relax }}{58}{figure.caption.49}
@@ -64,5 +64,6 @@
 \contentsline {figure}{\numberline {62}{\ignorespaces Resposta ao degrau real do acumulador variando o ganho derivativo.\relax }}{78}{figure.caption.75}
 \contentsline {figure}{\numberline {63}{\ignorespaces M\IeC {\'e}todo de Sintonia com rel\IeC {\'e}.\relax }}{79}{figure.caption.76}
 \contentsline {figure}{\numberline {64}{\ignorespaces Resposta ao degrau do acumulador com os par\IeC {\^a}metros do m\IeC {\'e}todo do rel\IeC {\'e}.\relax }}{80}{figure.caption.78}
-\contentsline {figure}{\numberline {65}{\ignorespaces Controle de tens\IeC {\~a}o do material com Kp = 10, Ki = 5,5 e Kd = 0.\relax }}{81}{figure.caption.80}
-\contentsline {figure}{\numberline {66}{\ignorespaces Medi\IeC {\c c}\IeC {\~a}o indireta da tens\IeC {\~a}o no material com uso de \textit {dancer} mec\IeC {\^a}nico.\relax }}{84}{figure.caption.81}
+\contentsline {figure}{\numberline {65}{\ignorespaces Controle de tens\IeC {\~a}o do material com $K_p = 10$, $K_i = 5,5$ e $K_d = 0$.\relax }}{81}{figure.caption.80}
+\contentsline {figure}{\numberline {66}{\ignorespaces Medi\IeC {\c c}\IeC {\~a}o indireta da tens\IeC {\~a}o no material com uso de \textit {dancer} mec\IeC {\^a}nico.\relax }}{85}{figure.caption.81}
+\contentsline {figure}{\numberline {67}{\ignorespaces Diagrama esquem\IeC {\'a}tico do sistema.\relax }}{91}{figure.caption.87}

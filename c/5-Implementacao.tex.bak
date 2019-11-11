@@ -38,7 +38,7 @@
 \begin{figure}[H]
 	\caption{Tela de comunicação do sistema supervisório.}
 	\centering
-	\includegraphics[width = 0.5\linewidth]{i/SupervisorioComunicacao.png}
+	\includegraphics[width = 0.7\linewidth]{i/SupervisorioComunicacao.png}
 	\label{fig:SupervisorioComunicacao}
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
@@ -48,7 +48,7 @@
 \begin{figure}[H]
 	\caption{Tela de controle do sistema supervisório.}
 	\centering
-	\includegraphics[width = 0.5\linewidth]{i/SupervisorioControle.png}
+	\includegraphics[width = 0.7\linewidth]{i/SupervisorioControle.png}
 	\label{fig:SupervisorioControle}
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
@@ -133,7 +133,7 @@
 	\fonte{Elaborado pelo Autor.}
 \end{figure}
 
-	Na figura \ref{fig:RealStepResponseRelayMethodA}, observa-se que logo que o carro móvel alcança o valor de referência e ultrapassa a banda superior, formada pela soma do valor de referência e da histerese, a saída do relé inverte o sinal de controle e força a descida do carro até alcançar a banda inferior, formada pela subtração do valor de referência e da histerese, invertendo novamente o sinal de controle. Com esta inversão da saída, o carro móvel começa a oscilar indefinidamente de forma estável ao redor do valor de referência e, com isso, pode-se ler a amplitude da oscilação e o seu período e calcular o obter-se o ganho e período crítico. Assim, observando a figura \ref{fig:RealStepResponseRelayMethodB}, onde foi detalhada a oscilação do sistema com  valor da amplitude e período dela, para usar a equação \ref{eq:n(a)} e encontrar o valor do ganho crítico $K_u$ e, em seguida, aplicar os resultados no quadro \ref{qua:ZieglerNichols}. Com isto, obtendo-se:
+	Na figura \ref{fig:RealStepResponseRelayMethodA}, observa-se que logo que o carro móvel alcança o valor de referência e ultrapassa a banda superior, formada pela soma do valor de referência e da histerese, a saída do relé inverte o sinal de controle e força a descida do carro até alcançar a banda inferior, formada pela subtração do valor de referência e da histerese, invertendo novamente o sinal de controle. Com esta inversão da saída, o carro móvel começa a oscilar indefinidamente de forma estável ao redor do valor de referência e, com isso, pode-se ler a amplitude da oscilação e o seu período e calcular o obter-se o ganho e período crítico. Assim, observando a figura \ref{fig:RealStepResponseRelayMethodB}, onde foi detalhada a oscilação do sistema com  valor da amplitude e período dela, para usar a equação \ref{eq:n(a)} e encontrar o valor do ganho crítico $K_u$ e, em seguida, aplicar os resultados no quadro \ref{qua:ZieglerNichols}. Com isto, obtendo-se os valores vistos na tabela \ref{tab:parrele}:
 	
 \begin{table}[H]
   \caption{Parâmetros da planta obtidos com o método do relé com histerese.}
@@ -194,7 +194,7 @@
 	Entretanto, a utilização do modo de controle de tensão no material, não utiliza os mesmos parâmetros do que o modo de controle de posição. Visto isto, foram testados diversos ganhos diferentes até se atingir a resposta da figura \ref{fig:RealStepResponseTorque}, onde o comportamento do acumulador apresentou a melhor estabilidade e responsividade para o universo de parâmetros testados.
 
 \begin{figure}[H]
-	\caption{Controle de tensão do material com Kp = 10, Ki = 5,5 e Kd = 0.}
+	\caption{Controle de tensão do material com $K_p = 10$, $K_i = 5,5$ e $K_d = 0$.}
 	\centering
 	\includegraphics[width = 0.9\linewidth]{i/RealStepResponseTorque.png}
 	\label{fig:RealStepResponseTorque}

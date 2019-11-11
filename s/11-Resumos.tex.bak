@@ -5,19 +5,7 @@
 \setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
 \begin{resumo}
 
-	As indústrias de polímeros, elastômeros, papéis e metais operam há várias décadas utilizando equipamentos similares para criar pulmões nas linhas contínuas de produção de forma a evitar paralisações de processo. Contudo, um grande desafio é controlar a tensão sobre o material de forma a mantê-la homogênea durante o processo, principalmente em etapas de acúmulo e desacúmulo do material que provocam distúrbios de tensão que se propagam por toda a linha de produção, podendo prejudicar o produto final. Portanto, o presente trabalho apresenta uma linha miniaturizada de bobinamento e desbobinamento de papel com um acumulador vertical, com o objetivo de controlar a tensão sobre o material nas diferentes etapas do processo, aplicando os conhecimentos clássicos de controle e desenvolvendo um controlador PID digital com sintonia automática, embarcado em
-	
-	
-	Este trabalho apresenta o desenvolvimento de sistemas de controle para motores de corrente contínua, utilizando controladores analógicos e digitais. A estratégia de controle utilizada é a estrutura em cascata, que possui ótimas características de compensação de distúrbios. São apresentados alguns métodos de discretização de controladores em tempo contínuo, modelagem do motor CC, cálculos dos controladores, simulações para diferentes condições de funcionamento, comparações entre controladores, circuitos eletrônicos desenvolvidos e resultados práticos.
-	
-	
-	As técnicas de controle e sintonia de controladores foram se desenvolvendo e incorporando
-ferramentas desenvolvidas com o tempo. No presente panorama, o uso de algoritmos que simulam
-o comportamento de organismo e métodos de otimização estão ganhando espaço, disputando com
-métodos clássicos em aplicações complexas e que exigem eficiência, elevada controlabilidade,
-como é o caso do controle de atitude de satélites. O presente trabalho apresenta um estudo e uma proposta de técnica de sintonia de controladores PID, com o objetivo de controlar a dinâmica de um satélite. Portanto, esse trabalho propõe o desenvolvimento de um protótipo de satélite com rodas de reação e de um método automático de sintonia de controladores PID usando redes neurais artificiais e regressão não-linear robusta, afim de melhorar a dinâmica do simulador de satélites. Por fim, são apresentados os resultados e análises do protótipo e do método automático
-de sintonia.
-	
+	As indústrias de polímeros, elastômeros, papéis e metais operam há várias décadas utilizando equipamentos similares para criar pulmões nas linhas contínuas de produção de forma a evitar paralisações de processo. Contudo, um grande desafio é controlar a tensão sobre o material de forma a mantê-la homogênea durante o processo, principalmente em etapas de acúmulo e desacumulo do material que provocam distúrbios de tensão que se propagam por toda a linha de produção, podendo prejudicar o produto final. Portanto, o presente trabalho apresenta uma linha miniaturizada de bobinamento de papel com um acumulador vertical, com o objetivo de controlar a tensão sobre o material ou a posição do carro móvel, aplicando os conhecimentos clássicos de controle e desenvolvendo um controlador PID digital com função de sintonia, embarcado em uma placa de prototipação Arduino e com sistema de supervisão serial.	
 	    
 	\vspace{\onelineskip}
 	 

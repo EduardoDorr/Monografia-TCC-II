@@ -1,9 +1,9 @@
 % ||||||||||||||||||||||||||||||||||||||||||||||
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ||||||||||||||||||||||||||||||||||||||||||||||
-\titulo{Desenvolvimento de um Controlador PID e Sistema de Supervisão para o Controle de Tensão ou Posição em uma Planta Miniaturizada de um Acumulador Vertical Motorizado com Bobinamento de Papel} % Não utilize o ponto final no título
-\autor{Eduardo da Silva Dörr}
-\local{São Leopoldo}
+\titulo{DESENVOLVIMENTO DE UM CONTROLADOR PID E SISTEMA DE SUPERVISÃO PARA O CONTROLE DE TENSÃO OU POSIÇÃO EM UMA PLANTA MINIATURIZADA DE UM ACUMULADOR VERTICAL MOTORIZADO COM BOBINAMENTO DE PAPEL} % Não utilize o ponto final no título
+\autor{EDUARDO DA SILVA DÖRR}
+\local{SÃO LEOPOLDO, RS}
 \data{2019}
 \orientador{Prof. Me. João Olegário de Oliveira Souza}
 %\coorientador{Prof. Dr. Nome Sobrenome} % comente esta linha caso nao tenha coorientador
@@ -15,7 +15,16 @@
 % O preambulo deve conter o tipo do trabalho, o objetivo, 
 % o nome da instituição e a área de concentração 
 
-\preambulo{Dissertação apresentada como requisito parcial para obtenção do título de Engenheiro Eletricista com ênfase em Controle e Automação, pela Graduação em Engenharia Elétrica da Universidade do Vale do Rio dos Sinos - UNISINOS.}
+\preambulo{Trabalho de Conclusão de Curso apresentado
+como requisito parcial para obtenção do título
+de Bacharel em Engenharia Elétrica pelo curso de Engenharia Elétrica da Universidade do Vale do Rio dos Sinos - UNISINOS.}
+
+Trabalho de Conclusão de Curso apresentado
+como requisito parcial para obtenção do título
+de Bacharel em Engenharia de Controle e Automação
+pelo curso de Engenharia de Controle e
+Automação da Universidade do Vale do Rio dos
+Sinos – UNISINOS.
 
 % ----------------------------------------------
 % Configurações de aparência do PDF final

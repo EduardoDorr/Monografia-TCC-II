@@ -71,7 +71,7 @@
 	
 \subsubsection{Carro Móvel}
 
-	A parte mecânica mais importante do acumulador é também formada por perfis de alumínio, junções impressas, conta com rolamentos lineares mancalizados, por onde corre as guias de aço retificado de $\SI{8}{{\milli\metre}}$ e guias laterais com roldanas para evitar desalinhamentos do carro durante a movimentação. Uma peça nomeada de \textit{clamp} também é instalada lateralmente no carro com o objetivo de fixá-la à correia sincronizadora movida pelo motoredutor que transmite o movimento de elevação ao sistema. No carro são montados dois conjuntos de rolos desviadores que operam em conjunto com os três montados na parte interna estrutura. Com o \textit{software} \textit{SolidWorks}\textcopyright , foi possível ter uma estimativa da massa do carro, que será necessária para a etapa de modelagem do sistema e definição do motoredutor, sendo esta de aproximadamente $\SI{1348,96}{{\gram}}$, ou, para fins de dimensionamento, $m_t = \SI{1,35}{{\kilogram}}$, logo, $m_tg \approx \SI{13,5}{{\newton}}$.
+	A parte mecânica mais importante do acumulador é também formada por perfis de alumínio, junções impressas, contando com rolamentos lineares mancalizados, por onde corre as guias de aço retificado de $\SI{8}{{\milli\metre}}$ e guias laterais com roldanas para evitar desalinhamentos do carro durante a movimentação. Uma peça nomeada de \textit{clamp} também é instalada lateralmente no carro com o objetivo de fixá-la à correia sincronizadora movida pelo motoredutor que transmite o movimento de elevação ao sistema. No carro são montados dois conjuntos de rolos desviadores que operam em conjunto com os três montados na parte interna estrutura, podendo ser visto na figura \ref{fig:carromovel}. Com o \textit{software} \textit{SolidWorks}\textcopyright , foi possível ter uma estimativa da massa do carro, que será necessária para a etapa de modelagem do sistema e definição do motoredutor, sendo esta de aproximadamente $\SI{1348,96}{{\gram}}$, ou, para fins de dimensionamento, $m_t = \SI{1,35}{{\kilogram}}$, logo, $m_tg \approx \SI{13,5}{{\newton}}$.
 	
 \begin{figure}[H]
 	\caption{Carro móvel.}
@@ -121,7 +121,7 @@
 	\frac{d}{d_t}V_k = \frac{R_k}{J_k} R_k (T_{k+1} - T_k)
 \end{equation}
 
-	Contudo, ainda resta conhecer o valor das tensões parciais impressas pelo material. Partindo da ideia de prender o material na entrada e travar o carro em uma posição fixa, faz-se uma análise de como as tensões se comportam ao longo do acumulador.
+	Contudo, ainda resta conhecer o valor das tensões parciais impressas pelo material. Partindo da ideia de prender o material na entrada e travar o carro em uma posição fixa, conforme a figura \ref{fig:acumuladorcarriage}, faz-se uma análise de como as tensões se comportam ao longo do acumulador.
 
 \begin{figure}[H]
 	\caption{Modelo do acumulador estático.}
@@ -282,7 +282,7 @@
 
 \subsection{Modelo de um Motor de Tensão Contínua}\label{cap:modeomotor}
 
-	Para os acionamentos dos sistemas de bobinamentos e movimentação do acumulador foi definido o uso de motores de corrente contínua (CC). Então, como parte necessária para o desenvolvimento do controle, faz-se necessário a geração do modelo que descreve a física do motor. Segundo \citeonline{Leonhard2001}, o modelo de um motor CC pode ser definido pelo circuito de armadura e de campo que geram através de forças magnéticas o movimento do sistema mecânico do rotor:
+	Para os acionamentos dos sistemas de bobinamento e movimentação do acumulador foi definido o uso de motores de corrente contínua (CC). Então, como parte necessária para o desenvolvimento do controle, faz-se necessário a geração do modelo que descreve a física do motor. Segundo \citeonline{Leonhard2001}, o modelo de um motor CC pode ser definido pelo circuito de armadura e de campo que geram através de forças magnéticas o movimento do sistema mecânico do rotor, visto na figura \ref{fig:motormodel}:
 
 \begin{figure}[H]
 	\caption{Modelo de um motor de corrente contínua.}
@@ -408,7 +408,7 @@
   \caption{Características mecânicas do material de teste}
   \label{tab:caracpapel}
   \centering%
-  \begin{minipage}{.5\textwidth}
+  \begin{minipage}{.53\textwidth}
     \begin{tabular*}{\textwidth}{cc}
       \hline
       Grandeza & Unidade \\ \hline
@@ -538,7 +538,7 @@
 \begin{figure}[H]
 	\caption{Representação do sinal PWM nos terminais de um motor CC.}
 	\centering
-	\includegraphics[width = 0.6\linewidth]{i/PWMGraph.png}
+	\includegraphics[width = 0.63\linewidth]{i/PWMGraph.png}
 	\label{fig:PWMGraph}
 	\fonte{Adaptado de \citeonline{Ozer2017}.} 
 \end{figure}
@@ -556,7 +556,7 @@
 \begin{figure}[H]
 	\caption{Esquema de uma ponte H com representação da alteração de sentido de rotação.}
 	\centering
-	\includegraphics[width = 0.6\linewidth]{i/HBridgeFull.png}
+	\includegraphics[width = 0.63\linewidth]{i/HBridgeFull.png}
 	\label{fig:HBridgeFull}
 	\fonte{Adaptado de \citeonline{Ozer2017}.} 
 \end{figure}
@@ -609,7 +609,7 @@
 
 	Apesar da possibilidade de controle indireto de tensão no material, optou-se por utilizar um método de medição direta com o uso de \textit{strain gauges}, que são sensores resistivos para medição da distância de deformação de corpos, assim podendo obter informações como força, pressão e aceleração atuantes sobre o corpo medido. Os  \textit{strain gauges} são extremamente úteis no campo de análise de estresse nos mais diversos tipos de corpos, funcionando por um princípio descoberto por William Thompson em 1856, de que fios de cobre ou de ferro tinham a sua resistência elétrica alterada quando eram esticados ou comprimidos por alguma força externa \citeonline{Strain2009}.
 	
-	Graças a esta descoberto, hoje os \textit{strain gauges} são largamente utilizados na criação de células de carga, inclusive sendo aplicados em linhas de processamento com sistemas de acúmulo para medição da tensão do material e controle em malha fechada \citeonline{Gilbert2018}. Para isto, foi instalado nos mancais centrais da cama fixa de rolos, sensores \textit{strain gauges} para a medição direta da deformação do mancal, causada pelo esforço do papel sendo tracionado pelo carro móvel.
+	Graças a esta descoberto, hoje os \textit{strain gauges} são largamente utilizados na criação de células de carga, inclusive sendo aplicados em linhas de processamento com sistemas de acúmulo para medição da tensão do material e controle em malha fechada \citeonline{Gilbert2018}. Para isto, foi instalado nos mancais centrais da cama fixa de rolos, sensores \textit{strain gauges} para a medição direta da deformação do mancal, causada pelo esforço do papel sendo tracionado pelo carro móvel, conforme figura \ref{fig:acumuladorstrain}.
 
 \begin{figure}[H]
 	\caption{Célula de carga e medição de tensão no acumulador.}
