@@ -1,9 +1,9 @@
 % ||||||||||||||||||||||||||||||||||||||||||||||
 % CAPITULO 5
 % ||||||||||||||||||||||||||||||||||||||||||||||
-\chapter{Implementação do Controle em Tempo Discreto}
+\chapter{Implementação do Controle do Acumulador}
 
-	Para implementação prática do sistema de controle, algumas condições precisaram ser satisfeitas primeiramente, como ajustes e nivelamento do carro móvel e o correto esticamento e posicionamento da correia sincronizadora de forma a reduzir ao máximo a quantidade de vibração e travamentos no movimento, deixando-o o mais livre possível e assim não impactar no controle.
+	Para implementação prática do sistema de controle, algumas condições precisaram ser satisfeitas inicialmente, como ajustes e nivelamento do carro móvel e o correto esticamento e posicionamento da correia sincronizadora de forma a reduzir ao máximo a quantidade de vibração e travamentos no movimento, deixando-o o mais livre possível e assim não impactar no controle.
 	
 \begin{figure}[H]
 	\caption{Planta real do acumulador com um bobinador.}
@@ -43,7 +43,7 @@
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
 	
-	Caso existam comandos, é feita a leitura e interpretação do comando e executado assim que a sua respectiva função de controle seja chamada pelo laço principal do programa. Após verificar a presença de comandos do supervisório, o controlador embarcado envia cinco informações para o supervisório, sendo: a corrente do motoredutor, a tensão medida na célula de carga, a velocidade e posição instantâneas do carro móvel e, por fim, o tempo da última varredura do laço principal. Conforme a figura \ref{fig:SupervisorioControle}, pode-se selecionar entre 4 tipos de operação, sendo: controle manual, controle de tensão, controle de posição e método do relé.
+	Caso existam comandos, é feita a leitura e interpretação do comando e executado assim que a sua respectiva função de controle seja chamada pelo laço principal do programa. Após verificar a presença de comandos do supervisório, o controlador embarcado envia cinco informações para o supervisório, que são: a corrente do motorredutor, a tensão medida na célula de carga, a velocidade e posição instantâneas do carro móvel e, por fim, o tempo da última varredura do laço principal. Conforme a figura \ref{fig:SupervisorioControle}, pode-se selecionar entre 4 tipos de operação, sendo: controle manual, controle de tensão, controle de posição e método do relé.
 
 \begin{figure}[H]
 	\caption{Tela de controle do sistema supervisório.}
@@ -53,7 +53,7 @@
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
 
-	No controle manual, o acumulador permanece sem se movimentar e aguarda um comando de subida ou decida do supervisório através do botão duplo. Deve ser digitado um valor percentual no campo ao lado do botão duplo para escolher o \textit{Duty Cycle} que será comandado ao motoredutor. Os dois botões adicionais são utilizados para zerar o valor lido na célula de carga (\textit{Tare}) e zerar o valor da posição do carro móvel (\textit{Home}), indicando que ele esteja na posição totalmente embaixo.
+	No controle manual, o acumulador permanece sem se movimentar e aguarda um comando de subida ou decida do supervisório através do botão duplo. Deve ser digitado um valor percentual no campo ao lado do botão duplo para escolher o \textit{Duty Cycle} que será comandado ao motorredutor. Os dois botões adicionais são utilizados para zerar o valor lido na célula de carga (\textit{Tare}) e zerar o valor da posição do carro móvel (\textit{Home}), indicando que ele esteja na posição totalmente embaixo.
 	
 	Nos controles de tensão e posição, o usuário deve digitar o valor do \textit{setpoint} desejado para o tipo de controle selecionado, e pode alterar o valor dos ganhos do controlador alterando seus respectivos valores nos campos mais abaixo, podendo habilitar ou desabilitar um ganho dinamicamente para testar o comportamento da planta.
 	
@@ -63,7 +63,7 @@
 
 \section{Comportamento com Controle Proporcional}
 
-	Na sequência de testes na planta real, é aplicado uma entrada em degrau no modo de controle de posição, variando o ganho proporcional para verificar e comparar o comportamento do sistema a medida que o ganho $K_p$ é aumentado em relação a sua resposta simulada. Contudo, devido a velocidade de aquisição dos dados da planta, não é possível testar usando um sinal de referência de $\SI{10}{\milli\metre}$, causando uma resposta com poucos para geração do gráfico. Então, para os testes reais, foi aplicado um sinal de referência de $\SI{100}{\milli\metre}$:
+	Na sequência de testes na planta real, é aplicado uma entrada em degrau no modo de controle de posição, variando o ganho proporcional para verificar e comparar o comportamento do sistema a medida que o ganho $K_p$ é aumentado em relação a sua resposta simulada. Contudo, devido a velocidade de aquisição dos dados da planta, não é possível testar usando um sinal de referência de $\SI{10}{\milli\metre}$, causando uma resposta com poucos pontos para geração do gráfico. Então, para os testes reais, foi aplicado um sinal de referência de $\SI{100}{\milli\metre}$:
 	
 \begin{figure}[H]
 	\caption{Resposta ao degrau real do acumulador variando o ganho proporcional.}
@@ -73,13 +73,13 @@
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
 
-	Observando a resposta do sistema, em geral, o comportamento da planta apresenta um formato próximo do simulado, dada as diferenças no degrau de entrada e demais parâmetros não contemplados na planta simulada, tais como os atritos.
+	Observando a resposta do sistema na figura \ref{fig:RealStepResponseKp2Kp5Kp10Kp25Kp50}, em geral, o comportamento da planta apresenta um formato próximo do simulado, dada as diferenças no degrau de entrada e demais parâmetros não contemplados na planta simulada, tais como os atritos.
 
 % ----------------------------------------------
 
 \section{Comportamento com Controle Proporcional-Integral}
 
-	Seguindo a mesma sequência de testes da simulação, foi fixado o ganho proporcional $K_p = 25$ e foi sendo variado o ganho integral $K_i$. Devido a forma como a biblioteca de PID do Arduino foi criada, o controlador já apresenta naturalmente a ação \textit{anti-windup}, para evitar que seja colocado um valor superior a $255$ na saída \textit{PWM}, que seria quando o \textit{Duty Cycle} é máximo.
+	Seguindo a mesma sequência de testes da simulação, foi fixado o ganho proporcional $K_p = 25$, e foi sendo variado o ganho integral $K_i$. Devido a forma como a biblioteca de PID do Arduino foi criada, o controlador já apresenta naturalmente a ação \textit{anti-windup}, para evitar que seja colocado um valor superior a $255$ na saída \textit{PWM}, que seria quando o \textit{Duty Cycle} é máximo.
 	
 \begin{figure}[H]
 	\caption{Resposta ao degrau real do acumulador variando o ganho integral.}
@@ -89,7 +89,7 @@
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
 
-	A medida que é aumentado o valor do ganho integral, a recuperação do controle após a ultrapassagem é mais rápida, pois o erro acumulado é tão grande que com ganhos pequenos é necessário um maior tempo para o somatório se anular e a planta apresentar nenhum erro em regime, como visto na resposta para um ganho $K_i = 50$, onde o sistema possui uma recuperação muito mais rápida do que comparado com as demais respostas.
+	A medida que é aumentado o valor do ganho integral, a recuperação do controle após a ultrapassagem é mais rápida, pois o erro acumulado é tão grande que com ganhos pequenos é necessário um maior tempo para o somatório se anular e a planta apresentar nenhum erro em regime, como visto na resposta para um ganho $K_i = 50$, onde o sistema possui uma recuperação muito mais rápida quando comparado com as demais respostas.
 	
 	É interessante observar que na figura \ref{fig:MatlabStepResponseKi2Ki5Ki10Ki25Ki50WU}, a planta simulada apresenta mais oscilação e sobressinal para alcançar o regime, indicando a falta de um parâmetro de amortecimento para estabilizar o sistema, como os atritos não considerados.
 	
@@ -97,7 +97,7 @@
 
 \section{Comportamento com Controle Proporcional-Integral-Derivativo}
 
-	Agora fixando os ganhos proporcional e integral em 25 e 25, respectivamente, e variando o ganho derivativo $K_d$, assim como na planta simulada, espera-se que as repostas apresentem um tempo de acomodação e sobressinal menores:
+	Agora fixando os ganhos proporcional e integral em 25 e 25, respectivamente, e variando o ganho derivativo $K_d$, assim como na planta simulada, espera-se que as respostas apresentem um tempo de acomodação e sobressinal menores.
 	
 \begin{figure}[H]
 	\caption{Resposta ao degrau real do acumulador variando o ganho derivativo.}
@@ -107,13 +107,13 @@
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
 
-	Diferentemente da simulação, a adição do ganho derivativo reduziu muito pouco o tempo de acomodação e o sobressinal do sistema. Além disso, a alteração do ganho, praticamente, não alterou a resposta, o que pode indicar que os ganhos são baixos demais para a planta real.
+	Diferentemente da simulação, na figura \ref{fig:RealStepResponseKd0,02Kd0,05Kd0,1Kd0,25Kd0,5}, a adição do ganho derivativo reduziu muito pouco o tempo de acomodação e o sobressinal do sistema. Além disso, a alteração do ganho, praticamente, não alterou a resposta, o que pode indicar que os ganhos são baixos demais para a planta real.
 
 % ----------------------------------------------
 
 \section{Método de Sintonia com Relé}
 
-	Durante o desenvolvimento deste trabalho, foi discutido brevemente sobre alguns métodos de sintonia de controladores em malha fechada, em especial o método do relé com histerese, que fornece uma forma mais segura de utilizar o método da sensibilidade limiar de Ziegler e Nichols. Então, com isto em mente, foi implementado e disponibilizado no sistema supervisório a opção de ativar um controle de relé com histerese para se levantar os parâmetros de controle da planta. Aplicando a saída com relé na planta, obteve-se o seguinte resultado:
+	Durante o desenvolvimento deste trabalho, foi discutido brevemente alguns métodos de sintonia de controladores em malha fechada, em especial o método do relé com histerese, que fornece uma forma mais segura de utilizar o método da sensibilidade limiar de Ziegler e Nichols. Então, com isto em mente, foi implementado e disponibilizado no sistema supervisório a opção de ativar um controle de relé com histerese para se levantar os parâmetros de controle da planta. Aplicando o controle com relé, obteve-se os resultados apresentados nas figuras \ref{fig:RealStepResponseRelayMethodA} e \ref{fig:RealStepResponseRelayMethodB}:
 
 \begin{figure}[H]
 	\caption{Método de Sintonia com relé.}
@@ -133,7 +133,7 @@
 	\fonte{Elaborado pelo Autor.}
 \end{figure}
 
-	Na figura \ref{fig:RealStepResponseRelayMethodA}, observa-se que logo que o carro móvel alcança o valor de referência e ultrapassa a banda superior, formada pela soma do valor de referência e da histerese, a saída do relé inverte o sinal de controle e força a descida do carro até alcançar a banda inferior, formada pela subtração do valor de referência e da histerese, invertendo novamente o sinal de controle. Com esta inversão da saída, o carro móvel começa a oscilar indefinidamente de forma estável ao redor do valor de referência e, com isso, pode-se ler a amplitude da oscilação e o seu período e calcular o obter-se o ganho e período crítico. Assim, observando a figura \ref{fig:RealStepResponseRelayMethodB}, onde foi detalhada a oscilação do sistema com  valor da amplitude e período dela, para usar a equação \ref{eq:n(a)} e encontrar o valor do ganho crítico $K_u$ e, em seguida, aplicar os resultados no quadro \ref{qua:ZieglerNichols}. Com isto, obtendo-se os valores vistos na tabela \ref{tab:parrele}:
+	Na figura \ref{fig:RealStepResponseRelayMethodA}, observa-se que logo que o carro móvel alcança o valor de referência e ultrapassa a banda superior, formada pela soma do valor de referência e da histerese, a saída do relé inverte o sinal de controle e força a descida do carro até alcançar a banda inferior, formada pela subtração do valor de referência e da histerese, invertendo novamente o sinal de controle. Com esta inversão da saída, o carro móvel começa a oscilar indefinidamente de forma estável ao redor do valor de referência e, com isso, pode-se ler a amplitude da oscilação e o seu período, e calcular o ganho e o período crítico. Assim, observando a figura \ref{fig:RealStepResponseRelayMethodB}, onde foi detalhada a oscilação do sistema com o valor da amplitude e seu período, pode-se utilizar a equação \ref{eq:n(a)} para encontrar o valor do ganho crítico $K_u$ e, em seguida, aplicar os resultados no quadro \ref{qua:ZieglerNichols}. Com isto, obtém-se os valores vistos na tabela \ref{tab:parrele}:
 	
 \begin{table}[H]
   \caption{Parâmetros da planta obtidos com o método do relé com histerese.}
@@ -160,7 +160,7 @@
 	
 \section{Análise dos Resultados}
 
-	Aplicando os parâmetros obtidos com o método do relé na planta, conforme visto na figura \ref{fig:RealStepResponseKpKiKdRelay}, obteve-se uma melhora notável em termos de sobressinal e tempo de acomodação, apresentando uma pequena oscilação amortecida até alcançar o regime:
+	Aplicando os parâmetros obtidos com o método do relé na planta, conforme visto na figura \ref{fig:RealStepResponseKpKiKdRelay}, obteve-se uma melhora notável em termos de sobressinal e tempo de acomodação, apresentando uma pequena oscilação amortecida até alcançar o regime, conforme visto na figura \ref{fig:RealStepResponseKpKiKdRelay}:
 
 \begin{figure}[H]
 	\caption{Resposta ao degrau do acumulador com os parâmetros do método do relé.}
@@ -170,7 +170,7 @@
 	\fonte{Elaborado pelo autor.} 
 \end{figure}
 
-	A partir da figura \ref{fig:RealStepResponseKpKiKdRelay}, pode-se retirar todos os dados de desempenho da planta, onde:
+	A partir desta resposta, pode-se retirar todos os dados de desempenho da planta, que são apresentados na tabela \ref{tab:parcontrole}:
 	
 \begin{table}[H]
   \caption{Dados de desempenho da resposta ao degrau da planta com os parâmetro do método do relé com histerese.}
@@ -191,7 +191,7 @@
   \end{minipage}
 \end{table}
 
-	Entretanto, a utilização do modo de controle de tensão no material, não utiliza os mesmos parâmetros do que o modo de controle de posição. Visto isto, foram testados diversos ganhos diferentes até se atingir a resposta da figura \ref{fig:RealStepResponseTorque}, onde o comportamento do acumulador apresentou a melhor estabilidade e responsividade para o universo de parâmetros testados.
+	Entretanto, a utilização do modo de controle de tensão no material, não utiliza os mesmos parâmetros que o modo de controle de posição. Visto isto, foram testados diversos ganhos diferentes até se atingir a resposta da figura \ref{fig:RealStepResponseTorque}, onde o comportamento do acumulador apresentou a melhor estabilidade e responsividade para o universo de parâmetros testados.
 
 \begin{figure}[H]
 	\caption{Controle de tensão do material com $K_p = 10$, $K_i = 5,5$ e $K_d = 0$.}
@@ -201,7 +201,7 @@
 	\fonte{Elaborado pelo autor.} 
 \end{figure}
 
-	Durante os testes com controle de tensão, observou-se que o valor lido da célula de carga, acaba aumentando lentamente com o tempo, mesmo com o sistema parado e sem carga imposta à célula. Este comportamento se repetiu em todos os testes e prejudicou diretamente o controle de tensão do sistema, uma vez que, este valor aumentava ao ponto de desestabilizar o sistema, fazendo o carro móvel descer, folgar o material e não conseguir corrigir, necessitando reiniciar a planta para remover o erro acumulado.
+	Durante os testes com controle de tensão, observou-se que o valor lido da célula de carga, acaba aumentando lentamente com o tempo, mesmo com o sistema parado e sem carga imposta à célula. Este comportamento se repetiu em todos os testes e prejudicou diretamente o controle de tensão do sistema, uma vez que, este valor aumentava a ponto de desestabilizar o sistema, fazendo o carro móvel descer, folgar o material e não conseguir corrigir, necessitando reiniciar a planta para remover o erro acumulado.
 	
 	O sistema mecânico, em geral, foi capaz de fornecer a estrutura e versatilidade para executar todos os testes necessários e monitoração das variáveis do sistema. Todavia, a estrutura mecânica apresentou alguns problemas de nivelamento do carro móvel, que não influenciaram muito nos resultados do sistema, operando normalmente com bastante estabilidade.
 	

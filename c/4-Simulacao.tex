@@ -1,9 +1,9 @@
 % ||||||||||||||||||||||||||||||||||||||||||||||
 % CAPITULO 4
 % ||||||||||||||||||||||||||||||||||||||||||||||
-\chapter{Simulação do Modelo em Tempo Contínuo}
+\chapter{Simulação do Modelo do Acumulador}
 
-	Para a simulação do sistema do acumulador, decidiu-se pela utilização do \textit{software} \textit{MATLAB}\textcopyright , devido a simplicidade da utilização das bibliotecas do pacote \textit{Simulink} que vem integrado ao programa. Utilizando a modelagem do motor de corrente contínua já apresentado neste trabalho, foram feitas algumas adições ao modelo contemplando a ação da carga do sistema e a ação do redutor acoplador ao motor de forma a obter-se uma representação em blocos do sistema conforme a figura \ref{fig:matlabctrl}:
+	Para a simulação do sistema do acumulador, decidiu-se pela utilização do \textit{software} \textit{MATLAB}\textcopyright , devido a simplicidade da utilização das bibliotecas do pacote \textit{Simulink} que vem integrado ao programa. Utilizando a modelagem do motor de corrente contínua já apresentada neste trabalho, foram feitas algumas adições ao modelo contemplando a ação da carga do sistema e a ação do redutor acoplador ao motor de forma a obter-se uma representação em blocos do sistema conforme a figura \ref{fig:matlabctrl}:
 	
 \begin{figure}[H]
 	\caption{Diagrama de blocos do acumulador.}
@@ -23,7 +23,7 @@
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
 
-	Na figura \ref{fig:matlabctrl1}, $J_p$ é a inércia das polias sincronizadoras, $M_l$ é a força peso do carro móvel e $R_p$ é o raio da polia. Estes termos retornam em forma de torque consumido para o motor, sendo reduzidos por $N^{2}$, onde $N$ é o fator de redução do redutor, neste caso 1:64. Importante também perceber que a velocidade angular de saída do motoredutor é derivada para calcular a inércia refletida, usando a aceleração angular do sistema, conforme o cálculo de forças em sistemas rotacionais:
+	Na figura \ref{fig:matlabctrl1}, $J_p$ é a inércia das polias sincronizadoras, $M_l$ é a força peso do carro móvel e $R_p$ é o raio da polia. Estes termos retornam em forma de torque consumido para o motor, sendo reduzidos por $N^{2}$, onde $N$ é o fator de redução do redutor, neste caso 1:64. Importante também perceber que a velocidade angular de saída do motorredutor é derivada para calcular a inércia refletida, usando a aceleração angular do sistema, conforme o cálculo de forças em sistemas rotacionais:
 	
 \begin{equation}
 	\tau = J \frac{d \omega}{dt} = J \alpha
@@ -85,13 +85,13 @@
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
 
-	Conforme observa-se na figura \ref{fig:MatlabStepResponseKp2Kp5Kp10Kp25Kp50}, a medida que é aumentado o ganho sistema, ele se torna cada vez mais rápido, atingindo o limite do tempo de subida com ganho $K_p = 10$, a partir deste ponto o sistema começa a apresentar cada vez mais oscilação e um menor erro em regime, mas nunca de fato alcançando a referência.
+	Conforme observa-se na figura \ref{fig:MatlabStepResponseKp2Kp5Kp10Kp25Kp50}, a medida que é aumentado o ganho sistema, ele se torna cada vez mais rápido, atingindo o limite do tempo de subida com ganho $K_p = 10$. A partir deste ponto o sistema começa a apresentar cada vez mais oscilação e um menor erro em regime, mas nunca de fato alcançando a referência.
 
 % ----------------------------------------------
 
 \section{Comportamento com Controle Proporcional-Integral}
 
-	Efetuando uma nova série de simulações, fixando o ganho proporcional em 25 e alterando somente o ganho integral, obtêm-se a resposta:
+	Efetuando uma nova série de simulações, fixando o ganho proporcional em 25 e alterando somente o ganho integral, obtêm-se a resposta vista na figura \ref{fig:MatlabStepResponseKi2Ki5Ki10Ki25Ki50}:
 	
 \begin{figure}[H]
 	\caption{Resposta ao degrau simulada do acumulador variando o ganho integral.}
@@ -101,7 +101,7 @@
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
 
-	Conforme observa-se na figura \ref{fig:MatlabStepResponseKi2Ki5Ki10Ki25Ki50}, a medida que é aumentado o ganho integral, maior fica o sobressinal do sistema, mas todos em determinado ponto estabilizam ainda mais próximo da referência e com uma oscilação muito menor do que apenas com o uso do controle proporcional. Considerando o grande sobressinal observado para os maiores ganhos, torna-se muito interessante a aplicação de um \textit{anti-windup}, para diminuir o erro de controle acumulado devido a saturação da fonte, limitada em $\SI{12}{\volt}$:
+	Conforme observa-se na figura \ref{fig:MatlabStepResponseKi2Ki5Ki10Ki25Ki50}, a medida que é aumentado o ganho integral, maior fica o sobressinal do sistema, mas todos em determinado ponto estabilizam ainda mais próximo da referência e com uma oscilação muito menor do que apenas com o uso do controle proporcional. Considerando o grande sobressinal observado para os maiores ganhos, torna-se muito interessante a aplicação de um \textit{anti-windup}, para diminuir o erro de controle acumulado devido a saturação da fonte, limitada em $\SI{12}{\volt}$, conforme observado na figura \ref{fig:MatlabStepResponseKi2Ki5Ki10Ki25Ki50WU}:
 	
 \begin{figure}[H]
 	\caption{Resposta ao degrau simulada do acumulador variando o ganho integral e ação anti-windup.}
@@ -111,13 +111,13 @@
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
 
-	Agora com a ação do \textit{anti-windup} operando o sobressinal para todos os ganhos diminuíram e para $K_i = 50$ e $K_i = 25$, especificamente, o sistema apresentou praticamente nenhum erro em regime com um tempo de acomodação menor do que sem a ação operando.
+	Agora com a ação do \textit{anti-windup} operando, o sobressinal para todos os ganhos diminuiu e para $K_i = 50$ e $K_i = 25$, especificamente, o sistema apresentou praticamente nenhum erro em regime, com um tempo de acomodação menor do que sem a ação operando.
 	
 % ----------------------------------------------
 
 \section{Comportamento com Controle Proporcional-Integral-Derivativo}
 
-	Para adicionar o controle derivativo ao sistema, foi fixado o valor dos ganhos proporcional e integral em 25 e 25, respectivamente, e alterando somente o ganho derivativo, para se obter a resposta:
+	Para adicionar o controle derivativo ao sistema, foi fixado o valor dos ganhos proporcional e integral em 25 e 25, respectivamente, e alterando somente o ganho derivativo, para se obter a resposta vista na figura \ref{fig:MatlabStepResponseKd0,02Kd0,05Kd0,1Kd0,25Kd0,5WU}:
 	
 \begin{figure}[H]
 	\caption{Resposta ao degrau simulada do acumulador variando o ganho derivativo.}
@@ -127,7 +127,7 @@
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
 
-	Observando a figura \ref{fig:MatlabStepResponseKd0,02Kd0,05Kd0,1Kd0,25Kd0,5WU}, a adição do ganho derivativo reduziu ainda mais o sobressinal do sistema em todas as respostas, além de levar as respostas ao regime mais rapidamente e próximo da referência e com pouquíssima oscilação.
+	Observando a figura \ref{fig:MatlabStepResponseKd0,02Kd0,05Kd0,1Kd0,25Kd0,5WU}, a adição do ganho derivativo reduziu ainda mais o sobressinal do sistema em todas as respostas, além de levar as respostas ao regime mais rapidamente e próximo da referência, com pouquíssima oscilação.
 	
 	Comparando todas as respostas obtidas, pode-se concluir que o sistema que apresentou a melhor resposta, visto sobressinal, tempo de acomodação e erro em regime, utilizou os ganhos de controlador $K_p = 25$, $K_i = 25$ e $K_d = 0,5$, com a ação \textit{anti-windup} ativa.
 
