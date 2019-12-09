@@ -18,8 +18,8 @@
 \contentsline {section}{\numberline {2.2}Acumulador Industrial}{22}{section.2.2}
 \contentsline {section}{\numberline {2.3}Sistemas de Controle}{27}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Resposta ao Degrau de um Sistema}{28}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Controlador PID}{31}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}M\IeC {\'e}todos de Sintonia em Malha Fechada}{36}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.2}Controlador PID}{30}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}M\IeC {\'e}todos de Sintonia em Malha Fechada}{35}{subsection.2.3.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Metodologia}}{39}{chapter.3}
 \contentsline {section}{\numberline {3.1}Prot\IeC {\'o}tipo e Modelagem do Sistema}{39}{section.3.1}
@@ -36,37 +36,37 @@
 \contentsline {section}{\numberline {3.2}Acionamento e Instrumenta\IeC {\c c}\IeC {\~a}o}{56}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Acionamento dos Motores}{56}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Medi\IeC {\c c}\IeC {\~a}o de Corrente}{60}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Medi\IeC {\c c}\IeC {\~a}o de Tens\IeC {\~a}o}{60}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}Medi\IeC {\c c}\IeC {\~a}o de Tra\IeC {\c c}\IeC {\~a}o}{60}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Medi\IeC {\c c}\IeC {\~a}o de Posi\IeC {\c c}\IeC {\~a}o e Velocidade}{62}{subsection.3.2.4}
 \contentsline {section}{\numberline {3.3}Controle}{63}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Embarcado}{63}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Software}{64}{subsection.3.3.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Simula\IeC {\c c}\IeC {\~a}o do Modelo em Tempo Cont\IeC {\'\i }nuo}}{67}{chapter.4}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Simula\IeC {\c c}\IeC {\~a}o do Modelo do Acumulador}}{67}{chapter.4}
 \contentsline {section}{\numberline {4.1}Identifica\IeC {\c c}\IeC {\~a}o dos Par\IeC {\^a}metros do Motor}{68}{section.4.1}
 \contentsline {section}{\numberline {4.2}Comportamento com Controle Proporcional}{69}{section.4.2}
 \contentsline {section}{\numberline {4.3}Comportamento com Controle Proporcional-Integral}{70}{section.4.3}
 \contentsline {section}{\numberline {4.4}Comportamento com Controle Proporcional-Integral-Derivativo}{71}{section.4.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Implementa\IeC {\c c}\IeC {\~a}o do Controle em Tempo Discreto}}{73}{chapter.5}
-\contentsline {section}{\numberline {5.1}Estrutura do Supervis\IeC {\'o}rio}{74}{section.5.1}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Implementa\IeC {\c c}\IeC {\~a}o do Controle do Acumulador}}{72}{chapter.5}
+\contentsline {section}{\numberline {5.1}Estrutura do Supervis\IeC {\'o}rio}{73}{section.5.1}
 \contentsline {section}{\numberline {5.2}Comportamento com Controle Proporcional}{75}{section.5.2}
-\contentsline {section}{\numberline {5.3}Comportamento com Controle Proporcional-Integral}{76}{section.5.3}
-\contentsline {section}{\numberline {5.4}Comportamento com Controle Proporcional-Integral-Derivativo}{77}{section.5.4}
-\contentsline {section}{\numberline {5.5}M\IeC {\'e}todo de Sintonia com Rel\IeC {\'e}}{78}{section.5.5}
-\contentsline {section}{\numberline {5.6}An\IeC {\'a}lise dos Resultados}{80}{section.5.6}
+\contentsline {section}{\numberline {5.3}Comportamento com Controle Proporcional-Integral}{75}{section.5.3}
+\contentsline {section}{\numberline {5.4}Comportamento com Controle Proporcional-Integral-Derivativo}{76}{section.5.4}
+\contentsline {section}{\numberline {5.5}M\IeC {\'e}todo de Sintonia com Rel\IeC {\'e}}{77}{section.5.5}
+\contentsline {section}{\numberline {5.6}An\IeC {\'a}lise dos Resultados}{79}{section.5.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Considera\IeC {\c c}\IeC {\~o}es Finais}}{83}{chapter.6}
-\contentsline {section}{\numberline {6.1}Sugest\IeC {\~o}es de Melhoria e Trabalhos Futuros}{84}{section.6.1}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Considera\IeC {\c c}\IeC {\~o}es Finais}}{81}{chapter.6}
+\contentsline {section}{\numberline {6.1}Sugest\IeC {\~o}es de Melhoria e Trabalhos Futuros}{82}{section.6.1}
 \vspace {\cftbeforechapterskip }
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase {Refer\^encias Bibliogr\'aficas}}{86}{section*.85}
+\contentsline {chapter}{\MakeTextUppercase {Refer\^encias Bibliogr\'aficas}}{84}{section*.85}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Ap\^endices}}{90}{section*.86}
+\contentsline {part}{\uppercase {Ap\^endices}}{88}{section*.86}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Diagrama Esquem\IeC {\'a}tico do Sistema}}{91}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Diagrama Esquem\IeC {\'a}tico do Sistema}}{89}{appendix.A}

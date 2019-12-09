@@ -29,15 +29,13 @@
 	\tau = J \frac{d \omega}{dt} = J \alpha
 \end{equation}
 
-	Onde $\tau$ é o torque produzido pela imposição de uma aceleração angular $\alpha$ sobre um corpo qualquer com momento de inércia $J$.
-	
-	A simulação de controle dos bobinadores não será abordada neste trabalho, tendo o enfoque total apenas no acumulador.
+	Onde $\tau$ é o torque produzido pela imposição de uma aceleração angular $\alpha$ sobre um corpo qualquer com momento de inércia $J$. A simulação de controle dos bobinadores não será abordada neste trabalho, tendo o enfoque total apenas no acumulador.
 	
 % ----------------------------------------------	
 
 \section{Identificação dos Parâmetros do Motor}
 
-	Antes de simular o sistema, é necessário encontrar os parâmetros do motor, sendo eles: resistência de armadura ($R_a$), indutância de armadura ($L_a$), constante de torque ($K_T$), constante de velocidade ($K_{\omega}$), inércia do rotor ($J_m$) e o atrito viscoso do motor ($B_m$). Para isto, seguiu-se os passos descritos na dissertação de \citeonline{Russolo2011}, onde com o uso de multímetro, osciloscópio e uma fonte variável, foi possível encontrar valores aproximados para os parâmetros do motor.
+	Antes de simular o sistema, é necessário encontrar os parâmetros do motor, sendo eles: resistência de armadura ($R_a$), indutância de armadura ($L_a$), constante de torque ($K_T$), constante de velocidade ($K_{\omega}$), inércia do rotor ($J_m$) e o atrito viscoso do motor ($B_m$). Para isto, seguiu-se os passos descritos no trabalho de conclusão de \citeonline{Russolo2011}, onde com o uso de multímetro, osciloscópio e uma fonte variável, foi possível encontrar valores aproximados para os parâmetros do motor.
 	
 \begin{table}[H]
   \caption{Parâmetros do motor AK360/78.8PL12S7000S.}
@@ -64,7 +62,7 @@
 \begin{figure}[H]
 	\caption{Resposta ao degrau simulada do acumulador com ganho proporcional unitário.}
 	\centering
-	\includegraphics[width = 0.9\linewidth]{i/MatlabStepResponseKp1Ki0Kd0.png}
+	\includegraphics[width = 0.85\linewidth]{i/MatlabStepResponseKp1Ki0Kd0.png}
 	\label{fig:MatlabStepResponseKp1Ki0Kd0}
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
@@ -80,7 +78,7 @@
 \begin{figure}[H]
 	\caption{Resposta ao degrau simulada do acumulador variando o ganho proporcional.}
 	\centering
-	\includegraphics[width = 0.9\linewidth]{i/MatlabStepResponseKp2Kp5Kp10Kp25Kp50.png}
+	\includegraphics[width = 0.85\linewidth]{i/MatlabStepResponseKp2Kp5Kp10Kp25Kp50.png}
 	\label{fig:MatlabStepResponseKp2Kp5Kp10Kp25Kp50}
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
@@ -96,7 +94,7 @@
 \begin{figure}[H]
 	\caption{Resposta ao degrau simulada do acumulador variando o ganho integral.}
 	\centering
-	\includegraphics[width = 0.9\linewidth]{i/MatlabStepResponseKi2Ki5Ki10Ki25Ki50.png}
+	\includegraphics[width = 0.85\linewidth]{i/MatlabStepResponseKi2Ki5Ki10Ki25Ki50.png}
 	\label{fig:MatlabStepResponseKi2Ki5Ki10Ki25Ki50}
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
@@ -106,7 +104,7 @@
 \begin{figure}[H]
 	\caption{Resposta ao degrau simulada do acumulador variando o ganho integral e ação anti-windup.}
 	\centering
-	\includegraphics[width = 0.9\linewidth]{i/MatlabStepResponseKi2Ki5Ki10Ki25Ki50WU.png}
+	\includegraphics[width = 0.85\linewidth]{i/MatlabStepResponseKi2Ki5Ki10Ki25Ki50WU.png}
 	\label{fig:MatlabStepResponseKi2Ki5Ki10Ki25Ki50WU}
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
@@ -122,7 +120,7 @@
 \begin{figure}[H]
 	\caption{Resposta ao degrau simulada do acumulador variando o ganho derivativo.}
 	\centering
-	\includegraphics[width = 0.9\linewidth]{i/MatlabStepResponseKd0,02Kd0,05Kd0,1Kd0,25Kd0,5WU.png}
+	\includegraphics[width = 0.85\linewidth]{i/MatlabStepResponseKd0,02Kd0,05Kd0,1Kd0,25Kd0,5WU.png}
 	\label{fig:MatlabStepResponseKd0,02Kd0,05Kd0,1Kd0,25Kd0,5WU}
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}

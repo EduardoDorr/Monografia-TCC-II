@@ -8,7 +8,7 @@
 \begin{figure}[H]
 	\caption{Planta real do acumulador com um bobinador.}
 	\centering
-	\includegraphics[width = 0.6\linewidth]{i/Realacumulador.png}
+	\includegraphics[width = 0.7\linewidth]{i/Realacumulador.png}
 	\label{fig:Realacumulador}
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
@@ -38,7 +38,7 @@
 \begin{figure}[H]
 	\caption{Tela de comunicação do sistema supervisório.}
 	\centering
-	\includegraphics[width = 0.7\linewidth]{i/SupervisorioComunicacao.png}
+	\includegraphics[width = 0.85\linewidth]{i/SupervisorioComunicacao.png}
 	\label{fig:SupervisorioComunicacao}
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
@@ -48,7 +48,7 @@
 \begin{figure}[H]
 	\caption{Tela de controle do sistema supervisório.}
 	\centering
-	\includegraphics[width = 0.7\linewidth]{i/SupervisorioControle.png}
+	\includegraphics[width = 0.85\linewidth]{i/SupervisorioControle.png}
 	\label{fig:SupervisorioControle}
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
@@ -68,7 +68,7 @@
 \begin{figure}[H]
 	\caption{Resposta ao degrau real do acumulador variando o ganho proporcional.}
 	\centering
-	\includegraphics[width = 0.9\linewidth]{i/RealStepResponseKp2Kp5Kp10Kp25Kp50.png}
+	\includegraphics[width = 1\linewidth]{i/RealStepResponseKp2Kp5Kp10Kp25Kp50.png}
 	\label{fig:RealStepResponseKp2Kp5Kp10Kp25Kp50}
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
@@ -79,12 +79,12 @@
 
 \section{Comportamento com Controle Proporcional-Integral}
 
-	Seguindo a mesma sequência de testes da simulação, foi fixado o ganho proporcional $K_p = 25$, e foi sendo variado o ganho integral $K_i$. Devido a forma como a biblioteca de PID do Arduino foi criada, o controlador já apresenta naturalmente a ação \textit{anti-windup}, para evitar que seja colocado um valor superior a $255$ na saída \textit{PWM}, que seria quando o \textit{Duty Cycle} é máximo.
+	Seguindo a mesma sequência de testes da simulação, foi fixado o ganho proporcional $K_p = 25$, e foi sendo variado o ganho integral $K_i$, conforme visto na figura \ref{fig:RealStepResponseKi2Ki5Ki10Ki25Ki50}. Devido a forma como a biblioteca de PID do Arduino foi criada, o controlador já apresenta naturalmente a ação \textit{anti-windup}, para evitar que seja colocado um valor superior a $255$ na saída \textit{PWM}, que seria quando o \textit{Duty Cycle} é máximo.
 	
 \begin{figure}[H]
 	\caption{Resposta ao degrau real do acumulador variando o ganho integral.}
 	\centering
-	\includegraphics[width = 0.9\linewidth]{i/RealStepResponseKi2Ki5Ki10Ki25Ki50.png}
+	\includegraphics[width = 1\linewidth]{i/RealStepResponseKi2Ki5Ki10Ki25Ki50.png}
 	\label{fig:RealStepResponseKi2Ki5Ki10Ki25Ki50}
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
@@ -102,7 +102,7 @@
 \begin{figure}[H]
 	\caption{Resposta ao degrau real do acumulador variando o ganho derivativo.}
 	\centering
-	\includegraphics[width = 0.9\linewidth]{i/RealStepResponseKd0,02Kd0,05Kd0,1Kd0,25Kd0,5.png}
+	\includegraphics[width = 1\linewidth]{i/RealStepResponseKd0,02Kd0,05Kd0,1Kd0,25Kd0,5.png}
 	\label{fig:RealStepResponseKd0,02Kd0,05Kd0,1Kd0,25Kd0,5}
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
@@ -117,13 +117,13 @@
 
 \begin{figure}[H]
 	\caption{Método de Sintonia com relé.}
-	\begin{subfigure}[b]{0.5\textwidth}
+	\begin{subfigure}[b]{0.48\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{i/RealStepResponseRelayMethodA.png} 
 		\caption{Resposta do método do relé.}
 		\label{fig:RealStepResponseRelayMethodA}
 	\end{subfigure}
-	\begin{subfigure}[b]{0.5\textwidth}
+	\begin{subfigure}[b]{0.48\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{i/RealStepResponseRelayMethodB.png}
 		\caption{Resposta do método do relé em detalhe.}
@@ -165,7 +165,7 @@
 \begin{figure}[H]
 	\caption{Resposta ao degrau do acumulador com os parâmetros do método do relé.}
 	\centering
-	\includegraphics[width = 0.9\linewidth]{i/RealStepResponseKpKiKdRelay.png}
+	\includegraphics[width = 1\linewidth]{i/RealStepResponseKpKiKdRelay.png}
 	\label{fig:RealStepResponseKpKiKdRelay}
 	\fonte{Elaborado pelo autor.} 
 \end{figure}
@@ -196,7 +196,7 @@
 \begin{figure}[H]
 	\caption{Controle de tensão do material com $K_p = 10$, $K_i = 5,5$ e $K_d = 0$.}
 	\centering
-	\includegraphics[width = 0.9\linewidth]{i/RealStepResponseTorque.png}
+	\includegraphics[width = 1\linewidth]{i/RealStepResponseTorque.png}
 	\label{fig:RealStepResponseTorque}
 	\fonte{Elaborado pelo autor.} 
 \end{figure}

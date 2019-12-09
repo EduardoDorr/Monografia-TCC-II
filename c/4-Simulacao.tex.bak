@@ -1,7 +1,7 @@
 % ||||||||||||||||||||||||||||||||||||||||||||||
 % CAPITULO 4
 % ||||||||||||||||||||||||||||||||||||||||||||||
-\chapter{Simulação do Modelo}
+\chapter{Simulação do Modelo do Acumulador}
 
 	Para a simulação do sistema do acumulador, decidiu-se pela utilização do \textit{software} \textit{MATLAB}\textcopyright , devido a simplicidade da utilização das bibliotecas do pacote \textit{Simulink} que vem integrado ao programa. Utilizando a modelagem do motor de corrente contínua já apresentada neste trabalho, foram feitas algumas adições ao modelo contemplando a ação da carga do sistema e a ação do redutor acoplador ao motor de forma a obter-se uma representação em blocos do sistema conforme a figura \ref{fig:matlabctrl}:
 	
@@ -29,9 +29,7 @@
 	\tau = J \frac{d \omega}{dt} = J \alpha
 \end{equation}
 
-	Onde $\tau$ é o torque produzido pela imposição de uma aceleração angular $\alpha$ sobre um corpo qualquer com momento de inércia $J$.
-	
-	A simulação de controle dos bobinadores não será abordada neste trabalho, tendo o enfoque total apenas no acumulador.
+	Onde $\tau$ é o torque produzido pela imposição de uma aceleração angular $\alpha$ sobre um corpo qualquer com momento de inércia $J$. A simulação de controle dos bobinadores não será abordada neste trabalho, tendo o enfoque total apenas no acumulador.
 	
 % ----------------------------------------------	
 

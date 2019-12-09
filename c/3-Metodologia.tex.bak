@@ -198,7 +198,7 @@
 	\frac{s}{n}(V_{in}(s) - V_{out}(s)) = \frac{R_s}{J_s} R_s[F_m(s) - (m_tg + nT_k(s))]
 \end{equation}	
 
-	Após alguns ajustes algébricos, tens-se:
+	Reescrevendo a equação, tens-se:
 
 \begin{equation}\label{eq:svacc3}
 	(V_{in}(s) - V_{out}(s)) = \frac{nR_s}{sJ_s} [\tau_m(s) - R_s(m_tg + nT_k(s))]
@@ -287,7 +287,7 @@
 \begin{figure}[H]
 	\caption{Modelo de um motor de corrente contínua.}
 	\centering
-	\includegraphics[width = 0.6\linewidth]{i/motormodel.png}
+	\includegraphics[width = 0.5\linewidth]{i/motormodel.png}
 	\label{fig:motormodel}
 	\fonte{Adaptado de \citeonline{Ogata2011}.} 
 \end{figure}
@@ -400,7 +400,7 @@
 
 \subsection{Material de Teste}
 
-	Nesta sessão é descrito brevemente as características mecânicas do material a ser utilizado nos testes da planta. Então, a primeira definição a ser feita diz respeito às dificuldades encontradas para se obter um material elastomérico além da complexidade de controlar um material imprevisível no sistema. Por isso, decidiu-se optar por um material de fácil acesso, que apesar de apresentar características muito distintas, para fins de modelagem e controle da planta, serão suficientes para o desenvolvimento do projeto. O material escolhido para operação será um rolo de papel Mili Bianco Folha Simples de 60 metros.
+	Nesta sessão é descrito brevemente as características mecânicas do material utilizado nos testes da planta. Devido às dificuldades encontradas para se obter um material elastomérico e a complexidade de controlar um material imprevisível no sistema, decidiu-se optar por um material de fácil acesso, que apesar de características muito distintas, para fins de modelagem e controle da planta, serão suficientes para o desenvolvimento do projeto. O material escolhido para operação será um rolo de papel Mili Bianco Folha Simples de 60 metros.
 	
 	Os dados técnicos disponíveis sobre as características mecânicas do tipo de papel escolhido são escassos e para o desenvolvimento e dimensionamento do projeto serão considerados os valores apresentados na tabela \ref{tab:caracpapel}, conforme fornecidos por contato informal por meio de correio eletrônico com um funcionário da Mili.
 
@@ -556,7 +556,7 @@
 \begin{figure}[H]
 	\caption{Esquema de uma ponte H com representação da alteração de sentido de rotação.}
 	\centering
-	\includegraphics[width = 0.63\linewidth]{i/HBridgeFull.png}
+	\includegraphics[width = 0.7\linewidth]{i/HBridgeFull.png}
 	\label{fig:HBridgeFull}
 	\fonte{Adaptado de \citeonline{Ozer2017}.} 
 \end{figure}
@@ -605,7 +605,7 @@
 	\fonte{Adaptado de \citeonline{INA219}.} 
 \end{figure}
 
-\subsection{Medição de Tensão}
+\subsection{Medição de Tração}
 
 	Apesar da possibilidade de controle indireto de tensão no material, optou-se por utilizar um método de medição direta com o uso de \textit{strain gauges}, que são sensores resistivos para medição da distância de deformação de corpos, assim podendo obter informações como força, pressão e aceleração atuantes sobre o corpo medido. Os  \textit{strain gauges} são extremamente úteis no campo de análise de estresse nos mais diversos tipos de corpos, funcionando por um princípio descoberto por William Thompson em 1856, de que fios de cobre ou de ferro tinham a sua resistência elétrica alterada quando eram esticados ou comprimidos por alguma força externa \cite{Strain2009}.
 	
@@ -633,6 +633,8 @@
 \subsection{Medição de Posição e Velocidade}
 
 	Outra realimentação importante para o sistema é a posição onde o carro móvel está, pois há um limite tanto para a posição mínima como máxima que ele pode atingir devido as limitações mecânicas do sistema. Para isto, utilizou-se um sensor de posição no carro e aplicando uma derivada à variação de posição medida é possível calcular a velocidade instantânea. Existem diversas formas diferentes de se fazer a medição de posição e velocidade de um motor, desde métodos sem uso de sensor (\textit{sensorless}) ao uso de diversos tipos de sensores diferentes como óticos e ultrassônicos \cite{Dwivedi2017}.
+	
+	Para a fazer as medições decidiu-se pelo uso de um módulo de medição rotativo por pulsos de fabricação \textit{Keyes} que é um sensor muito parecido com um potenciômetro, visto na figura \ref{fig:KY-040}, que possui resolução de 20 pulsos por volta e interface de comunicação a partir de dois canais A e B que enviam um trem de pulsos em código \textit{Gray}, conforme o eixo do sensor é rotacionado.
 
 \begin{figure}[H]
 	\caption{Módulo de medição de velocidade por pulsos.}
@@ -642,7 +644,7 @@
 	\fonte{Adaptado de \citeonline{KY-040}.} 
 \end{figure}
 
-	Para a fazer as medições decidiu-se pelo uso de um módulo de medição rotativo por pulsos de fabricação \textit{Keyes} que é um sensor muito parecido com um potenciômetro, visto na figura \ref{fig:KY-040}, que possui resolução de 20 pulsos por volta e interface de comunicação a partir de dois canais A e B que enviam um trem de pulsos em código \textit{Gray}, conforme o eixo do sensor é rotacionado. Neste módulo, um sensor ótico emite uma luz infravermelha para um receptor que toda vez que este feixe é cortado por uma roda perfurada emite pulsos na saída. Este tipo de funcionamento é o princípio de um \textit{encoder} padrão de mercado, que é um dispositivo de medição de velocidade/posição ótica utilizado largamente na indústria. Para poder medir corretamente a velocidade de rotação de um eixo, por exemplo, é necessário construir uma roda perfurada, onde o comprimento do arco formado entre um furo e outro será a medida do deslocamento angular por pulso. Somando a quantidade de pulsos por um intervalo de amostragem é possível obter-se a velocidade e posição angular do eixo \cite{Joshi2014}.
+	Neste módulo, um sensor ótico emite uma luz infravermelha para um receptor que toda vez que este feixe é cortado por uma roda perfurada emite pulsos na saída. Este tipo de funcionamento é o princípio de um \textit{encoder} padrão de mercado, que é um dispositivo de medição de velocidade/posição ótica utilizado largamente na indústria. Para poder medir corretamente a velocidade de rotação de um eixo, por exemplo, é necessário construir uma roda perfurada, onde o comprimento do arco formado entre um furo e outro será a medida do deslocamento angular por pulso. Somando a quantidade de pulsos por um intervalo de amostragem é possível obter-se a velocidade e posição angular do eixo \cite{Joshi2014}.
 	
 \begin{figure}[H]
 	\caption{Representação de um encoder ótico}
@@ -689,7 +691,7 @@
 \begin{figure}[H]
 	\caption{Fluxo macro do \textit{software} de controle.}
 	\centering
-	\includegraphics[width = 0.9\linewidth]{i/fluxobasico.png}
+	\includegraphics[width = 1\linewidth]{i/fluxobasico.png}
 	\label{fig:fluxobasico}
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
@@ -699,7 +701,7 @@
 \begin{figure}[H]
 	\caption{Diagrama de blocos da malha de posição do acumulador.}
 	\centering
-	\includegraphics[width = 0.9\linewidth]{i/ctrlacumulador.PNG}
+	\includegraphics[width = 0.8\linewidth]{i/ctrlacumulador.PNG}
 	\label{fig:ctrlacumulador}
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
@@ -709,12 +711,12 @@
 \begin{figure}[H]
 	\caption{Diagrama de blocos da malha de tensão do acumulador.}
 	\centering
-	\includegraphics[width = 0.9\linewidth]{i/ctrlacumulador1.PNG}
+	\includegraphics[width = 0.8\linewidth]{i/ctrlacumulador1.PNG}
 	\label{fig:ctrlacumulador1}
 	\fonte{Elaborado pelo Autor.} 
 \end{figure}
 
-	O sistema supervisório é desenvolvido em linguagem $C#$ no ambiente do \textit{VisualStudio}\textcopyright , servindo para alterar os valores de referência do sistema, como tensão e posição, além dos ganhos $K_p$, $K_i$ e $K_d$ das malhas de controle para eventuais ajustes manuais. A partir dele também é possível visualizar o valor das principais variáveis de processo como corrente do motor, tensão na célula de carga, velocidade e posição do carro móvel. Através do supervisório será possível selecionar o tipo de modo de controle como manual, por tensão ou por posição, além de gerar relatórios do funcionamento da planta.
+	O sistema supervisório é desenvolvido em linguagem $C\sharp$ no ambiente do \textit{VisualStudio}\textcopyright , servindo para alterar os valores de referência do sistema, como tensão e posição, além dos ganhos $K_p$, $K_i$ e $K_d$ das malhas de controle para eventuais ajustes manuais. A partir dele também é possível visualizar o valor das principais variáveis de processo como corrente do motor, tensão na célula de carga, velocidade e posição do carro móvel. Através do supervisório será possível selecionar o tipo de modo de controle como manual, por tensão ou por posição, além de gerar relatórios do funcionamento da planta.
 	
 	O método de sintonia escolhido para encontrar os parâmetros da planta e parametrizar o controlador PID é o método do relé com histerese já comentado neste trabalho. Desta forma, colocando o carro móvel a oscilar sem carga e lendo a frequência e amplitude da oscilação, pode-se obter os ganhos do controlador utilizando a equação \ref{eq:n(a)} e o quadro \ref{qua:ZieglerNichols}, tendo assim um ponto de partida para ajustar e otimizar o sistema com outras formas de controle mais robustas e refinadas, sendo que a função relé pode ser executada através do sistema supervisório.
 
